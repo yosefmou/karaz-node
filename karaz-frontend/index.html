@@ -1,0 +1,1027 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <!--flowbite tailwind slider-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
+    <script type="module" src="/main.js"></script>
+    <title>Karez</title>
+  </head>
+  <body id="app" class="block font-sans">
+    <div class="background-images">
+      <!-- Empty container to hold the background images -->
+    </div>
+    <div class="main">
+      <!--start hero-->
+      <div class="pt-32 hero">
+        <!--header component-->
+        <nav class="fixed top-0 z-50 items-center w-full">
+          <!--top header-->
+          <div class="flex items-center justify-between w-full h-10 px-2 py-8 font-sans font-normal bg-white md:px-14 text-k-red">
+            <!--social media-->
+              <div class="flex items-center justify-start ml-2 space-x-2">
+                <span class="font-sans text-xs font-semibold">Follow Us:</span>
+                <svg width="13" height="13" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.5 0C6.329 0 6.056 0.01 5.203 0.048C4.35 0.088 3.769 0.222 3.26 0.42C2.72609 0.620819 2.24249 0.935826 1.843 1.343C1.43608 1.7427 1.12111 2.22624 0.92 2.76C0.722 3.268 0.587 3.85 0.548 4.7C0.51 5.555 0.5 5.827 0.5 8.001C0.5 10.173 0.51 10.445 0.548 11.298C0.588 12.15 0.722 12.731 0.92 13.24C1.125 13.766 1.398 14.212 1.843 14.657C2.287 15.102 2.733 15.376 3.259 15.58C3.769 15.778 4.349 15.913 5.201 15.952C6.055 15.99 6.327 16 8.5 16C10.673 16 10.944 15.99 11.798 15.952C12.649 15.912 13.232 15.778 13.741 15.58C14.2746 15.3791 14.7578 15.0641 15.157 14.657C15.602 14.212 15.875 13.766 16.08 13.24C16.277 12.731 16.412 12.15 16.452 11.298C16.49 10.445 16.5 10.173 16.5 8C16.5 5.827 16.49 5.555 16.452 4.701C16.412 3.85 16.277 3.268 16.08 2.76C15.8789 2.22623 15.5639 1.74268 15.157 1.343C14.7576 0.935676 14.274 0.620645 13.74 0.42C13.23 0.222 12.648 0.087 11.797 0.048C10.943 0.01 10.672 0 8.498 0H8.501H8.5ZM7.783 1.442H8.501C10.637 1.442 10.89 1.449 11.733 1.488C12.513 1.523 12.937 1.654 13.219 1.763C13.592 1.908 13.859 2.082 14.139 2.362C14.419 2.642 14.592 2.908 14.737 3.282C14.847 3.563 14.977 3.987 15.012 4.767C15.051 5.61 15.059 5.863 15.059 7.998C15.059 10.133 15.051 10.387 15.012 11.23C14.977 12.01 14.846 12.433 14.737 12.715C14.6087 13.0624 14.404 13.3764 14.138 13.634C13.858 13.914 13.592 14.087 13.218 14.232C12.938 14.342 12.514 14.472 11.733 14.508C10.89 14.546 10.637 14.555 8.501 14.555C6.365 14.555 6.111 14.546 5.268 14.508C4.488 14.472 4.065 14.342 3.783 14.232C3.4355 14.1039 3.12113 13.8996 2.863 13.634C2.59675 13.376 2.39172 13.0617 2.263 12.714C2.154 12.433 2.023 12.009 1.988 11.229C1.95 10.386 1.942 10.133 1.942 7.996C1.942 5.86 1.95 5.608 1.988 4.765C2.024 3.985 2.154 3.561 2.264 3.279C2.409 2.906 2.583 2.639 2.863 2.359C3.143 2.079 3.409 1.906 3.783 1.761C4.065 1.651 4.488 1.521 5.268 1.485C6.006 1.451 6.292 1.441 7.783 1.44V1.442ZM12.771 2.77C12.6449 2.77 12.5201 2.79483 12.4036 2.84308C12.2872 2.89132 12.1813 2.96203 12.0922 3.05118C12.003 3.14032 11.9323 3.24615 11.8841 3.36262C11.8358 3.4791 11.811 3.60393 11.811 3.73C11.811 3.85607 11.8358 3.9809 11.8841 4.09738C11.9323 4.21385 12.003 4.31968 12.0922 4.40882C12.1813 4.49797 12.2872 4.56868 12.4036 4.61692C12.5201 4.66517 12.6449 4.69 12.771 4.69C13.0256 4.69 13.2698 4.58886 13.4498 4.40882C13.6299 4.22879 13.731 3.98461 13.731 3.73C13.731 3.47539 13.6299 3.23121 13.4498 3.05118C13.2698 2.87114 13.0256 2.77 12.771 2.77ZM8.501 3.892C7.95607 3.8835 7.41489 3.98349 6.90898 4.18614C6.40306 4.3888 5.94251 4.69007 5.55415 5.07242C5.16579 5.45478 4.85736 5.91057 4.64684 6.41326C4.43632 6.91595 4.3279 7.4555 4.3279 8.0005C4.3279 8.5455 4.43632 9.08505 4.64684 9.58774C4.85736 10.0904 5.16579 10.5462 5.55415 10.9286C5.94251 11.3109 6.40306 11.6122 6.90898 11.8149C7.41489 12.0175 7.95607 12.1175 8.501 12.109C9.57954 12.0922 10.6082 11.6519 11.365 10.8833C12.1217 10.1146 12.5459 9.07917 12.5459 8.0005C12.5459 6.92183 12.1217 5.88641 11.365 5.11775C10.6082 4.34909 9.57954 3.90883 8.501 3.892ZM8.501 5.333C9.20833 5.333 9.88669 5.61399 10.3869 6.11415C10.887 6.61431 11.168 7.29267 11.168 8C11.168 8.70733 10.887 9.38569 10.3869 9.88585C9.88669 10.386 9.20833 10.667 8.501 10.667C7.79367 10.667 7.11531 10.386 6.61515 9.88585C6.11499 9.38569 5.834 8.70733 5.834 8C5.834 7.29267 6.11499 6.61431 6.61515 6.11415C7.11531 5.61399 7.79367 5.333 8.501 5.333Z" fill="#9E0C26"/>
+                </svg>
+                <svg width="13" height="13" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.502 8.05C15.502 3.604 11.92 0 7.502 0C3.082 0.001 -0.5 3.604 -0.5 8.051C-0.5 12.068 2.426 15.398 6.25 16.002V10.377H4.22V8.051H6.252V6.276C6.252 4.259 7.447 3.145 9.274 3.145C10.15 3.145 11.065 3.302 11.065 3.302V5.282H10.056C9.063 5.282 8.753 5.903 8.753 6.54V8.05H10.971L10.617 10.376H8.752V16.001C12.576 15.397 15.502 12.067 15.502 8.05Z" fill="#9E0C26"/>
+                </svg>
+                <svg width="13" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.526 13.0007C10.564 13.0007 13.867 7.99769 13.867 3.66669C13.867 3.52669 13.867 3.38469 13.861 3.24469C14.5041 2.77918 15.0591 2.20284 15.5 1.54269C14.8993 1.80754 14.2628 1.9821 13.611 2.06069C14.2975 1.65033 14.8117 1.00466 15.058 0.243693C14.413 0.625817 13.707 0.894067 12.971 1.03669C12.4762 0.509717 11.8214 0.160611 11.1081 0.0434506C10.3948 -0.0737096 9.66272 0.0476146 9.02534 0.38863C8.38796 0.729646 7.88081 1.27132 7.58245 1.92975C7.28409 2.58818 7.21118 3.32663 7.375 4.03069C6.06974 3.96524 4.79282 3.62616 3.62704 3.03544C2.46127 2.44471 1.43268 1.61554 0.608 0.601693C0.18934 1.32478 0.0615737 2.18009 0.250646 2.99396C0.439718 3.80782 0.931455 4.51922 1.626 4.98369C1.10554 4.96601 0.596521 4.82625 0.14 4.57569V4.62069C0.140897 5.37817 0.403307 6.11211 0.882874 6.69845C1.36244 7.28479 2.02975 7.68757 2.772 7.83869C2.49026 7.91631 2.19923 7.955 1.907 7.95369C1.70098 7.95432 1.49538 7.93523 1.293 7.89669C1.50279 8.54875 1.91127 9.11886 2.46125 9.52717C3.01122 9.93548 3.67513 10.1615 4.36 10.1737C3.19656 11.0875 1.7594 11.5831 0.28 11.5807C0.0193207 11.5818 -0.241177 11.5668 -0.5 11.5357C1.00151 12.493 2.7453 13.0012 4.526 13.0007Z" fill="#9E0C26"/>
+                </svg>   
+              </div>
+            <!--end social media-->
+            <!--top header contact-->
+              <div class="items-center justify-center hidden xl:flex">
+                <span class="flex items-center font-sans text-xs">
+                  <svg class="mr-2" width="13" height="13" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.15447 1.32829C4.09544 1.25236 4.02092 1.18985 3.93587 1.14492C3.85082 1.09999 3.75719 1.07368 3.66119 1.06772C3.56519 1.06176 3.46902 1.07629 3.37907 1.11036C3.28912 1.14442 3.20744 1.19724 3.13947 1.26529L2.10547 2.30029C1.62247 2.78429 1.44447 3.4693 1.65547 4.0703C2.53121 6.55788 3.95577 8.81639 5.82347 10.6783C7.6854 12.546 9.9439 13.9705 12.4315 14.8463C13.0325 15.0573 13.7175 14.8793 14.2015 14.3963L15.2355 13.3623C15.3035 13.2943 15.3563 13.2127 15.3904 13.1227C15.4245 13.0327 15.439 12.9366 15.433 12.8406C15.4271 12.7446 15.4008 12.6509 15.3558 12.5659C15.3109 12.4808 15.2484 12.4063 15.1725 12.3473L12.8655 10.5533C12.7843 10.4904 12.69 10.4467 12.5895 10.4256C12.489 10.4044 12.3851 10.4064 12.2855 10.4313L10.0955 10.9783C9.80315 11.0514 9.49689 11.0475 9.20652 10.967C8.91614 10.8866 8.65154 10.7324 8.43847 10.5193L5.98247 8.06229C5.76924 7.84933 5.6148 7.58478 5.53418 7.29439C5.45357 7.00401 5.44954 6.6977 5.52247 6.4053L6.07047 4.2153C6.09538 4.11569 6.09734 4.01173 6.07621 3.91126C6.05507 3.81079 6.01139 3.71642 5.94847 3.63529L4.15447 1.32829ZM2.38447 0.511295C2.55947 0.336244 2.7697 0.200425 3.00121 0.112856C3.23272 0.0252871 3.48021 -0.0120282 3.72725 0.00338804C3.97429 0.0188043 4.21522 0.0865995 4.43405 0.202272C4.65288 0.317944 4.8446 0.478846 4.99647 0.674295L6.79047 2.98029C7.11947 3.4033 7.23547 3.9543 7.10547 4.4743L6.55847 6.6643C6.53019 6.77772 6.53172 6.89654 6.56291 7.0092C6.5941 7.12187 6.65388 7.22456 6.73647 7.3073L9.19347 9.76429C9.27631 9.84705 9.37916 9.90694 9.49202 9.93813C9.60488 9.96933 9.72389 9.97076 9.83747 9.9423L12.0265 9.3953C12.2831 9.33113 12.5509 9.32615 12.8098 9.38072C13.0686 9.43529 13.3116 9.54799 13.5205 9.71029L15.8265 11.5043C16.6555 12.1493 16.7315 13.3743 15.9895 14.1153L14.9555 15.1493C14.2155 15.8893 13.1095 16.2143 12.0785 15.8513C9.43965 14.9228 7.04374 13.4121 5.06847 11.4313C3.08776 9.45631 1.57708 7.06075 0.648471 4.4223C0.286471 3.3923 0.611471 2.2853 1.35147 1.54529L2.38547 0.511295H2.38447Z" fill="#9E0C26"/>
+                  </svg>
+                  (225) 555-0118
+                </span>
+                <span class="flex items-center ml-2 font-sans text-xs">
+                  <svg class="mr-2" width="13" height="13" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 2C0 1.46957 0.210714 0.960859 0.585786 0.585786C0.960859 0.210714 1.46957 0 2 0H14C14.5304 0 15.0391 0.210714 15.4142 0.585786C15.7893 0.960859 16 1.46957 16 2V10C16 10.5304 15.7893 11.0391 15.4142 11.4142C15.0391 11.7893 14.5304 12 14 12H2C1.46957 12 0.960859 11.7893 0.585786 11.4142C0.210714 11.0391 0 10.5304 0 10V2ZM2 1C1.73478 1 1.48043 1.10536 1.29289 1.29289C1.10536 1.48043 1 1.73478 1 2V2.217L8 6.417L15 2.217V2C15 1.73478 14.8946 1.48043 14.7071 1.29289C14.5196 1.10536 14.2652 1 14 1H2ZM15 3.383L10.242 6.238L15 9.114V3.384V3.383ZM14.966 10.261L9.271 6.82L8 7.583L6.728 6.82L1.034 10.26C1.0912 10.4724 1.21685 10.6601 1.39149 10.7938C1.56613 10.9276 1.78001 11.0001 2 11H14C14.2199 11.0001 14.4336 10.9278 14.6083 10.7942C14.7829 10.6607 14.9086 10.4732 14.966 10.261ZM1 9.114L5.758 6.238L1 3.383V9.113V9.114Z" fill="#9E0C26"/>
+                  </svg>
+                  michelle.rivera@example.com
+                </span>
+              </div>
+            <!--end top header contact-->
+            <!--lang & countrypic-->
+            <div class="flex items-center justify-center">
+              <span class="mr-6 font-sans text-xs">English</span>
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect width="26" height="26" fill="url(#pattern0)"/>
+                <defs>
+                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0_180_785" transform="scale(0.0263158)"/>
+                </pattern>
+                <image id="image0_180_785" width="38" height="38" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAhGVYSWZNTQAqAAAACAAFARIAAwAAAAEAAQAAARoABQAAAAEAAABKARsABQAAAAEAAABSASgAAwAAAAEAAgAAh2kABAAAAAEAAABaAAAAAAAAAEgAAAABAAAASAAAAAEAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAJqADAAQAAAABAAAAJgAAAAB3yE1YAAAACXBIWXMAAAsTAAALEwEAmpwYAAABWWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNi4wLjAiPgogICA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyI+CiAgICAgICAgIDx0aWZmOk9yaWVudGF0aW9uPjE8L3RpZmY6T3JpZW50YXRpb24+CiAgICAgIDwvcmRmOkRlc2NyaXB0aW9uPgogICA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgoZXuEHAAAG6ElEQVRYCc1Ya2wUVRQ+987sdrvbLdvWLt2l7bal4CtRCEWCJfiMTYwUjYI/JD6IIViNGgMalaBGjdEY44M0ojH4SHyRqIAgD1NK0SqGglUotUX7mO5su2V3+7Cd7c7MvZ67uiil2661Bc9mMrN37j3nu+ee8507l0CKwjknKFxVVbtpmkutsm1x1NQXh2OD8wbN4Yw+XUuXgMTmODz+TIujg4HRAMD3UUq/ycvLG0qMT9EckFQ7IqCLgFrWtQ74K/acOppff6qJH+77lWjGMDCgwPFHUR3jBpTYciHbkcuXuOaSW73lWpEjb5NM2Xt+v7+lrKxMT8VmUmCJGYZCocyoYb4AJ5W16qtvwzueY/TNRVng1gwI0vFN2IkEMTPKS7PnkudLV0YWXXDxjhnUvt6Z5wwm9CfTkFR1fNmCwaVDLW0t/Y8+VxW6bgXRth6k1OS4Qgz14X0CGeYmGNRCuvsVuPXQ067VR99Y1RkNdkRDv98g9I83fExgOBvJrwQe0I827Q8vvj5XO3gAeIYFvStWYVx9Y9rqw+Ulkp00B3+il9bcad2nHtnl7+ndyFt52pgDsPEsYAJUT1fPevrziTdOVVzN2exiCv0aABNemryIGOzkOnhJDl126DHY293wTJs9sImr3D6W1jOAiXUPdHathqbmF9QbrzVJyTwJwkOTcdJYtuJtKoLzyG7pnu/WmfWR4/e2Q+BB4YzRA84Apqq984w2pTpQcRMjRZdJ0IeemgYJsBjMSiuRVn33JGvt73xOVYPXjjZzGhimSQZEo3vCV18n8aISCgNR9NS/j6fRBpL9VzHuPPJMcsMPG6l/6NTHWkTz/bNvHJhYQr2l7e6Rze/nMnByQCqYRIz/U++EzyLmIsAI6Iy/qnyZrfQFH0YccmJgHFgwOOQ2enqfiLy0ASDfTSGGwM6BRJF23FI6/fDkJ6xrpLcKSdyTMBsHZg6Gbh556wMPsRVxiJ4bUAkA/Vg3QMomW/w1Vk03RSLEMcnCfWqnumH4izqALDuBkbOBEWQwjpcFDCjOKYWKkkvANRxD8kxaOBJ2U7pjKSMaNbhVttwPXbARB2lyQFHmGQcO5bPfuznYc8iYsUUomBYAG7TCXZe8DOsW3wLcNJE0z8rylIAk6xTVRtK7Qr1X4fvdlDF6lfZ1HXBHBgHzv5FoMoOptks4UYnAUuxPKCHSUv34L0DSMCGmkR5SASdbcONE2eWCJShQ4tMbjmNxwpibPtpKBZfY7wGVpMtqa2spNToVF6YFDjy/qP5CzmXJku90OgmlkoyMK2JrajIsFdeM10eS/0yoOGeM1/F8vaPMNDr+3P38L5YS2F/MQOXCgj4AEx3zv1hKYhjGsQULFjDKmfGTXFqIsX9+OUyEjGArwzD7t27dGv+8abReWQZc1MgpKjGTjEssJugczupWrlzJqNVu3Wa/5UYgQ30c5PObC7FYDExOsWhjaUaWlZQfmw6E51eWs5lWwO+tMScsIGsjHOrn50ONzwMuwwBDVPcpEFGKIpEwVFe/1V1UVFCMRBsVGzNGXTPqMh67u3zgxc0c3E7cvJ0JTuSrgKBbOfx6uBF2frsf3NgSnAJStlgsoOs6q1xWSU3T2IRmRvDCqMLvO2vurNfT7lihEQgAiJp5DsXlyhLWyEMPPxJ0ONK/EHhEQzyoch3QI9ltz2euf4qA0svAem7AORwO6O0NsvvuqyKFBb4P8YzjFwFKSByYQOmZ7XvFtvauw3JaHgULop7mDEWbkJk5Ix4lq1ffGymdU/QMtp3epcaBCYTYqIEtfY1rT7UBXcc5ZNpE87SJ1zsLAgGV7dtby/PzCyvQPhL933IamGjyenN/JMUlVd69tZS3NZq41f675xQ+ud0zwe/vMqurN0uFvoINeXk5RyZUL+hD7VAfD+yu4djbOFJyOW/IvpA3Zs3lda5SXpWWLdzPMSvjd/H8by70lOhvbHn3ff7bSeVttJf67D9FcH4l+ED77hoTwZkNpfN5I4L7L8Bwqbiv0CdAmV/u+MpQlMBTCCrpoQr2Sy6BQe0a/4mTQ023rzEbwcvqZl06KY+5XC4BiC1ffrNZX39oKBQM3Zbc6gRvcDZxWg+HwzP8Hf7XOrfvi3xfXsnX5ngYpKVxN6ETLiHSAZdlCy9fcqW5fdsuvbPd/9FgYDBXmE7oTwYjpZqCSuTu7u65Eier2tvbH/z0s88djY1HeHNzM1EUBT8XKJ5SMZHZ+CyBzWaFhQsX8YVlV5BllcsGZheX7MTDxWe9Xu+JZEBGt6cETAwSMxRxIg6HsUwukSRyvSRZygYHBn2trS35uqFbkcWjmU5nvyvL1W632Wp1M3YYx9UUFBSEE+NHA0j2/w+lID+QcGkl8gAAAABJRU5ErkJggg=="/>
+                </defs>
+              </svg>  
+            </div>
+            <!--end lang & countrypic-->
+          </div>
+          <!--end top header-->
+          <!--header Menu-->
+          <div class="relative flex items-center justify-between w-full h-16 px-4 py-8 font-sans font-normal text-white bg-k-red md:px-14">
+              <div class="relative flex items-center justify-start logo">
+                <img id="resize-image" src="./public/karaz-logo.svg" alt="logo">
+              </div>
+              <div class="hamburger lg:hidden">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </div>
+              <ul class="items-center justify-center hidden lg:flex nav_menu lg:ml-[160px]">
+                <li class="hover:text-k-red hover:bg-white">
+                  <a href="#" class="relative block px-2 py-6 text-sm font-bold lg:p-5">Home</a>
+                </li>
+                <li class="hover:text-k-red hover:bg-white">
+                  <a href="#" class="relative block px-2 py-6 text-sm font-bold lg:p-5">Daily deals </a>
+                </li>
+                <!--Toggleable Link-->
+                <li class="text-white toggleable hover:text-k-red hover:bg-white">
+                  <input type="checkbox" value="selected" id="toggle-one" class="hidden toggle-input">
+                    <label for="toggle-one" class="block px-4 py-6 text-sm font-bold cursor-pointer lg:p-5">Categories</label>
+                    <div role="toggle" class="p-6 mb-16 bg-white shadow-xl mega-menu sm:mb-0 mega-menu_mobile">
+                      <svg width="15" height="25" viewBox="0 0 21 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="hidden float-right back_btn" >
+                        <path d="M19.6905 0C20.0223 0 20.3626 0.105357 20.6172 0.311148C21.1276 0.721746 21.1276 1.39229 20.6172 1.80289L3.16399 15.8479L20.3626 29.6822C20.873 30.0928 20.873 30.7633 20.3626 31.1739C19.8521 31.5845 19.0185 31.5845 18.508 31.1739L0.382836 16.5943C-0.127612 16.1837 -0.127612 15.5131 0.382836 15.1025L18.7627 0.311148C19.0173 0.106342 19.3588 0 19.6905 0Z" fill="#9E0C26"/>
+                      </svg>                      
+                      <div class="container flex flex-wrap justify-between w-full">
+                        <ul class="w-full px-4 pt-6 pb-6 border-b border-white sm:w-1/2 lg:w-1/4 sm:border-r lg:border-b-0 lg:pt-3">
+                          <h3 class="mb-2 text-lg font-bold text-k-red text-bold">Topwear</h3>
+                          <li>
+                            <a href="#" class="block p-3 text-k-red">Bottomwear</a>
+                          </li>
+                          <li>
+                            <a href="#" class="block p-3 text-k-red">Footwear</a>
+                          </li>
+                          <li>
+                            <a href="#" class="block p-3 text-k-red">Sports and Active Wear</a>
+                          </li>
+                        </ul>
+                        <ul class="w-full px-4 pt-6 pb-6 border-b border-white sm:w-1/2 lg:w-1/4 sm:border-r-0 lg:border-r lg:border-b-0 lg:pt-3">
+                          <h3 class="mb-2 text-lg font-bold text-k-red">Bottomwear</h3>
+                          <li>
+                            <a href="#" class="block p-3 text-k-red">Bottomwear</a>
+                          </li>
+                          <li>
+                            <a href="#" class="block p-3 text-k-red">Footwear</a>
+                          </li>
+                          <li>
+                            <a href="#" class="block p-3 text-k-red">Sports and Active Wear</a>
+                          </li>
+                        </ul>
+                        <ul class="w-full px-4 pt-6 pb-6 border-b border-white sm:w-1/2 lg:w-1/4 sm:border-b-0 sm:border-r md:border-b-0 lg:pt-3">
+                          <h3 class="text-lg font-bold text-k-red">Footwear</h3>
+                          <li>
+                            <a href="#" class="block p-3 text-k-red">Footwear</a>
+                          </li>
+                          <li>
+                            <a href="#" class="block p-3 text-k-red">Sports and Active Wear</a>
+                          </li>
+                        </ul>
+                        <ul class="w-full px-4 pt-6 pb-6 border-white sm:w-1/2 lg:w-1/4 lg:pt-3">
+                          <h3 class="mb-2 text-lg font-bold text-k-red text-bold">Sports </h3>
+                          <li class="pt-3">
+                            <img src="https://placehold.it/205x172">
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                </li>
+                <li class="hover:text-k-red hover:bg-white">
+                  <a href="#" class="relative block px-2 py-6 text-sm font-bold lg:p-5">Advertise with us </a>
+                </li>
+                <li class="hover:text-k-red hover:bg-white">
+                  <a href="#" class="relative block px-2 py-6 text-sm font-bold lg:p-5">Contact </a>
+                </li>
+                <li class="hover:text-k-red hover:bg-white">
+                  <a href="#" class="relative block px-2 py-6 text-sm font-bold lg:p-5">Blog </a>
+                </li>
+              </ul>
+              <div class="items-center justify-end hidden lg:flex">
+                <span class="flex items-center justify-center font-sans font-bold">  
+                  <svg class="mr-2" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 6C6.79565 6 7.55871 5.68393 8.12132 5.12132C8.68393 4.55871 9 3.79565 9 3C9 2.20435 8.68393 1.44129 8.12132 0.87868C7.55871 0.316071 6.79565 0 6 0C5.20435 0 4.44129 0.316071 3.87868 0.87868C3.31607 1.44129 3 2.20435 3 3C3 3.79565 3.31607 4.55871 3.87868 5.12132C4.44129 5.68393 5.20435 6 6 6ZM8 3C8 3.53043 7.78929 4.03914 7.41421 4.41421C7.03914 4.78929 6.53043 5 6 5C5.46957 5 4.96086 4.78929 4.58579 4.41421C4.21071 4.03914 4 3.53043 4 3C4 2.46957 4.21071 1.96086 4.58579 1.58579C4.96086 1.21071 5.46957 1 6 1C6.53043 1 7.03914 1.21071 7.41421 1.58579C7.78929 1.96086 8 2.46957 8 3ZM12 11C12 12 11 12 11 12H1C1 12 0 12 0 11C0 10 1 7 6 7C11 7 12 10 12 11ZM11 10.996C10.999 10.75 10.846 10.01 10.168 9.332C9.516 8.68 8.289 8 6 8C3.71 8 2.484 8.68 1.832 9.332C1.154 10.01 1.002 10.75 1 10.996H11Z" fill="white"/>
+                  </svg>                  
+                  <span>Login / Register </span>
+                </span>
+                  <!--search btn-->
+                <div class="hidden pl-6 ml-4 cursor-pointer search-icon sm:block">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg" id="search-toggle" class="inline w-4 h-4 pointer-events-none">
+                        <g clip-path="url(#clip0_194_692)">
+                        <path d="M11.7429 10.3441C12.7112 9.02279 13.1449 7.38459 12.9572 5.75725C12.7695 4.12991 11.9743 2.63344 10.7307 1.56723C9.48701 0.501022 7.88665 -0.0562959 6.24973 0.00677721C4.61282 0.0698504 3.06008 0.748663 1.90217 1.90741C0.744249 3.06615 0.0665484 4.61938 0.00464653 6.25633C-0.0572553 7.89329 0.501207 9.49326 1.56831 10.7361C2.6354 11.979 4.13244 12.7732 5.75992 12.9597C7.38739 13.1462 9.02528 12.7113 10.3459 11.7421H10.3449C10.3749 11.7821 10.4069 11.8201 10.4429 11.8571L14.2929 15.7071C14.4804 15.8947 14.7348 16.0002 15 16.0003C15.2653 16.0004 15.5198 15.8951 15.7074 15.7076C15.895 15.5201 16.0005 15.2657 16.0006 15.0005C16.0007 14.7352 15.8954 14.4807 15.7079 14.2931L11.8579 10.4431C11.8221 10.4069 11.7837 10.3735 11.7429 10.3431V10.3441ZM12.0009 6.5001C12.0009 7.22237 11.8586 7.93757 11.5822 8.60486C11.3058 9.27215 10.9007 9.87847 10.39 10.3892C9.87926 10.8999 9.27295 11.305 8.60566 11.5814C7.93837 11.8578 7.22317 12.0001 6.5009 12.0001C5.77863 12.0001 5.06343 11.8578 4.39614 11.5814C3.72885 11.305 3.12253 10.8999 2.61181 10.3892C2.10109 9.87847 1.69596 9.27215 1.41956 8.60486C1.14316 7.93757 1.0009 7.22237 1.0009 6.5001C1.0009 5.04141 1.58036 3.64246 2.61181 2.61101C3.64326 1.57956 5.04221 1.0001 6.5009 1.0001C7.95959 1.0001 9.35853 1.57956 10.39 2.61101C11.4214 3.64246 12.0009 5.04141 12.0009 6.5001Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_194_692">
+                        <rect width="16.0006" height="16.0003" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>                        
+                </div>
+                <!--end search-->
+            </div>
+          </div>
+          <div class="relative bg-white shadow-xl " id="search-content">
+            <input id="searchfield" type="search" placeholder="Search..." autofocus="autofocus" class="w-full p-2 text-xl leading-normal transition border-none appearance-none text-grey-800 focus:outline-none focus:border-none lg:text-2xl">
+        </div>
+          <!--end header Menu-->
+        </nav>
+        <!--end header component-->
+        <!--banner component-->
+        <div class="w-full mx-auto">
+          <div id="default-carousel" class="relative" data-carousel="static">
+                <!-- Carousel wrapper -->
+                <div class="relative overflow-hidden banner_sliderh">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-500 ease" data-carousel-item>
+                        <img src="./public/src/banner-slide.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 banner_slider_img top-1/2 left-1/2" alt="...">
+                        <div class="absolute overlay"></div>
+                        <p class="absolute font-sans font-light text-center text-transparent -translate-x-1/2 -translate-y-1/2 opacity-70 top-1/2 left-1/2 bg-clip-text bg-gradient-to-t from-k-dark-gray to-white">
+                          <span class="text-2xl md:text-4xl">Top DEALS WITH</span>
+                          <span class="block pt-4 text-5xl font-bold md:text-9xl bg-clip-text bg-gradient-to-b from-white to-k-dark-gray">KARAZ</span>
+                        </p>
+                    </div>
+                    
+                    <!-- Item 2 -->
+                    <div class="hidden duration-500 ease" data-carousel-item>
+                      <img src="./public/src/banner-slide.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 banner_slider_img top-1/2 left-1/2" alt="...">
+                      <div class="absolute overlay"></div>
+                      <p class="absolute font-sans font-light text-center text-transparent -translate-x-1/2 -translate-y-1/2 opacity-70 top-1/2 left-1/2 bg-clip-text bg-gradient-to-t from-k-dark-gray to-white">
+                        <span class="text-2xl md:text-4xl">Top DEALS WITH</span>
+                        <span class="block pt-4 text-5xl font-bold md:text-9xl bg-clip-text bg-gradient-to-b from-white to-k-dark-gray">KARAZ</span>
+                      </p>
+                    </div>
+                </div>
+                <!-- Slider controls -->
+                <button type="button" class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer md:left-12 sm:left-2 group focus:outline-none" data-carousel-prev>
+                    <span class="inline-flex items-center justify-center w-12 h-12 sm:w-10 sm:h-10 group-focus:outline-none">
+                        <svg class="w-8 h-8 lg:w-12 lg:h-20" viewBox="0 0 49 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M45.3733 0C46.127 0 46.9002 0.274188 47.4787 0.80975C48.6384 1.87831 48.6384 3.62337 47.4787 4.69194L7.8236 41.2434L46.9002 77.2466C48.0599 78.3151 48.0599 80.0602 46.9002 81.1287C45.7404 82.1973 43.8464 82.1973 42.6866 81.1287L1.5046 43.1858C0.34482 42.1173 0.34482 40.3722 1.5046 39.3036L43.2651 0.80975C43.8436 0.27675 44.6195 0 45.3733 0Z" fill="white" fill-opacity="0.22"/>
+                        </svg>        
+                        <span class="hidden">Previous</span>
+                    </span>
+                </button>
+                <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer md:right-12 group focus:outline-none" data-carousel-next>
+                    <span class="inline-flex items-center justify-center w-12 h-12 sm:w-10 sm:h-1 group-focus:outline-none">
+                      <svg width="55" height="82" class="w-8 h-8 lg:w-14 lg:h-20" viewBox="0 0 55 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.67561 81.1456C2.82097 81.1312 1.94509 80.8451 1.29076 80.304C-0.021061 79.2242 -0.0157624 77.4971 1.30255 76.4617L46.3782 41.0428L2.17881 4.66317C0.866982 3.58343 0.872281 1.85629 2.19059 0.820847C3.50891 -0.214594 5.65654 -0.178424 6.96836 0.901314L53.5491 39.2411C54.8609 40.3208 54.8556 42.0479 53.5373 43.0834L6.06852 80.3845C5.41095 80.9009 4.53025 81.16 3.67561 81.1456Z" fill="white" fill-opacity="0.22"/>
+                      </svg>                        
+                      <span class="hidden">Next</span>
+                    </span>
+                </button>
+          </div>
+        </div>
+        <!--end banner component-->
+      </div>  
+      <!--end hero-->
+      <!--start main-->
+      <!--Top coupons-->
+      <div class="relative flex flex-row flex-wrap items-center justify-center w-full pt-12">
+        <h1 class="flex flex-col items-center justify-center w-full font-sans text-2xl font-normal title sm:text-5xl">Top Coupons</h1>
+        <!--coupon slider-->
+        <div class="swipe-slide-container swiper">
+          <div class="swipe-slide-content coupon_swiper">
+              <div class="card-wrapper swiper-wrapper">
+                <div class="drop-shadow-lg card swiper-slide">
+                  <div class="relative card_image">
+                    <img src="./coupon-img.svg" alt="" class="w-full rounded-t-lg cardimg">
+                    <span class="absolute bottom-0 right-0 z-10 flex flex-wrap items-center justify-center px-0 py-2 text-lg font-bold text-white rounded-tl-xl bg-k-red">
+                      50% <span class="w-full text-sm text-center">OFF</span>
+                    </span>
+                  </div>
+                  <div class="flex flex-row flex-wrap items-center justify-center w-full text-black bg-white rounded-b-lg"> 
+                   <div class="flex flex-col w-full px-4 py-2">
+                    <h2 class="font-sans font-bold text-left">Nike</h2>
+                    <p class="font-sans text-xs font-light">Toronto Experimental Dance Festival Toronto ental Dance Festival Toronto Experimental </p>
+                   </div>
+                    <div class="flex items-center w-full p-2 pb-6">
+                      <img src="./brand.svg" class="left-0 flex items-center justify-center p-3 rounded-full shadow-xl">
+                      <button class="ml-auto text-sm font-light text-white rounded-lg w-36 h-9 bg-k-red">Copy & Shop</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="drop-shadow-lg card swiper-slide">
+                  <div class="relative card_image">
+                    <img src="./coupon-img.svg" alt="" class="w-full rounded-t-lg cardimg">
+                    <span class="absolute bottom-0 right-0 z-10 flex flex-wrap items-center justify-center px-0 py-2 text-lg font-bold text-white rounded-tl-xl bg-k-red">
+                      50% <span class="w-full text-sm text-center">OFF</span>
+                    </span>
+                  </div>
+                  <div class="flex flex-row flex-wrap items-center justify-center w-full text-black bg-white rounded-b-lg"> 
+                    <div class="flex flex-col w-full px-4 py-2">
+                    <h2 class="font-sans font-bold text-left">Nike</h2>
+                    <p class="font-sans text-xs font-light">Toronto Experimental Dance Festival Toronto ental Dance Festival Toronto Experimental</p>
+                    </div>
+                    <div class="flex items-center w-full p-2 pb-6">
+                      <img src="./brand.svg" class="left-0 flex items-center justify-center p-3 rounded-full shadow-xl">
+                      <button class="ml-auto text-sm font-light text-white rounded-lg w-36 h-9 bg-k-red">Copy & Shop</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="drop-shadow-lg card swiper-slide">
+                  <div class="relative card_image">
+                    <img src="./coupon-img.svg" alt="" class="w-full rounded-t-lg cardimg">
+                    <span class="absolute bottom-0 right-0 z-10 flex flex-wrap items-center justify-center px-0 py-2 text-lg font-bold text-white rounded-tl-xl bg-k-red">
+                      50% <span class="w-full text-sm text-center">OFF</span>
+                    </span>
+                  </div>
+                  <div class="flex flex-row flex-wrap items-center justify-center w-full text-black bg-white rounded-b-lg"> 
+                   <div class="flex flex-col w-full px-4 py-2">
+                    <h2 class="font-sans font-bold text-left">Nike</h2>
+                    <p class="font-sans text-xs font-light">Toronto Experimental Dance Festival Toronto ental Dance Festival Toronto Experimental </p>
+                   </div>
+                    <div class="flex items-center w-full p-2 pb-6">
+                      <img src="./brand.svg" class="left-0 flex items-center justify-center p-3 rounded-full shadow-xl">
+                      <button class="ml-auto text-sm font-light text-white rounded-lg w-36 h-9 bg-k-red">Copy & Shop</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="drop-shadow-lg card swiper-slide">
+                  <div class="relative card_image">
+                    <img src="./coupon-img.svg" alt="" class="w-full rounded-t-lg cardimg">
+                    <span class="absolute bottom-0 right-0 z-10 flex flex-wrap items-center justify-center px-0 py-2 text-lg font-bold text-white rounded-tl-xl bg-k-red">
+                      50% <span class="w-full text-sm text-center">OFF</span>
+                    </span>
+                  </div>
+                  <div class="flex flex-row flex-wrap items-center justify-center w-full text-black bg-white rounded-b-lg"> 
+                    <div class="flex flex-col w-full px-4 py-2">
+                    <h2 class="font-sans font-bold text-left">Nike</h2>
+                    <p class="font-sans text-xs font-light">Toronto Experimental Dance Festival Toronto ental Dance Festival Toronto Experimental</p>
+                    </div>
+                    <div class="flex items-center w-full p-2 pb-6">
+                      <img src="./brand.svg" class="left-0 flex items-center justify-center p-3 rounded-full shadow-xl">
+                      <button class="ml-auto text-sm font-light text-white rounded-lg w-36 h-9 bg-k-red">Copy & Shop</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="drop-shadow-lg card swiper-slide">
+                  <div class="relative card_image">
+                    <img src="./coupon-img.svg" alt="" class="w-full rounded-t-lg cardimg">
+                    <span class="absolute bottom-0 right-0 z-10 flex flex-wrap items-center justify-center px-0 py-2 text-lg font-bold text-white rounded-tl-xl bg-k-red">
+                      50% <span class="w-full text-sm text-center">OFF</span>
+                    </span>
+                  </div>
+                  <div class="flex flex-row flex-wrap items-center justify-center w-full text-black bg-white rounded-b-lg"> 
+                   <div class="flex flex-col w-full px-4 py-2">
+                    <h2 class="font-sans font-bold text-left">Nike</h2>
+                    <p class="font-sans text-xs font-light">Toronto Experimental Dance Festival Toronto ental Dance Festival Toronto Experimental </p>
+                   </div>
+                    <div class="flex items-center w-full p-2 pb-6">
+                      <img src="./brand.svg" class="left-0 flex items-center justify-center p-3 rounded-full shadow-xl">
+                      <button class="ml-auto text-sm font-light text-white rounded-lg w-36 h-9 bg-k-red">Copy & Shop</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="drop-shadow-lg card swiper-slide">
+                  <div class="relative card_image">
+                    <img src="./coupon-img.svg" alt="" class="w-full rounded-t-lg cardimg">
+                    <span class="absolute bottom-0 right-0 z-10 flex flex-wrap items-center justify-center px-0 py-2 text-lg font-bold text-white rounded-tl-xl bg-k-red">
+                      50% <span class="w-full text-sm text-center">OFF</span>
+                    </span>
+                  </div>
+                  <div class="flex flex-row flex-wrap items-center justify-center w-full text-black bg-white rounded-b-lg"> 
+                    <div class="flex flex-col w-full px-4 py-2">
+                    <h2 class="font-sans font-bold text-left">Nike</h2>
+                    <p class="font-sans text-xs font-light">Toronto Experimental Dance Festival Toronto ental Dance Festival Toronto Experimental</p>
+                    </div>
+                    <div class="flex items-center w-full p-2 pb-6">
+                      <img src="./brand.svg" class="left-0 flex items-center justify-center p-3 rounded-full shadow-xl">
+                      <button class="ml-auto text-sm font-light text-white rounded-lg w-36 h-9 bg-k-red">Copy & Shop</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="drop-shadow-lg card swiper-slide">
+                  <div class="relative card_image">
+                    <img src="./coupon-img.svg" alt="" class="w-full rounded-t-lg cardimg">
+                    <span class="absolute bottom-0 right-0 z-10 flex flex-wrap items-center justify-center px-0 py-2 text-lg font-bold text-white rounded-tl-xl bg-k-red">
+                      50% <span class="w-full text-sm text-center">OFF</span>
+                    </span>
+                  </div>
+                  <div class="flex flex-row flex-wrap items-center justify-center w-full text-black bg-white rounded-b-lg"> 
+                   <div class="flex flex-col w-full px-4 py-2">
+                    <h2 class="font-sans font-bold text-left">Nike</h2>
+                    <p class="font-sans text-xs font-light">Toronto Experimental Dance Festival Toronto ental Dance Festival Toronto Experimental </p>
+                   </div>
+                    <div class="flex items-center w-full p-2 pb-6">
+                      <img src="./brand.svg" class="left-0 flex items-center justify-center p-3 rounded-full shadow-xl">
+                      <button class="ml-auto text-sm font-light text-white rounded-lg w-36 h-9 bg-k-red">Copy & Shop</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="drop-shadow-lg card swiper-slide">
+                  <div class="relative card_image">
+                    <img src="./coupon-img.svg" alt="" class="w-full rounded-t-lg cardimg">
+                    <span class="absolute bottom-0 right-0 z-10 flex flex-wrap items-center justify-center px-0 py-2 text-lg font-bold text-white rounded-tl-xl bg-k-red">
+                      50% <span class="w-full text-sm text-center">OFF</span>
+                    </span>
+                  </div>
+                  <div class="flex flex-row flex-wrap items-center justify-center w-full text-black bg-white rounded-b-lg"> 
+                    <div class="flex flex-col w-full px-4 py-2">
+                    <h2 class="font-sans font-bold text-left">Nike</h2>
+                    <p class="font-sans text-xs font-light">Toronto Experimental Dance Festival Toronto ental Dance Festival Toronto Experimental</p>
+                    </div>
+                    <div class="flex items-center w-full p-2 pb-6">
+                      <img src="./brand.svg" class="left-0 flex items-center justify-center p-3 rounded-full shadow-xl">
+                      <button class="ml-auto text-sm font-light text-white rounded-lg w-36 h-9 bg-k-red">Copy & Shop</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="drop-shadow-lg card swiper-slide">
+                  <div class="relative card_image">
+                    <img src="./coupon-img.svg" alt="" class="w-full rounded-t-lg cardimg">
+                    <span class="absolute bottom-0 right-0 z-10 flex flex-wrap items-center justify-center px-0 py-2 text-lg font-bold text-white rounded-tl-xl bg-k-red">
+                      50% <span class="w-full text-sm text-center">OFF</span>
+                    </span>
+                  </div>
+                  <div class="flex flex-row flex-wrap items-center justify-center w-full text-black bg-white rounded-b-lg"> 
+                   <div class="flex flex-col w-full px-4 py-2">
+                    <h2 class="font-sans font-bold text-left">Nike</h2>
+                    <p class="font-sans text-xs font-light">Toronto Experimental Dance Festival Toronto ental Dance Festival Toronto Experimental </p>
+                   </div>
+                    <div class="flex items-center w-full p-2 pb-6">
+                      <img src="./brand.svg" class="left-0 flex items-center justify-center p-3 rounded-full shadow-xl">
+                      <button class="ml-auto text-sm font-light text-white rounded-lg w-36 h-9 bg-k-red">Copy & Shop</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="drop-shadow-lg card swiper-slide">
+                  <div class="relative card_image">
+                    <img src="./coupon-img.svg" alt="" class="w-full rounded-t-lg cardimg">
+                    <span class="absolute bottom-0 right-0 z-10 flex flex-wrap items-center justify-center px-0 py-2 text-lg font-bold text-white rounded-tl-xl bg-k-red">
+                      50% <span class="w-full text-sm text-center">OFF</span>
+                    </span>
+                  </div>
+                  <div class="flex flex-row flex-wrap items-center justify-center w-full text-black bg-white rounded-b-lg"> 
+                    <div class="flex flex-col w-full px-4 py-2">
+                    <h2 class="font-sans font-bold text-left">Nike</h2>
+                    <p class="font-sans text-xs font-light">Toronto Experimental Dance Festival Toronto ental Dance Festival Toronto Experimental</p>
+                    </div>
+                    <div class="flex items-center w-full p-2 pb-6">
+                      <img src="./brand.svg" class="left-0 flex items-center justify-center p-3 rounded-full shadow-xl">
+                      <button class="ml-auto text-sm font-light text-white rounded-lg w-36 h-9 bg-k-red">Copy & Shop</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="swiper-pagination swiper-pagination1"></div>
+        </div>
+        <!--coupon slider controls-->
+        <div class="swiper-button-prev swiper-btn"></div>
+        <div class="swiper-button-next swiper-btn"></div>
+      </div>
+      <!--end top coupon-->
+      <!--ads image-->
+      <div class="flex flex-row items-center justify-center pt-12 sm:m-12 md:m-0 ads_img">
+        <img src="./ads-banner.svg" alt="" class="w-full">
+      </div>
+      <!--end ads image--> 
+      <!--top stores-->
+      <div class="relative flex flex-row flex-wrap items-center justify-center w-full pt-12">
+        <h1 class="flex flex-col items-center justify-center w-full font-sans text-2xl font-normal title sm:text-5xl">Top Stores</h1>
+        <!--stores slider-->
+        <div class="swipe-slide-container swiper">
+          <div class=" stores_swiper">
+              <div class="card-wrapper swiper-wrapper">
+                <div class="mt-6 mb-6 drop-shadow-lg card swiper-slide">
+                  <div class="relative card_image">
+                    <img src="adidas.png" alt="" class="w-full rounded-t-lg cardimg">
+                    <img src="./brand.svg" class="absolute left-0 right-0 z-10 flex items-center justify-center p-5 m-auto bg-white rounded-full shadow-xl -bottom-8">
+                  </div>
+                  <div class="flex flex-row flex-wrap items-center justify-center w-full text-black bg-white rounded-b-lg"> 
+                   <div class="flex flex-col items-center justify-center w-full px-4 pt-12 pb-2">
+                    <p class="font-sans text-xs font-light">Toronto Experimental Dance Festival Toronto ental Dance Festival Toronto Experimental </p>
+                   </div>
+                    <div class="flex items-center w-full p-2 pb-6">
+                      <button class="w-full m-auto text-sm font-light text-white rounded-lg h-9 bg-k-red">Copy & Shop</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-6 mb-6 drop-shadow-lg card swiper-slide">
+                  <div class="relative card_image">
+                    <img src="adidas.png" alt="" class="w-full rounded-t-lg cardimg">
+                    <img src="./brand.svg" class="absolute left-0 right-0 z-10 flex items-center justify-center p-5 m-auto bg-white rounded-full shadow-xl -bottom-8">
+                  </div>
+                  <div class="flex flex-row flex-wrap items-center justify-center w-full text-black bg-white rounded-b-lg"> 
+                   <div class="flex flex-col items-center justify-center w-full px-4 pt-12 pb-2">
+                    <p class="font-sans text-xs font-light">Toronto Experimental Dance Festival Toronto ental Dance Festival Toronto Experimental </p>
+                   </div>
+                    <div class="flex items-center w-full p-2 pb-6">
+                      <button class="w-full m-auto text-sm font-light text-white rounded-lg h-9 bg-k-red">Copy & Shop</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-6 mb-6 drop-shadow-lg card swiper-slide">
+                  <div class="relative card_image">
+                    <img src="adidas.png" alt="" class="w-full rounded-t-lg cardimg">
+                    <img src="./brand.svg" class="absolute left-0 right-0 z-10 flex items-center justify-center p-5 m-auto bg-white rounded-full shadow-xl -bottom-8">
+                  </div>
+                  <div class="flex flex-row flex-wrap items-center justify-center w-full text-black bg-white rounded-b-lg"> 
+                   <div class="flex flex-col items-center justify-center w-full px-4 pt-12 pb-2">
+                    <p class="font-sans text-xs font-light">Toronto Experimental Dance Festival Toronto ental Dance Festival Toronto Experimental </p>
+                   </div>
+                    <div class="flex items-center w-full p-2 pb-6">
+                      <button class="w-full m-auto text-sm font-light text-white rounded-lg h-9 bg-k-red">Copy & Shop</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-6 mb-6 drop-shadow-lg card swiper-slide">
+                  <div class="relative card_image">
+                    <img src="adidas.png" alt="" class="w-full rounded-t-lg cardimg">
+                    <img src="./brand.svg" class="absolute left-0 right-0 z-10 flex items-center justify-center p-5 m-auto bg-white rounded-full shadow-xl -bottom-8">
+                  </div>
+                  <div class="flex flex-row flex-wrap items-center justify-center w-full text-black bg-white rounded-b-lg"> 
+                   <div class="flex flex-col items-center justify-center w-full px-4 pt-12 pb-2">
+                    <p class="font-sans text-xs font-light">Toronto Experimental Dance Festival Toronto ental Dance Festival Toronto Experimental </p>
+                   </div>
+                    <div class="flex items-center w-full p-2 pb-6">
+                      <button class="w-full m-auto text-sm font-light text-white rounded-lg h-9 bg-k-red">Copy & Shop</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-6 mb-6 drop-shadow-lg card swiper-slide">
+                  <div class="relative card_image">
+                    <img src="adidas.png" alt="" class="w-full rounded-t-lg cardimg">
+                    <img src="./brand.svg" class="absolute left-0 right-0 z-10 flex items-center justify-center p-5 m-auto bg-white rounded-full shadow-xl -bottom-8">
+                  </div>
+                  <div class="flex flex-row flex-wrap items-center justify-center w-full text-black bg-white rounded-b-lg"> 
+                   <div class="flex flex-col items-center justify-center w-full px-4 pt-12 pb-2">
+                    <p class="font-sans text-xs font-light">Toronto Experimental Dance Festival Toronto ental Dance Festival Toronto Experimental </p>
+                   </div>
+                    <div class="flex items-center w-full p-2 pb-6">
+                      <button class="w-full m-auto text-sm font-light text-white rounded-lg h-9 bg-k-red">Copy & Shop</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-6 mb-6 drop-shadow-lg card swiper-slide">
+                  <div class="relative card_image">
+                    <img src="adidas.png" alt="" class="w-full rounded-t-lg cardimg">
+                    <img src="./brand.svg" class="absolute left-0 right-0 z-10 flex items-center justify-center p-5 m-auto bg-white rounded-full shadow-xl -bottom-8">
+                  </div>
+                  <div class="flex flex-row flex-wrap items-center justify-center w-full text-black bg-white rounded-b-lg"> 
+                   <div class="flex flex-col items-center justify-center w-full px-4 pt-12 pb-2">
+                    <p class="font-sans text-xs font-light">Toronto Experimental Dance Festival Toronto ental Dance Festival Toronto Experimental </p>
+                   </div>
+                    <div class="flex items-center w-full p-2 pb-6">
+                      <button class="w-full m-auto text-sm font-light text-white rounded-lg h-9 bg-k-red">Copy & Shop</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-6 mb-6 drop-shadow-lg card swiper-slide">
+                  <div class="relative card_image">
+                    <img src="adidas.png" alt="" class="w-full rounded-t-lg cardimg">
+                    <img src="./brand.svg" class="absolute left-0 right-0 z-10 flex items-center justify-center p-5 m-auto bg-white rounded-full shadow-xl -bottom-8">
+                  </div>
+                  <div class="flex flex-row flex-wrap items-center justify-center w-full text-black bg-white rounded-b-lg"> 
+                   <div class="flex flex-col items-center justify-center w-full px-4 pt-12 pb-2">
+                    <p class="font-sans text-xs font-light">Toronto Experimental Dance Festival Toronto ental Dance Festival Toronto Experimental </p>
+                   </div>
+                    <div class="flex items-center w-full p-2 pb-6">
+                      <button class="w-full m-auto text-sm font-light text-white rounded-lg h-9 bg-k-red">Copy & Shop</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-6 mb-6 drop-shadow-lg card swiper-slide">
+                  <div class="relative card_image">
+                    <img src="adidas.png" alt="" class="w-full rounded-t-lg cardimg">
+                    <img src="./brand.svg" class="absolute left-0 right-0 z-10 flex items-center justify-center p-5 m-auto bg-white rounded-full shadow-xl -bottom-8">
+                  </div>
+                  <div class="flex flex-row flex-wrap items-center justify-center w-full text-black bg-white rounded-b-lg"> 
+                   <div class="flex flex-col items-center justify-center w-full px-4 pt-12 pb-2">
+                    <p class="font-sans text-xs font-light">Toronto Experimental Dance Festival Toronto ental Dance Festival Toronto Experimental </p>
+                   </div>
+                    <div class="flex items-center w-full p-2 pb-6">
+                      <button class="w-full m-auto text-sm font-light text-white rounded-lg h-9 bg-k-red">Copy & Shop</button>
+                    </div>
+                  </div>
+                </div>
+            
+              </div>
+          </div>
+          <div class="swiper-pagination swiper-pagination2"></div>
+        </div>
+        <!--coupon slider controls-->
+        <div class="swiper-button-prev swiper-btn"></div>
+        <div class="swiper-button-next swiper-btn"></div>
+
+      </div>
+      <!--end top stores-->
+      <!--ads image-->
+      <div class="flex flex-row items-center justify-center pt-12 sm:m-12 md:m-0 ">
+        <div class="flex flex-col items-center justify-between pr-1">
+          <img src="./ads2.svg" alt="" class="">
+        </div>
+        <div class="flex flex-col items-center justify-between pl-1">
+          <img src="./ads3.svg" alt="" class="">
+        </div>
+      </div>
+      <!--end ads image-->
+      <!--top deals-->
+      <div class="relative flex flex-row flex-wrap items-center justify-center w-full pt-12">
+        <h1 class="flex flex-col items-center justify-center w-full font-sans text-2xl font-normal title sm:text-5xl">Top Deals</h1>
+        <!--deals slider-->
+        <div class="swipe-slide-container swiper">
+          <div class="deals_swiper">
+              <div class="card-wrapper swiper-wrapper">
+                <div class="drop-shadow-lg card swiper-slide">
+                  <div class="relative card_image">
+                    <img src="./pexels-fernando-arcos-190819.jpg" alt="" class="w-full rounded-t-lg cardimg">
+                    <img src="./amzon.svg" class="absolute top-0 right-0 z-10 flex items-center justify-center mt-2 mr-2">
+                    <span class="absolute top-0 left-0 z-10 flex items-center justify-center px-3 mt-2 ml-2 font-sans text-xs text-white bg-red-500 rounded-sm">Sale</span>
+                  </div>
+                  <div class="flex flex-row flex-wrap w-full text-black bg-white rounded-b-lg"> 
+                   <div class="flex flex-col items-start justify-start w-full px-4 py-4">
+                    <p class="pb-2 font-sans text-xs font-bold text-k-red">AMAZON</p>
+                    <p class="pb-2 font-sans text-xs font-bold">HEADPHONES</p>
+                    <p class="font-sans text-xs font-light">Toronto Experimental Dance Festival Toronto ental Dance Festival Toronto Experimental </p>
+                   </div>
+                    <div class="flex items-center w-full p-2 pb-6">
+                      <button class="left-0 text-sm font-light border rounded-lg w-28 text-k-red border-k-red h-9">Learn More</button>
+                      <div class="ml-auto">
+                      <p class="text-xs font-light text-gray-400 text-end">AED 16.48</p>
+                       <p class="text-lg font-bold text-green-600">AED 6.48</p>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="drop-shadow-lg card swiper-slide">
+                  <div class="relative card_image">
+                    <img src="./ringdeals.jpg" alt="" class="w-full rounded-t-lg cardimg">
+                    <img src="./amzon.svg" class="absolute top-0 right-0 z-10 flex items-center justify-center mt-2 mr-2">
+                    <span class="absolute top-0 left-0 z-10 flex items-center justify-center px-3 mt-2 ml-2 font-sans text-xs text-white bg-red-500 rounded-sm">Sale</span>
+                  </div>
+                  <div class="flex flex-row flex-wrap w-full text-black bg-white rounded-b-lg"> 
+                   <div class="flex flex-col items-start justify-start w-full px-4 py-4">
+                    <p class="pb-2 font-sans text-xs font-bold text-k-red">AMAZON</p>
+                    <p class="pb-2 font-sans text-xs font-bold">HEADPHONES</p>
+                    <p class="font-sans text-xs font-light">Toronto Experimental Dance Festival Toronto ental Dance Festival Toronto Experimental </p>
+                   </div>
+                    <div class="flex items-center w-full p-2 pb-6">
+                      <button class="left-0 text-sm font-light border rounded-lg w-28 text-k-red border-k-red h-9">Learn More</button>
+                      <div class="ml-auto">
+                      <p class="text-xs font-light text-gray-400 text-end">AED 16.48</p>
+                       <p class="text-lg font-bold text-green-600">AED 6.48</p>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="drop-shadow-lg card swiper-slide">
+                  <div class="relative card_image">
+                    <img src="./pexels-fernando-arcos-190819.jpg" alt="" class="w-full rounded-t-lg cardimg">
+                    <img src="./amzon.svg" class="absolute top-0 right-0 z-10 flex items-center justify-center mt-2 mr-2">
+                    <span class="absolute top-0 left-0 z-10 flex items-center justify-center px-3 mt-2 ml-2 font-sans text-xs text-white bg-red-500 rounded-sm">Sale</span>
+                  </div>
+                  <div class="flex flex-row flex-wrap w-full text-black bg-white rounded-b-lg"> 
+                   <div class="flex flex-col items-start justify-start w-full px-4 py-4">
+                    <p class="pb-2 font-sans text-xs font-bold text-k-red">AMAZON</p>
+                    <p class="pb-2 font-sans text-xs font-bold">HEADPHONES</p>
+                    <p class="font-sans text-xs font-light">Toronto Experimental Dance Festival Toronto ental Dance Festival Toronto Experimental </p>
+                   </div>
+                    <div class="flex items-center w-full p-2 pb-6">
+                      <button class="left-0 text-sm font-light border rounded-lg w-28 text-k-red border-k-red h-9">Learn More</button>
+                      <div class="ml-auto">
+                      <p class="text-xs font-light text-gray-400 text-end">AED 16.48</p>
+                       <p class="text-lg font-bold text-green-600">AED 6.48</p>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="drop-shadow-lg card swiper-slide">
+                  <div class="relative card_image">
+                    <img src="./ringdeals.jpg" alt="" class="w-full rounded-t-lg cardimg">
+                    <img src="./amzon.svg" class="absolute top-0 right-0 z-10 flex items-center justify-center mt-2 mr-2">
+                    <span class="absolute top-0 left-0 z-10 flex items-center justify-center px-3 mt-2 ml-2 font-sans text-xs text-white bg-red-500 rounded-sm">Sale</span>
+                  </div>
+                  <div class="flex flex-row flex-wrap w-full text-black bg-white rounded-b-lg"> 
+                   <div class="flex flex-col items-start justify-start w-full px-4 py-4">
+                    <p class="pb-2 font-sans text-xs font-bold text-k-red">AMAZON</p>
+                    <p class="pb-2 font-sans text-xs font-bold">HEADPHONES</p>
+                    <p class="font-sans text-xs font-light">Toronto Experimental Dance Festival Toronto ental Dance Festival Toronto Experimental </p>
+                   </div>
+                    <div class="flex items-center w-full p-2 pb-6">
+                      <button class="left-0 text-sm font-light border rounded-lg w-28 text-k-red border-k-red h-9">Learn More</button>
+                      <div class="ml-auto">
+                      <p class="text-xs font-light text-gray-400 text-end">AED 16.48</p>
+                       <p class="text-lg font-bold text-green-600">AED 6.48</p>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="drop-shadow-lg card swiper-slide">
+                  <div class="relative card_image">
+                    <img src="./pexels-fernando-arcos-190819.jpg" alt="" class="w-full rounded-t-lg cardimg">
+                    <img src="./amzon.svg" class="absolute top-0 right-0 z-10 flex items-center justify-center mt-2 mr-2">
+                    <span class="absolute top-0 left-0 z-10 flex items-center justify-center px-3 mt-2 ml-2 font-sans text-xs text-white bg-red-500 rounded-sm">Sale</span>
+                  </div>
+                  <div class="flex flex-row flex-wrap w-full text-black bg-white rounded-b-lg"> 
+                   <div class="flex flex-col items-start justify-start w-full px-4 py-4">
+                    <p class="pb-2 font-sans text-xs font-bold text-k-red">AMAZON</p>
+                    <p class="pb-2 font-sans text-xs font-bold">HEADPHONES</p>
+                    <p class="font-sans text-xs font-light">Toronto Experimental Dance Festival Toronto ental Dance Festival Toronto Experimental </p>
+                   </div>
+                    <div class="flex items-center w-full p-2 pb-6">
+                      <button class="left-0 text-sm font-light border rounded-lg w-28 text-k-red border-k-red h-9">Learn More</button>
+                      <div class="ml-auto">
+                      <p class="text-xs font-light text-gray-400 text-end">AED 16.48</p>
+                       <p class="text-lg font-bold text-green-600">AED 6.48</p>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="drop-shadow-lg card swiper-slide">
+                  <div class="relative card_image">
+                    <img src="./ringdeals.jpg" alt="" class="w-full rounded-t-lg cardimg">
+                    <img src="./amzon.svg" class="absolute top-0 right-0 z-10 flex items-center justify-center mt-2 mr-2">
+                    <span class="absolute top-0 left-0 z-10 flex items-center justify-center px-3 mt-2 ml-2 font-sans text-xs text-white bg-red-500 rounded-sm">Sale</span>
+                  </div>
+                  <div class="flex flex-row flex-wrap w-full text-black bg-white rounded-b-lg"> 
+                   <div class="flex flex-col items-start justify-start w-full px-4 py-4">
+                    <p class="pb-2 font-sans text-xs font-bold text-k-red">AMAZON</p>
+                    <p class="pb-2 font-sans text-xs font-bold">HEADPHONES</p>
+                    <p class="font-sans text-xs font-light">Toronto Experimental Dance Festival Toronto ental Dance Festival Toronto Experimental </p>
+                   </div>
+                    <div class="flex items-center w-full p-2 pb-6">
+                      <button class="left-0 text-sm font-light border rounded-lg w-28 text-k-red border-k-red h-9">Learn More</button>
+                      <div class="ml-auto">
+                      <p class="text-xs font-light text-gray-400 text-end">AED 16.48</p>
+                       <p class="text-lg font-bold text-green-600">AED 6.48</p>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="drop-shadow-lg card swiper-slide">
+                  <div class="relative card_image">
+                    <img src="./pexels-fernando-arcos-190819.jpg" alt="" class="w-full rounded-t-lg cardimg">
+                    <img src="./amzon.svg" class="absolute top-0 right-0 z-10 flex items-center justify-center mt-2 mr-2">
+                    <span class="absolute top-0 left-0 z-10 flex items-center justify-center px-3 mt-2 ml-2 font-sans text-xs text-white bg-red-500 rounded-sm">Sale</span>
+                  </div>
+                  <div class="flex flex-row flex-wrap w-full text-black bg-white rounded-b-lg"> 
+                   <div class="flex flex-col items-start justify-start w-full px-4 py-4">
+                    <p class="pb-2 font-sans text-xs font-bold text-k-red">AMAZON</p>
+                    <p class="pb-2 font-sans text-xs font-bold">HEADPHONES</p>
+                    <p class="font-sans text-xs font-light">Toronto Experimental Dance Festival Toronto ental Dance Festival Toronto Experimental </p>
+                   </div>
+                    <div class="flex items-center w-full p-2 pb-6">
+                      <button class="left-0 text-sm font-light border rounded-lg w-28 text-k-red border-k-red h-9">Learn More</button>
+                      <div class="ml-auto">
+                      <p class="text-xs font-light text-gray-400 text-end">AED 16.48</p>
+                       <p class="text-lg font-bold text-green-600">AED 6.48</p>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="drop-shadow-lg card swiper-slide">
+                  <div class="relative card_image">
+                    <img src="./ringdeals.jpg" alt="" class="w-full rounded-t-lg cardimg">
+                    <img src="./amzon.svg" class="absolute top-0 right-0 z-10 flex items-center justify-center mt-2 mr-2">
+                    <span class="absolute top-0 left-0 z-10 flex items-center justify-center px-3 mt-2 ml-2 font-sans text-xs text-white bg-red-500 rounded-sm">Sale</span>
+                  </div>
+                  <div class="flex flex-row flex-wrap w-full text-black bg-white rounded-b-lg"> 
+                   <div class="flex flex-col items-start justify-start w-full px-4 py-4">
+                    <p class="pb-2 font-sans text-xs font-bold text-k-red">AMAZON</p>
+                    <p class="pb-2 font-sans text-xs font-bold">HEADPHONES</p>
+                    <p class="font-sans text-xs font-light">Toronto Experimental Dance Festival Toronto ental Dance Festival Toronto Experimental </p>
+                   </div>
+                    <div class="flex items-center w-full p-2 pb-6">
+                      <button class="left-0 text-sm font-light border rounded-lg w-28 text-k-red border-k-red h-9">Learn More</button>
+                      <div class="ml-auto">
+                      <p class="text-xs font-light text-gray-400 text-end">AED 16.48</p>
+                       <p class="text-lg font-bold text-green-600">AED 6.48</p>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="swiper-pagination swiper-pagination3"></div>
+        </div>
+        <!--coupon slider controls-->
+        <div class="swiper-button-prev swiper-btn"></div>
+        <div class="swiper-button-next swiper-btn"></div>
+
+      </div>
+      <!--end top deals-->
+      <!--scratch to revel component-->
+      <div class="flex flex-row flex-wrap items-center justify-center w-full gap-5 pt-12">
+        <div class="flex-col my-1 lg:w-1/4 drop-shadow-lg sm:w-full">
+          <figure class=" bridgeContainer">
+            <button type="button" class="block px-5 py-2 font-sans font-light text-white rounded-md scratch_btn bg-k-red drop-shadow-md">Get Your Gift</button>
+            <canvas class="rounded-t-lg bridge"></canvas>
+          </figure>
+          <div class="w-full p-4 bg-white rounded-b-lg">
+            <p class="font-sans text-base text-center">Scratch to Reveal</p>
+          </div>
+        </div>
+        <div class="flex-col lg:w-1/4 drop-shadow-lg sm:w-full ">
+          <figure class="bridgeContainer">
+            <button type="button" class="block px-5 py-2 font-sans font-light text-white rounded-md scratch_btn bg-k-red drop-shadow-md">Get Your Gift</button>
+            <canvas class="rounded-t-lg bridge"></canvas>
+          </figure>
+          <div class="w-full p-4 bg-white rounded-b-lg">
+            <p class="font-sans text-base text-center">Scratch to Reveal</p>
+          </div>
+        </div>
+        <div class="flex-col my-1 lg:w-1/4 drop-shadow-lg sm:w-full">
+          <figure class="bridgeContainer">
+            <button type="button" class="block px-5 py-2 font-sans font-light text-white rounded-md scratch_btn bg-k-red drop-shadow-md">Get Your Gift</button>
+            <canvas class="rounded-t-lg bridge" ></canvas>
+          </figure>
+          <div class="w-full p-4 bg-white rounded-b-lg">
+            <p class="font-sans text-base text-center">Scratch to Reveal</p>
+          </div>
+        </div>
+   
+      </div>  
+      <!--end scratch to revel component-->
+
+      <!--Category slider in stores page-->
+      <div class="relative flex flex-row flex-wrap items-center justify-center w-1/2 m-auto mpt-12 cat_swiper">
+        <div class="swipe-slide-container swiper">
+          <div class="swipe-slide-content category_swiper">
+              <div class="card-wrapper swiper-wrapper">
+                <div class="flex flex-row flex-wrap justify-center drop-shadow-lg swiper-slide">
+                  <img src="catslider.svg" class="flex w-full rounded-full drop-shadow-lg">
+                  <p class="flex justify-center w-full pt-4 text-gray-600">Fashion</p>
+                </div>
+                <div class="flex flex-row flex-wrap justify-center drop-shadow-lg swiper-slide">
+                  <img src="catslider.svg" class="flex w-full rounded-full drop-shadow-lg">
+                  <p class="flex justify-center w-full pt-4 text-gray-600">Fashion</p>
+                </div>
+                <div class="flex flex-row flex-wrap justify-center drop-shadow-lg swiper-slide">
+                  <img src="catslider.svg" class="flex w-full rounded-full drop-shadow-lg">
+                  <p class="flex justify-center w-full pt-4 text-gray-600">Fashion</p>
+                </div>
+                <div class="flex flex-row flex-wrap justify-center drop-shadow-lg swiper-slide">
+                  <img src="catslider.svg" class="flex w-full rounded-full drop-shadow-lg">
+                  <p class="flex justify-center w-full pt-4 text-gray-600">Fashion</p>
+                </div>
+                <div class="flex flex-row flex-wrap justify-center drop-shadow-lg swiper-slide">
+                  <img src="catslider.svg" class="flex w-full rounded-full drop-shadow-lg">
+                  <p class="flex justify-center w-full pt-4 text-gray-600">Fashion</p>
+                </div>
+                <div class="flex flex-row flex-wrap justify-center drop-shadow-lg swiper-slide">
+                  <img src="catslider.svg" class="flex w-full rounded-full drop-shadow-lg">
+                  <p class="flex justify-center w-full pt-4 text-gray-600">Fashion</p>
+                </div>
+                <div class="flex flex-row flex-wrap justify-center drop-shadow-lg swiper-slide">
+                  <img src="catslider.svg" class="flex w-full rounded-full drop-shadow-lg">
+                  <p class="flex justify-center w-full pt-4 text-gray-600">Fashion</p>
+                </div>
+                <div class="flex flex-row flex-wrap justify-center drop-shadow-lg swiper-slide">
+                  <img src="catslider.svg" class="flex w-full rounded-full drop-shadow-lg">
+                  <p class="flex justify-center w-full pt-4 text-gray-600">Home</p>
+                </div>
+                <div class="flex flex-row flex-wrap justify-center drop-shadow-lg swiper-slide">
+                  <img src="catslider.svg" class="flex w-fullrounded-full drop-shadow-lg">
+                  <p class="flex justify-center w-full pt-4 text-gray-600">Home</p>
+                </div>
+                <div class="flex flex-row flex-wrap justify-center drop-shadow-lg swiper-slide">
+                  <img src="catslider.svg" class="flex w-full rounded-full drop-shadow-lg">
+                  <p class="flex justify-center w-full pt-4 text-gray-600">Home</p>
+                </div>
+              </div>
+          </div>
+         </div>
+        <!--coupon slider controls-->
+        <div class="swiper-button-prev prev-cat swiper-btn"></div>
+        <div class="swiper-button-next next-cat swiper-btn"></div>
+      </div>
+      <!--end category slider-->
+
+    </div>
+    <!--end main-->
+    <!--footer component-->
+    <footer class="flex flex-wrap">
+      <div class="flex flex-row flex-wrap items-center justify-center w-full p-8 font-sans text-center text-white bg-k-red ">
+        <h2 class="text-2xl sm:text-5xl">Get to know Karaz</h2>
+        <p class="py-8 text-base">
+          Lorem ipsum dolor sit amet. Aut praesentium molestiae sit amet consectetur id consequuntur velit et enim asperiores aut molestias ratione sit molestias iste in galisum maiores! Sit quibusdam omnis cum perferendis officia et molestiae beatae hic dolores architecto. Sit sunt a beatae nemo qui assumenda itaque ex harum delectus ea magnam voluptatem. Hic error cumque aut reiciendis molestias ut voluptas consectetur et corrupti nihil.
+        </p>
+        <button class="flex items-center justify-center py-2 bg-white rounded-lg px-14 text-k-red drop-shadow-lg hover:bg-transparent hover:text-white hover:border hover:transition-all">Show more</button>
+      </div>
+      <div class="flex flex-row flex-wrap w-full p-4 pt-12 sm:px-64 sm:py-8 bg-k-light-red lg:flex-nowrap">
+        <div class="flex flex-col justify-start m-auto">
+        <img src="./phone.svg" class="items-center justify-center w-72 h-72">
+        </div>
+        <div class="flex flex-col justify-start py-8">
+          <p class="w-full text-lg text-center lg:text-3xl">Download our app and enjoy Coupons and Offer at your hands</p>
+            <div class="flex items-center justify-center w-full py-12 space-x-0 flex-nowrap gap-x-6">
+              <img src="./App-Store-Button-transparent-768x252.png" class="w-32 sm:w-72">
+              <img src="./Google-Play.png" class="w-32 sm:w-72">
+            </div>
+        </div>
+      </div>
+      <div class="flex flex-row flex-wrap items-center justify-center w-full p-8 font-sans text-center text-white bg-k-red ">
+        <h2 class="w-full font-sans text-xl font-bold text-center sm:text-3xl">Subscribe And Learn About Us</h2>
+        <div class="flex items-center justify-center w-full py-12">
+          <input class="px-4 py-2 font-sans text-base text-gray-400 placeholder-gray-400 bg-white border-none h-14 w-96 focus:shadow-outline" type="text" placeholder="Phone Number">
+          <button class="font-sans p-4 ml-0.5 bg-white text-k-red">Subscribe</button>
+        </div>
+        <p class="w-full font-sans text-base text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+        <div class="flex items-center justify-center py-8">
+          <a href="" class="facebook drop-shadow-xl hover:scale-150 hover:transition-all">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_189_977)">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M23.5 11.5704C23.5 5.1801 18.3515 0 12.0014 0C5.64848 0.00143732 0.5 5.1801 0.5 11.5719C0.5 17.3456 4.7056 22.1319 10.2019 23V14.9151H7.28415V11.5719H10.2048V9.02062C10.2048 6.12155 11.9224 4.52037 14.5484 4.52037C15.8075 4.52037 17.1226 4.74603 17.1226 4.74603V7.59193H15.6724C14.2451 7.59193 13.7995 8.4845 13.7995 9.40008V11.5704H16.9875L16.4787 14.9136H13.7981V22.9986C19.2944 22.1304 23.5 17.3441 23.5 11.5704Z" fill="white"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_189_977">
+              <rect width="24" height="24" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>            
+          </a>
+          <a href="" class="mx-6 instgram drop-shadow-xl hover:scale-150 hover:transition-all">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_189_980)">
+              <path d="M12.5 1C9.51488 1 9.1395 1.01375 7.96663 1.066C6.79375 1.121 5.99487 1.30525 5.295 1.5775C4.56088 1.85363 3.89593 2.28676 3.34663 2.84663C2.7871 3.39621 2.35402 4.06108 2.0775 4.795C1.80525 5.4935 1.61963 6.29375 1.566 7.4625C1.51375 8.63812 1.5 9.01213 1.5 12.0014C1.5 14.9879 1.51375 15.3619 1.566 16.5347C1.621 17.7063 1.80525 18.5051 2.0775 19.205C2.35938 19.9282 2.73475 20.5415 3.34663 21.1534C3.95713 21.7652 4.57037 22.142 5.29363 22.4225C5.99487 22.6947 6.79238 22.8804 7.96388 22.934C9.13813 22.9862 9.51213 23 12.5 23C15.4879 23 15.8605 22.9862 17.0347 22.934C18.2049 22.879 19.0065 22.6947 19.7064 22.4225C20.44 22.1462 21.1045 21.7131 21.6534 21.1534C22.2652 20.5415 22.6406 19.9282 22.9225 19.205C23.1934 18.5051 23.379 17.7063 23.434 16.5347C23.4862 15.3619 23.5 14.9879 23.5 12C23.5 9.01213 23.4862 8.63813 23.434 7.46388C23.379 6.29375 23.1934 5.4935 22.9225 4.795C22.646 4.06106 22.2129 3.39618 21.6534 2.84663C21.1042 2.28655 20.4392 1.85339 19.705 1.5775C19.0037 1.30525 18.2035 1.11963 17.0334 1.066C15.8591 1.01375 15.4865 1 12.4973 1H12.5014H12.5ZM11.5141 2.98275H12.5014C15.4384 2.98275 15.7863 2.99238 16.9454 3.046C18.0179 3.09413 18.6009 3.27425 18.9886 3.42412C19.5015 3.6235 19.8686 3.86275 20.2536 4.24775C20.6386 4.63275 20.8765 4.9985 21.0759 5.51275C21.2271 5.89913 21.4059 6.48213 21.454 7.55463C21.5076 8.71375 21.5186 9.06163 21.5186 11.9973C21.5186 14.9329 21.5076 15.2821 21.454 16.4412C21.4059 17.5138 21.2257 18.0954 21.0759 18.4831C20.8995 18.9607 20.618 19.3926 20.2522 19.7467C19.8672 20.1318 19.5015 20.3696 18.9873 20.569C18.6023 20.7203 18.0192 20.899 16.9454 20.9485C15.7863 21.0007 15.4384 21.0131 12.5014 21.0131C9.56438 21.0131 9.21513 21.0007 8.056 20.9485C6.9835 20.899 6.40188 20.7203 6.01412 20.569C5.53631 20.3929 5.10405 20.1119 4.74913 19.7467C4.38303 19.392 4.10112 18.9598 3.92412 18.4818C3.77425 18.0954 3.59413 17.5124 3.546 16.4399C3.49375 15.2808 3.48275 14.9329 3.48275 11.9945C3.48275 9.0575 3.49375 8.711 3.546 7.55187C3.5955 6.47937 3.77425 5.89638 3.9255 5.50863C4.12488 4.99575 4.36412 4.62862 4.74913 4.24362C5.13412 3.85862 5.49988 3.62075 6.01412 3.42138C6.40188 3.27013 6.9835 3.09138 8.056 3.04188C9.07075 2.99513 9.464 2.98138 11.5141 2.98V2.98275ZM18.3726 4.80875C18.1993 4.80875 18.0276 4.84289 17.8675 4.90923C17.7073 4.97557 17.5618 5.0728 17.4392 5.19537C17.3167 5.31794 17.2194 5.46346 17.1531 5.62361C17.0868 5.78376 17.0526 5.95541 17.0526 6.12875C17.0526 6.30209 17.0868 6.47374 17.1531 6.63389C17.2194 6.79404 17.3167 6.93956 17.4392 7.06213C17.5618 7.1847 17.7073 7.28193 17.8675 7.34827C18.0276 7.41461 18.1993 7.44875 18.3726 7.44875C18.7227 7.44875 19.0585 7.30968 19.306 7.06213C19.5536 6.81458 19.6926 6.47884 19.6926 6.12875C19.6926 5.77866 19.5536 5.44292 19.306 5.19537C19.0585 4.94782 18.7227 4.80875 18.3726 4.80875ZM12.5014 6.3515C11.7521 6.33981 11.008 6.47729 10.3123 6.75594C9.61671 7.0346 8.98346 7.44885 8.44946 7.97458C7.91546 8.50032 7.49138 9.12703 7.20191 9.81823C6.91244 10.5094 6.76336 11.2513 6.76336 12.0007C6.76336 12.7501 6.91244 13.4919 7.20191 14.1831C7.49138 14.8743 7.91546 15.5011 8.44946 16.0268C8.98346 16.5525 9.61671 16.9668 10.3123 17.2454C11.008 17.5241 11.7521 17.6616 12.5014 17.6499C13.9844 17.6267 15.3988 17.0214 16.4393 15.9645C17.4799 14.9076 18.0631 13.4839 18.0631 12.0007C18.0631 10.5175 17.4799 9.09382 16.4393 8.03691C15.3988 6.97999 13.9844 6.37464 12.5014 6.3515ZM12.5014 8.33288C13.474 8.33288 14.4067 8.71923 15.0944 9.40695C15.7821 10.0947 16.1685 11.0274 16.1685 12C16.1685 12.9726 15.7821 13.9053 15.0944 14.593C14.4067 15.2808 13.474 15.6671 12.5014 15.6671C11.5288 15.6671 10.596 15.2808 9.90833 14.593C9.22061 13.9053 8.83425 12.9726 8.83425 12C8.83425 11.0274 9.22061 10.0947 9.90833 9.40695C10.596 8.71923 11.5288 8.33288 12.5014 8.33288Z" fill="white"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_189_980">
+              <rect width="24" height="24" fill="white"/>
+              </clipPath>
+              </defs>
+            </svg>            
+          </a>
+          <a href="" class="twitter drop-shadow-xl hover:scale-150 hover:transition-all">
+            <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_189_983)">
+              <path d="M8.41075 19C16.713 19 21.2546 12.0731 21.2546 6.07666C21.2546 5.88282 21.2546 5.68622 21.2464 5.49238C22.1306 4.84786 22.8937 4.0499 23.5 3.13589C22.6741 3.50259 21.7988 3.74427 20.9026 3.85308C21.8466 3.28492 22.5536 2.39097 22.8923 1.33737C22.0054 1.86644 21.0346 2.23784 20.0226 2.43531C19.3423 1.70569 18.4419 1.22234 17.4611 1.06013C16.4803 0.897915 15.4737 1.06589 14.5973 1.53804C13.7209 2.0102 13.0236 2.76017 12.6134 3.67179C12.2031 4.58342 12.1029 5.60582 12.3281 6.58063C10.5334 6.49002 8.77762 6.02054 7.17468 5.20266C5.57175 4.38477 4.15744 3.23675 3.0235 1.83304C2.44784 2.83418 2.27216 4.0184 2.53214 5.14523C2.79211 6.27206 3.46825 7.25702 4.42325 7.9001C3.70762 7.87562 3.00772 7.68212 2.38 7.33521V7.39751C2.38123 8.44627 2.74205 9.46244 3.40145 10.2743C4.06086 11.0861 4.9784 11.6437 5.999 11.853C5.61161 11.9604 5.21144 12.014 4.80963 12.0122C4.52635 12.0131 4.24365 11.9866 3.96537 11.9333C4.25383 12.8361 4.8155 13.6254 5.57171 14.1907C6.32793 14.7561 7.24081 15.069 8.1825 15.0859C6.58276 16.3511 4.60668 17.0373 2.5725 17.0339C2.21407 17.0354 1.85588 17.0146 1.5 16.9716C3.56458 18.297 5.96228 19.0007 8.41075 19Z" fill="white"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_189_983">
+              <rect width="24" height="19.7647" fill="white" transform="translate(0 0.117645)"/>
+              </clipPath>
+              </defs>
+            </svg>            
+          </a>
+        </div>
+      </div>
+      <div class="flex flex-row flex-wrap items-center justify-center w-full px-4 py-8 font-sans bg-white lg:px-64">
+        <div class="flex justify-between w-full">
+          <div class="flex items-start justify-start w-1/2">
+            <img src="./karaz2-logo.svg" class="w-36">
+          </div>
+          <div class="flex flex-row items-center justify-end">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_189_934)">
+              <g clip-path="url(#clip1_189_934)">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M24 12.0704C24 5.6801 18.8515 0.5 12.5014 0.5C6.14848 0.501437 1 5.6801 1 12.0719C1 17.8456 5.2056 22.6319 10.7019 23.5V15.4151H7.78415V12.0719H10.7048V9.52062C10.7048 6.62155 12.4224 5.02037 15.0484 5.02037C16.3075 5.02037 17.6226 5.24603 17.6226 5.24603V8.09193H16.1724C14.7451 8.09193 14.2995 8.9845 14.2995 9.90008V12.0704H17.4875L16.9787 15.4136H14.2981V23.4986C19.7944 22.6304 24 17.8441 24 12.0704Z" fill="#9E0C26"/>
+              </g>
+              </g>
+              <defs>
+              <clipPath id="clip0_189_934">
+              <rect width="24" height="24" fill="white" transform="translate(0.5 0.5)"/>
+              </clipPath>
+              <clipPath id="clip1_189_934">
+              <rect width="24" height="24" fill="white" transform="translate(0.5 0.5)"/>
+              </clipPath>
+              </defs>
+            </svg>     
+            <svg class="mx-4" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_189_937)">
+              <path d="M13 1.5C10.0149 1.5 9.6395 1.51375 8.46663 1.566C7.29375 1.621 6.49487 1.80525 5.795 2.0775C5.06088 2.35363 4.39593 2.78676 3.84663 3.34663C3.2871 3.89621 2.85402 4.56108 2.5775 5.295C2.30525 5.9935 2.11963 6.79375 2.066 7.9625C2.01375 9.13812 2 9.51213 2 12.5014C2 15.4879 2.01375 15.8619 2.066 17.0347C2.121 18.2063 2.30525 19.0051 2.5775 19.705C2.85938 20.4282 3.23475 21.0415 3.84663 21.6534C4.45713 22.2652 5.07037 22.642 5.79363 22.9225C6.49487 23.1947 7.29238 23.3804 8.46388 23.434C9.63813 23.4862 10.0121 23.5 13 23.5C15.9879 23.5 16.3605 23.4862 17.5347 23.434C18.7049 23.379 19.5065 23.1947 20.2064 22.9225C20.94 22.6462 21.6045 22.2131 22.1534 21.6534C22.7652 21.0415 23.1406 20.4282 23.4225 19.705C23.6934 19.0051 23.879 18.2063 23.934 17.0347C23.9862 15.8619 24 15.4879 24 12.5C24 9.51213 23.9862 9.13813 23.934 7.96388C23.879 6.79375 23.6934 5.9935 23.4225 5.295C23.146 4.56106 22.7129 3.89618 22.1534 3.34663C21.6042 2.78655 20.9392 2.35339 20.205 2.0775C19.5037 1.80525 18.7035 1.61963 17.5334 1.566C16.3591 1.51375 15.9865 1.5 12.9973 1.5H13.0014H13ZM12.0141 3.48275H13.0014C15.9384 3.48275 16.2863 3.49238 17.4454 3.546C18.5179 3.59413 19.1009 3.77425 19.4886 3.92412C20.0015 4.1235 20.3686 4.36275 20.7536 4.74775C21.1386 5.13275 21.3765 5.4985 21.5759 6.01275C21.7271 6.39913 21.9059 6.98213 21.954 8.05463C22.0076 9.21375 22.0186 9.56163 22.0186 12.4973C22.0186 15.4329 22.0076 15.7821 21.954 16.9412C21.9059 18.0138 21.7257 18.5954 21.5759 18.9831C21.3995 19.4607 21.118 19.8926 20.7522 20.2467C20.3672 20.6318 20.0015 20.8696 19.4873 21.069C19.1023 21.2203 18.5192 21.399 17.4454 21.4485C16.2863 21.5007 15.9384 21.5131 13.0014 21.5131C10.0644 21.5131 9.71513 21.5007 8.556 21.4485C7.4835 21.399 6.90188 21.2203 6.51412 21.069C6.03631 20.8929 5.60405 20.6119 5.24913 20.2467C4.88303 19.892 4.60112 19.4598 4.42412 18.9818C4.27425 18.5954 4.09413 18.0124 4.046 16.9399C3.99375 15.7808 3.98275 15.4329 3.98275 12.4945C3.98275 9.5575 3.99375 9.211 4.046 8.05187C4.0955 6.97937 4.27425 6.39638 4.4255 6.00863C4.62488 5.49575 4.86412 5.12862 5.24913 4.74362C5.63412 4.35862 5.99988 4.12075 6.51412 3.92138C6.90188 3.77013 7.4835 3.59138 8.556 3.54188C9.57075 3.49513 9.964 3.48138 12.0141 3.48V3.48275ZM18.8726 5.30875C18.6993 5.30875 18.5276 5.34289 18.3675 5.40923C18.2073 5.47557 18.0618 5.5728 17.9392 5.69537C17.8167 5.81794 17.7194 5.96346 17.6531 6.12361C17.5868 6.28376 17.5526 6.45541 17.5526 6.62875C17.5526 6.80209 17.5868 6.97374 17.6531 7.13389C17.7194 7.29404 17.8167 7.43956 17.9392 7.56213C18.0618 7.6847 18.2073 7.78193 18.3675 7.84827C18.5276 7.91461 18.6993 7.94875 18.8726 7.94875C19.2227 7.94875 19.5585 7.80968 19.806 7.56213C20.0536 7.31458 20.1926 6.97884 20.1926 6.62875C20.1926 6.27866 20.0536 5.94292 19.806 5.69537C19.5585 5.44782 19.2227 5.30875 18.8726 5.30875ZM13.0014 6.8515C12.2521 6.83981 11.508 6.97729 10.8123 7.25594C10.1167 7.5346 9.48346 7.94885 8.94946 8.47458C8.41546 9.00032 7.99138 9.62703 7.70191 10.3182C7.41244 11.0094 7.26336 11.7513 7.26336 12.5007C7.26336 13.2501 7.41244 13.9919 7.70191 14.6831C7.99138 15.3743 8.41546 16.0011 8.94946 16.5268C9.48346 17.0525 10.1167 17.4668 10.8123 17.7454C11.508 18.0241 12.2521 18.1616 13.0014 18.1499C14.4844 18.1267 15.8988 17.5214 16.9393 16.4645C17.9799 15.4076 18.5631 13.9839 18.5631 12.5007C18.5631 11.0175 17.9799 9.59382 16.9393 8.53691C15.8988 7.47999 14.4844 6.87464 13.0014 6.8515ZM13.0014 8.83288C13.974 8.83288 14.9067 9.21923 15.5944 9.90695C16.2821 10.5947 16.6685 11.5274 16.6685 12.5C16.6685 13.4726 16.2821 14.4053 15.5944 15.093C14.9067 15.7808 13.974 16.1671 13.0014 16.1671C12.0288 16.1671 11.096 15.7808 10.4083 15.093C9.72061 14.4053 9.33425 13.4726 9.33425 12.5C9.33425 11.5274 9.72061 10.5947 10.4083 9.90695C11.096 9.21923 12.0288 8.83288 13.0014 8.83288Z" fill="#9E0C26"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_189_937">
+              <rect width="24" height="24" fill="white" transform="translate(0.5 0.5)"/>
+              </clipPath>
+              </defs>
+            </svg>        
+            <svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_189_940)">
+              <path d="M8.91075 19.5C17.213 19.5 21.7546 12.5731 21.7546 6.57666C21.7546 6.38282 21.7546 6.18622 21.7464 5.99238C22.6306 5.34786 23.3937 4.5499 24 3.63589C23.1741 4.00259 22.2988 4.24427 21.4026 4.35308C22.3466 3.78492 23.0536 2.89097 23.3923 1.83737C22.5054 2.36644 21.5346 2.73784 20.5226 2.93531C19.8423 2.20569 18.9419 1.72234 17.9611 1.56013C16.9803 1.39792 15.9737 1.56589 15.0973 2.03804C14.2209 2.5102 13.5236 3.26017 13.1134 4.17179C12.7031 5.08342 12.6029 6.10582 12.8281 7.08063C11.0334 6.99002 9.27762 6.52054 7.67468 5.70266C6.07175 4.88477 4.65744 3.73675 3.5235 2.33304C2.94784 3.33418 2.77216 4.5184 3.03214 5.64523C3.29211 6.77206 3.96825 7.75702 4.92325 8.4001C4.20762 8.37562 3.50772 8.18212 2.88 7.83521V7.89751C2.88123 8.94627 3.24205 9.96244 3.90145 10.7743C4.56086 11.5861 5.4784 12.1437 6.499 12.353C6.11161 12.4604 5.71144 12.514 5.30963 12.5122C5.02635 12.5131 4.74365 12.4866 4.46537 12.4333C4.75383 13.3361 5.3155 14.1254 6.07171 14.6907C6.82793 15.2561 7.74081 15.569 8.6825 15.5859C7.08276 16.8511 5.10668 17.5373 3.0725 17.5339C2.71407 17.5354 2.35588 17.5146 2 17.4716C4.06458 18.797 6.46228 19.5007 8.91075 19.5Z" fill="#9E0C26"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_189_940">
+              <rect width="24" height="19.7647" fill="white" transform="translate(0.5 0.617645)"/>
+              </clipPath>
+              </defs>
+            </svg>                             
+          </div>
+        </div>
+        <div class="container py-8 mx-auto md:py-12 md:px-8">
+          <div class="sm:flex sm:flex-wrap sm:-mx-4 md:py-4">
+            <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
+              <h5 class="mb-6 text-base font-bold">Company Info</h5>
+              <ul class="list-none footer-links">
+                <li class="mb-2">
+                  <a href="#" class="text-sm font-bold text-gray-500 hover:text-k-red">About Us</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-sm font-bold text-gray-500 hover:text-k-red">We are hiring</a>
+                </li>
+              </ul>
+            </div>
+            <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
+              <h5 class="mb-6 text-base font-bold">Legal</h5>
+              <ul class="list-none footer-links">
+                <li class="mb-2">
+                  <a href="#" class="text-sm font-bold text-gray-500 hover:text-k-red">About Us</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-sm font-bold text-gray-500 hover:text-k-red">We are hiring</a>
+                </li>
+              </ul>
+            </div>
+            <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
+              <h5 class="mb-6 text-base font-bold">Features</h5>
+              <ul class="list-none footer-links">
+                <li class="mb-2">
+                  <a href="#" class="text-sm font-bold text-gray-500 hover:text-k-red">About Us</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-sm font-bold text-gray-500 hover:text-k-red">We are hiring</a>
+                </li>
+              </ul>
+            </div>
+            <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
+              <h5 class="mb-6 text-base font-bold">Resources</h5>
+              <ul class="list-none footer-links">
+                <li class="mb-2">
+                  <a href="#" class="text-sm font-bold text-gray-500 hover:text-k-red">About Us</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-sm font-bold text-gray-500 hover:text-k-red">We are hiring</a>
+                </li>
+              </ul>
+            </div>
+            <div class="px-4 mt-4 sm:w-1/3 xl:w-1/6 sm:mx-auto xl:mt-0 xl:ml-auto md:ml-0">
+              <h5 class="mb-6 text-base font-bold sm:text-center xl:text-left">Learn about us</h5>
+              <div class="flex">
+                <input class="px-4 py-2 font-sans text-base text-gray-400 placeholder-gray-400 bg-gray-100 border-gray-200 rounded-tl-md rounded-bl-md h-14 w-96 focus:outline-none" type="text" placeholder="Phone Number">
+                <button class="p-4 font-sans text-white bg-k-red rounded-tr-md rounded-br-md">Subscribe</button>      
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-row flex-wrap items-center justify-center w-full py-4 font-sans px-14 bg-gray-50 sm:px-64 ">
+        <p class="w-full font-sans text-sm text-left text-gray-500">© Made With Love By KARAZ All Right Reserved </p>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
+    <!-- JavaScript -->
+     <!--Uncomment this line-->
+   <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/script.js"></script>
+  </body>
+</html>

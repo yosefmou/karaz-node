@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('head') %>
+
+    <body id="app" class="block font-sans">
+        <div class="background-images">
+        </div>
+        <div class="main">
+            <!--start hero-->
+            <div class="w-full pt-32">
+                <%- include('navigation') %>
+                    <div class="relative flex w-full h-96">
+                        <img src="/images/categoriesHero.svg" class="w-full short-banner-img ">
+                        <div class="absolute overlay-short-banner"></div>
+                        <p class="absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 bg-clip-text">
+                            <span
+                                class="font-sans text-5xl font-bold text-center text-white uppercase md:text-9xl">Categories</span>
+                        </p>
+                    </div>
+            </div>
+            <!--end hero-->
+            <div class="z-10 flex flex-col items-center pt-4 pb-4 section-border lg:w-full w-[90%] md:w-[95%]">
+            </div>
+            <!--start main-->
+            <div class="container mx-auto my-0">
+                <div
+                    class="flex flex-wrap items-center justify-between w-full px-2 font-sans font-normal py-28 md:px-14 md:z-20">
+                    <% categories.forEach(element=> { %>
+                        <div class="relative flex flex-col px-8 main-cat py-[100px]"
+                            style="padding: 30px; padding-top: 100px; padding-bottom: 100px;">
+                            <a href="/category-details?id=<%= element.category_id %>"
+                                class="flex flex-row flex-wrap justify-center cursor-pointer drop-shadow-lg w-80 h-80"
+                                cat-id="<%= element.category_id %>">
+                                <img src="<%= element.category_image %>"
+                                    class="flex rounded-full drop-shadow-lg w-80 h-80">
+                                <p class="flex justify-center w-full pt-4 text-2xl font-semibold text-gray-600">
+                                    <%= element.category_title %>
+                                </p>
+                            </a>
+                            <div class="relative floating-items">
+                                <% if (element.sub_categories) { %>
+                                    <% element.sub_categories.forEach(element2=> { %>
+                                        <% console.log(element2.subcategory_title) %>
+                                            <a href="/category-details?id=<%= element2.subcategory_id %>"
+                                                class="flex flex-col flex-wrap justify-center cursor-pointer drop-shadow-lg"
+                                                cat-id="<%= element2.subcategory_id %>">
+                                                <img src="<%= element.category_image %>"
+                                                    class="flex w-20 h-20 rounded-full drop-shadow-lg">
+                                                <p class="flex justify-center w-20 text-sm text-center text-gray-600">
+                                                    <%= element2.subcategory_title %>
+                                                </p>
+                                            </a>
+                                            <% }); %>
+                                                <% } %>
+                            </div>
+                        </div>
+                        <% }); %>
+
+                </div>
+            </div>
+        </div>
+        <!--end main-->
+
+        <%- include('footer') %>
+            <%- include('scripts') %>
+    </body>
+
+</html>

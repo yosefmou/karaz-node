@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('head') %>
+
+    <body id="app" class="block font-sans">
+        <div class="background-images">
+        </div>
+        <div class="main">
+            <!--start hero-->
+            <div class="w-full pt-32">
+                <%- include('navigation') %>
+                    <div class="relative flex w-full h-96">
+                        <img src="/images/storesHero.svg" class="w-full short-banner-img ">
+                        <div class="absolute overlay-short-banner"></div>
+                        <p class="absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 bg-clip-text">
+                            <span
+                                class="font-sans text-5xl font-bold text-center text-white uppercase md:text-9xl">Stores</span>
+                        </p>
+                    </div>
+            </div>
+            <!--end hero-->
+
+            <!--start main-->
+            <div class="container mx-auto my-0">
+                <div
+                    class="flex flex-wrap items-center justify-between w-full px-2 py-8 font-sans font-normal md:px-14">
+
+                    <div
+                        class="relative flex flex-row flex-wrap items-center justify-center max-w-[1600px] w-full m-auto cat_swiper">
+                        <div class="swipe-slide-container-cat swiper">
+                            <div class="swipe-slide-content category_swiper">
+                                <div class="card-wrapper swiper-wrapper">
+                                    <% categories.forEach(element=> { %>
+                                        <a href="?page=1&category=<%= element.category_id %>"
+                                            class="flex flex-row flex-wrap justify-center cursor-pointer drop-shadow-lg swiper-slide"
+                                            cat-id="<%= element.category_id %>">
+                                            <img src="<%= element.category_image %>"
+                                                class="flex w-full rounded-full drop-shadow-lg">
+                                            <p class="flex justify-center w-full pt-4 text-gray-600">
+                                                <%= element.category_title %>
+                                            </p>
+                                        </a>
+                                    <% }); %>
+                                </div>
+                            </div>
+                        </div>
+                        <!--coupon slider controls-->
+                        <div class="swiper-button-prev prev-cat swiper-btn"></div>
+                        <div class="swiper-button-next next-cat swiper-btn"></div>
+                    </div>
+
+                    <div class="flex flex-row flex-wrap items-center justify-center w-full gap-5 pt-20">
+                        <% stores.forEach(element=> { %>
+                            <div class="flex flex-col drop-shadow-lg card w-80">
+                                <div class="relative card_image">
+                                    <img src="<%= element.store_image %>" alt="" class="w-full rounded-t-xl cardimg">
+                                    <img src="<%= element.store_image %>"
+                                        class="absolute left-0 right-0 z-10 flex items-center justify-center m-auto bg-white rounded-full shadow-xl -bottom-7 brand-logo-store">
+                                </div>
+                                <div
+                                    class="flex flex-row flex-wrap items-center justify-between w-full text-black bg-white rounded-b-xl">
+                                    <div class="flex flex-col items-center w-full px-4 pt-8 pb-2 h-[170px]">
+                                        <p class="pb-2 font-sans text-sm font-bold">
+                                            <%= element.store_title %>
+                                        </p>
+                                        <p class="font-sans text-sm font-light text-center">
+                                            <%= element.store_description %>
+                                        </p>
+                                    </div>
+                                    <div class="flex items-center w-full p-2 pb-6">
+                                        <a href="/store/details/<%= element.store_id %>"
+                                            class="w-full h-10 m-auto text-sm font-medium leading-9 text-center text-white rounded-lg bg-k-red">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <% }); %>
+                        <span id="page-numbers" class="flex flex-row items-center justify-center w-full mb-6">
+                            <% for (let page=1; page <=totalPages; page++) { %>
+                                <% if (page==currentPage) { %>
+                                    <a href="?page=<%= page %>&category=<%= currentCategory %>" data-page="<%= page %>"
+                                        class="flex items-center justify-center p-2 m-2 text-white bg-k-red w-7 h-7">
+                                        <%= page %>
+                                    </a>
+                                <% } else { %>
+                                    <a href="?page=<%= page %>&category=<%= currentCategory %>" data-page="<%= page %>" class="text-[#9e0c26] border-[#9e0c26] border-2 p-2 w-7 h-7 flex items-center justify-center m-2">
+                                        <%= page %>
+                                    </a>
+                                <% } %>
+                            <% } %>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end main-->
+
+        <%- include('footer') %>
+            <%- include('scripts') %>
+    </body>
+
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('head') %>
+
+  <body id="app" class="block font-sans">
+    <div class="background-images">
+    </div>
+    <div class="main">
+      <!--start hero-->
+      <div class="pt-32 hero">
+        <!--header component-->
+        <%- include('navigation') %>
+          <!--end header component-->
+          <!--banner component-->
+          <div class="w-full mx-auto">
+            <div id="default-carousel" class="relative" data-carousel="static">
+              <!-- Carousel wrapper -->
+              <div class="relative overflow-hidden banner_sliderh">
+                <% sliders.forEach(element=> { %>
+                  <div id="<%= element.slider_id %>" class="hidden duration-500 ease" data-carousel-item>
+                    <img src="<%= element.slider_image %>"
+                      class="absolute block w-full -translate-x-1/2 -translate-y-1/2 banner_slider_img top-1/2 left-1/2"
+                      alt="...">
+                    <div class="absolute overlay"></div>
+                  </div>
+                  <% }); %>
+              </div>
+              <!-- Slider controls -->
+              <button type="button"
+                class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer md:left-12 sm:left-2 group focus:outline-none"
+                data-carousel-prev>
+                <span
+                  class="inline-flex items-center justify-center w-12 h-12 sm:w-10 sm:h-10 group-focus:outline-none">
+                  <svg class="w-8 h-8 lg:w-12 lg:h-20" viewBox="0 0 49 82" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M45.3733 0C46.127 0 46.9002 0.274188 47.4787 0.80975C48.6384 1.87831 48.6384 3.62337 47.4787 4.69194L7.8236 41.2434L46.9002 77.2466C48.0599 78.3151 48.0599 80.0602 46.9002 81.1287C45.7404 82.1973 43.8464 82.1973 42.6866 81.1287L1.5046 43.1858C0.34482 42.1173 0.34482 40.3722 1.5046 39.3036L43.2651 0.80975C43.8436 0.27675 44.6195 0 45.3733 0Z"
+                      fill="white" fill-opacity="0.22" />
+                  </svg>
+                  <span class="hidden">Previous</span>
+                </span>
+              </button>
+              <button type="button"
+                class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer md:right-12 group focus:outline-none"
+                data-carousel-next>
+                <span class="inline-flex items-center justify-center w-12 h-12 sm:w-10 sm:h-1 group-focus:outline-none">
+                  <svg width="55" height="82" class="w-8 h-8 lg:w-14 lg:h-20" viewBox="0 0 55 82" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.67561 81.1456C2.82097 81.1312 1.94509 80.8451 1.29076 80.304C-0.021061 79.2242 -0.0157624 77.4971 1.30255 76.4617L46.3782 41.0428L2.17881 4.66317C0.866982 3.58343 0.872281 1.85629 2.19059 0.820847C3.50891 -0.214594 5.65654 -0.178424 6.96836 0.901314L53.5491 39.2411C54.8609 40.3208 54.8556 42.0479 53.5373 43.0834L6.06852 80.3845C5.41095 80.9009 4.53025 81.16 3.67561 81.1456Z"
+                      fill="white" fill-opacity="0.22" />
+                  </svg>
+                  <span class="hidden">Next</span>
+                </span>
+              </button>
+            </div>
+          </div>
+          <!--end banner component-->
+      </div>
+      <!--end hero-->
+      <!--start main-->
+      <div class="container mx-auto my-0">
+        <!--Top coupons-->
+        <div class="relative flex flex-row flex-wrap items-center justify-center w-full pt-12">
+          <h1
+            class="flex flex-col items-center justify-center w-full font-sans text-2xl font-normal uppercase title sm:text-5xl">
+            Top
+            Coupons</h1>
+          <!--coupon slider-->
+          <div class="swipe-slide-container swiper">
+            <div class="swipe-slide-content coupon_swiper">
+              <div class="card-wrapper swiper-wrapper">
+
+                <% topCoupons.forEach(element=> { %>
+                  <div class="rounded-t-lg drop-shadow-lg card swiper-slide">
+                    <div class="relative rounded-t-xl card_image">
+                      <div class="absolute rounded-t-xl card-overlay"></div>
+                      <img src="<%= element.coupon_image %>" alt="" class="w-full rounded-t-xl cardimg">
+                      <span
+                        class="absolute min-w-[70px] w- bottom-0 right-0 z-10 flex flex-wrap items-center justify-center px-0 py-2 text-lg font-bold text-white rounded-tl-xl bg-k-red">
+                        <%= element.coupon_percentage %> <span class="w-full text-sm text-center">OFF</span>
+                      </span>
+                    </div>
+                    <div
+                      class="flex flex-col flex-wrap items-center justify-between w-full p-1 pb-2 text-black bg-white rounded-b-lg card_content">
+                      <div class="flex flex-col w-full px-4 py-2">
+                        <h2 class="font-sans font-bold text-left">
+                          <%= element.store.store_title %>
+                        </h2>
+                        <p class="font-sans text-sm font-light">
+                          <%= element.coupon_description %>
+                        </p>
+                      </div>
+                      <div class="flex items-center w-full p-2">
+                        <img class="rounded-full brand-logo" src="<%= element.store.store_image %>"
+                          class="left-0 flex items-center justify-center p-3 rounded-full shadow-xl">
+                        <button class="ml-auto text-sm font-medium text-white rounded-lg w-36 h-9 bg-k-red">Copy &
+                          Shop</button>
+                      </div>
+                    </div>
+                  </div>
+                  <% }); %>
+              </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination1"></div>
+          </div>
+          <!--coupon slider controls-->
+          <div class="swiper-button-prev swiper-btn"></div>
+          <div class="swiper-button-next swiper-btn"></div>
+        </div>
+        <!--end top coupon-->
+        <!--ads image-->
+        <div class="flex flex-row items-center justify-center pt-12 sm:m-12 md:m-0 ads_img">
+          <img src="/images/ads-banner.svg" alt="" class="w-full">
+        </div>
+        <!--end ads image-->
+        <!--top stores-->
+        <div class="relative flex flex-row flex-wrap items-center justify-center w-full pt-12">
+          <h1
+            class="flex flex-col items-center justify-center w-full font-sans text-2xl font-normal uppercase title sm:text-5xl">
+            Top
+            Stores</h1>
+          <!--stores slider-->
+          <div class="swipe-slide-container swiper">
+            <div class=" stores_swiper">
+              <div class="card-wrapper swiper-wrapper">
+                <% topStores.forEach(element=> { %>
+                  <div class="mt-6 mb-6 drop-shadow-lg card swiper-slide">
+                    <div class="relative card_image">
+                      <img src="<%= element.store_image %>" alt="" class="w-full rounded-t-xl cardimg">
+                      <img src="<%= element.store_image %>"
+                        class="absolute left-0 right-0 z-10 flex items-center justify-center m-auto bg-white rounded-full shadow-xl -bottom-7 brand-logo-store">
+                    </div>
+                    <div
+                      class="flex flex-row flex-wrap items-center justify-between w-full text-black bg-white rounded-b-xl">
+                      <div class="flex flex-col items-center w-full px-4 pt-8 pb-2 h-[170px]">
+                        <p class="pb-2 font-sans text-sm font-bold">
+                          <%= element.store_title %>
+                        </p>
+                        <p class="font-sans text-sm font-light text-center">
+                          <%= element.store_description %>
+                        </p>
+                      </div>
+                      <div class="flex items-center w-full p-2 pb-6">
+                        <a href="/store/details/<%= element.store_id %>"
+                          class="w-full h-10 m-auto text-sm font-medium leading-9 text-center text-white rounded-lg bg-k-red">Details</a>
+                      </div>
+                    </div>
+                  </div>
+                  <% }); %>
+              </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination2"></div>
+          </div>
+          <!--coupon slider controls-->
+          <div class="swiper-button-prev swiper-btn"></div>
+          <div class="swiper-button-next swiper-btn"></div>
+
+        </div>
+        <!--end top stores-->
+        <!--ads image-->
+        <div class="flex flex-row items-center justify-center pt-12 sm:m-12 md:m-0 ">
+          <div class="flex flex-col items-center justify-between pr-1">
+            <img src="/images/ads2.svg" alt="" class="">
+          </div>
+          <div class="flex flex-col items-center justify-between pl-1">
+            <img src="/images/ads3.svg" alt="" class="">
+          </div>
+        </div>
+        <!--end ads image-->
+        <!--top deals-->
+        <div class="relative flex flex-row flex-wrap items-center justify-center w-full pt-12">
+          <h1
+            class="flex flex-col items-center justify-center w-full font-sans text-2xl font-normal uppercase title sm:text-5xl">
+            Top
+            Deals</h1>
+          <!--deals slider-->
+          <div class="swipe-slide-container swiper">
+            <div class="deals_swiper">
+              <div class="card-wrapper swiper-wrapper">
+
+                <% topDeals.forEach(element=> { %>
+                  <div class="drop-shadow-lg card swiper-slide">
+                    <div class="relative card_image">
+                      <img src="<%= element.coupon_image %>" alt="" class="w-full rounded-t-lg cardimg">
+                      <img src="<%= element.coupon_image %>"
+                        class="absolute z-10 flex items-center justify-center w-6 h-6 mt-2 mr-2 top-1 right-1">
+                      <span
+                        class="absolute z-10 flex items-center justify-center px-3 py-[1px] mt-2 ml-2 font-sans text-xs text-white bg-[#E74040] rounded-sm top-1 left-1">
+                        <%= element.category.category_title %>
+                      </span>
+                    </div>
+                    <div
+                      class="flex flex-row flex-wrap items-center justify-between w-full text-black bg-white rounded-b-lg">
+                      <div class="flex flex-col items-start justify-start w-full px-4 py-4 h-[150px]">
+                        <p class="pb-2 font-sans text-sm font-bold text-k-red">
+                          <%= element.store.store_title %>
+                        </p>
+                        <p class="pb-[5px] font-sans text-sm font-bold">
+                          <%= element.category_title %>
+                        </p>
+                        <p class="font-sans text-sm font-light">
+                          <%= element.coupon_description %>
+                        </p>
+                      </div>
+                      <div class="flex items-center w-full px-4 pb-6">
+                        <a class="left-0 text-sm font-semibold border-[2px] rounded-lg w-28 text-k-red border-k-red h-9 leading-8 text-center"
+                          href="<%= element.coupon_link %>">Learn
+                          More</a>
+                        <div class="ml-auto">
+                          <p class="text-lg font-bold text-green-600">
+                            <%= element.coupon_percentage %>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <% }); %>
+              </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination3"></div>
+          </div>
+          <!--coupon slider controls-->
+          <div class="swiper-button-prev swiper-btn"></div>
+          <div class="swiper-button-next swiper-btn"></div>
+
+        </div>
+        <!--end top deals-->
+        <!--scratch to revel component-->
+        <div class="flex flex-row flex-wrap items-center justify-center w-full gap-5 pt-12">
+          <div class="flex-col my-1 lg:w-1/4 drop-shadow-lg sm:w-full">
+            <figure class=" bridgeContainer">
+              <button type="button"
+                class="block px-5 py-2 font-sans font-light text-white rounded-md scratch_btn bg-k-red drop-shadow-md">Get
+                Your Gift</button>
+              <canvas class="rounded-t-lg bridge"></canvas>
+            </figure>
+            <div class="w-full p-4 bg-white rounded-b-lg">
+              <p class="font-sans text-base text-center">Scratch to Reveal</p>
+            </div>
+          </div>
+          <div class="flex-col lg:w-1/4 drop-shadow-lg sm:w-full ">
+            <figure class="bridgeContainer">
+              <button type="button"
+                class="block px-5 py-2 font-sans font-light text-white rounded-md scratch_btn bg-k-red drop-shadow-md">Get
+                Your Gift</button>
+              <canvas class="rounded-t-lg bridge"></canvas>
+            </figure>
+            <div class="w-full p-4 bg-white rounded-b-lg">
+              <p class="font-sans text-base text-center">Scratch to Reveal</p>
+            </div>
+          </div>
+          <div class="flex-col my-1 lg:w-1/4 drop-shadow-lg sm:w-full">
+            <figure class="bridgeContainer">
+              <button type="button"
+                class="block px-5 py-2 font-sans font-light text-white rounded-md scratch_btn bg-k-red drop-shadow-md">Get
+                Your Gift</button>
+              <canvas class="rounded-t-lg bridge"></canvas>
+            </figure>
+            <div class="w-full p-4 bg-white rounded-b-lg">
+              <p class="font-sans text-base text-center">Scratch to Reveal</p>
+            </div>
+          </div>
+        </div>
+        <!--end scratch to revel component-->
+      </div>
+    </div>
+    <!--end main-->
+
+    <%- include('footer') %>
+    <%- include('scripts') %>
+
+  </body>
+
+</html>

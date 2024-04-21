@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('head') %>
+
+  <body id="app" class="block font-sans">
+    <div class="background-images">
+    </div>
+    <div class="mb-28 main">
+      <!--start hero-->
+      <div class="w-full pt-32">
+        <!--header component-->
+        <%- include('navigation') %>
+          <!--end header component-->
+          <!--banner component-->
+          <div class="relative flex w-full">
+            <img src="/images/pexels-antonio-sokic-3839432 1.svg" class="w-full short-banner-img ">
+            <div class="absolute overlay-short-banner"></div>
+            <p class="absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 bg-clip-text">
+              <span class="font-sans text-5xl font-bold text-center text-white uppercase md:text-9xl">
+                <%= storeInfo.store_title %>
+              </span>
+            </p>
+          </div>
+          <!--end banner component-->
+      </div>
+      <!--end hero-->
+
+      <!--start main-->
+      <div class="container mx-auto my-0">
+        <!--store details logo background-->
+        <div class="absolute -z-10">
+          <div class="text-[10rem] break-words opacity-[0.03]">
+            <%= storeInfo.store_title %>
+          </div>
+        </div>
+        <!--end store details logo background-->
+        <!--start mais store details-->
+        <div class="flex flex-wrap items-center justify-between w-full px-2 py-8 font-sans font-normal md:px-14">
+          <div class="flex items-center justify-start ml-2 space-x-2">
+            <h3 class="font-sans text-3xl font-normal">
+              <%= storeInfo.store_title %>
+            </h3>
+            <% for (let i=0; i < storeInfo.rating; i++) { %>
+              <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_194_1270)">
+                  <path
+                    d="M12.7907 5.35525C12.3441 3.52089 11.3901 -0.345649 9.09636 0.319755C8.08144 0.607498 7.53338 1.81242 7.168 2.58573C6.70114 3.55686 6.33576 4.68985 6.29517 5.76888C4.79308 5.39122 0.347708 4.33017 0.266514 6.54219C0.225917 7.56727 1.58592 8.48445 2.37756 9.02397C3.08801 9.52752 4.06233 10.2109 4.99606 10.5346C4.24502 11.4158 3.69696 12.4949 3.25039 13.5019C2.80383 14.509 2.35726 15.714 3.49397 16.4513C5.34114 17.6562 8.46711 14.491 9.56323 13.1063C11.0044 14.1494 15.1859 17.4044 16.5459 15.2464C17.0939 14.3652 16.2008 13.0883 15.734 12.351C15.3686 11.7935 14.7596 10.6425 14.0695 10.103C15.0641 9.58144 16.079 9.05991 17.0128 8.44845C17.8044 7.9449 19.2862 7.04571 19.2862 6.05659C19.2862 3.97049 14.5769 5.12146 12.7907 5.35525Z"
+                    fill="#F39200" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_194_1270">
+                    <rect width="19.0206" height="16.8517" fill="white" transform="translate(0.265625 0.0556641)" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <% } %>
+          </div>
+          <div class="flex items-center justify-start ml-2 space-x-2">
+            <span class="font-sans text-sm font-normal">Share:</span>
+            <svg width="13" height="13" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.5 0C6.329 0 6.056 0.01 5.203 0.048C4.35 0.088 3.769 0.222 3.26 0.42C2.72609 0.620819 2.24249 0.935826 1.843 1.343C1.43608 1.7427 1.12111 2.22624 0.92 2.76C0.722 3.268 0.587 3.85 0.548 4.7C0.51 5.555 0.5 5.827 0.5 8.001C0.5 10.173 0.51 10.445 0.548 11.298C0.588 12.15 0.722 12.731 0.92 13.24C1.125 13.766 1.398 14.212 1.843 14.657C2.287 15.102 2.733 15.376 3.259 15.58C3.769 15.778 4.349 15.913 5.201 15.952C6.055 15.99 6.327 16 8.5 16C10.673 16 10.944 15.99 11.798 15.952C12.649 15.912 13.232 15.778 13.741 15.58C14.2746 15.3791 14.7578 15.0641 15.157 14.657C15.602 14.212 15.875 13.766 16.08 13.24C16.277 12.731 16.412 12.15 16.452 11.298C16.49 10.445 16.5 10.173 16.5 8C16.5 5.827 16.49 5.555 16.452 4.701C16.412 3.85 16.277 3.268 16.08 2.76C15.8789 2.22623 15.5639 1.74268 15.157 1.343C14.7576 0.935676 14.274 0.620645 13.74 0.42C13.23 0.222 12.648 0.087 11.797 0.048C10.943 0.01 10.672 0 8.498 0H8.501H8.5ZM7.783 1.442H8.501C10.637 1.442 10.89 1.449 11.733 1.488C12.513 1.523 12.937 1.654 13.219 1.763C13.592 1.908 13.859 2.082 14.139 2.362C14.419 2.642 14.592 2.908 14.737 3.282C14.847 3.563 14.977 3.987 15.012 4.767C15.051 5.61 15.059 5.863 15.059 7.998C15.059 10.133 15.051 10.387 15.012 11.23C14.977 12.01 14.846 12.433 14.737 12.715C14.6087 13.0624 14.404 13.3764 14.138 13.634C13.858 13.914 13.592 14.087 13.218 14.232C12.938 14.342 12.514 14.472 11.733 14.508C10.89 14.546 10.637 14.555 8.501 14.555C6.365 14.555 6.111 14.546 5.268 14.508C4.488 14.472 4.065 14.342 3.783 14.232C3.4355 14.1039 3.12113 13.8996 2.863 13.634C2.59675 13.376 2.39172 13.0617 2.263 12.714C2.154 12.433 2.023 12.009 1.988 11.229C1.95 10.386 1.942 10.133 1.942 7.996C1.942 5.86 1.95 5.608 1.988 4.765C2.024 3.985 2.154 3.561 2.264 3.279C2.409 2.906 2.583 2.639 2.863 2.359C3.143 2.079 3.409 1.906 3.783 1.761C4.065 1.651 4.488 1.521 5.268 1.485C6.006 1.451 6.292 1.441 7.783 1.44V1.442ZM12.771 2.77C12.6449 2.77 12.5201 2.79483 12.4036 2.84308C12.2872 2.89132 12.1813 2.96203 12.0922 3.05118C12.003 3.14032 11.9323 3.24615 11.8841 3.36262C11.8358 3.4791 11.811 3.60393 11.811 3.73C11.811 3.85607 11.8358 3.9809 11.8841 4.09738C11.9323 4.21385 12.003 4.31968 12.0922 4.40882C12.1813 4.49797 12.2872 4.56868 12.4036 4.61692C12.5201 4.66517 12.6449 4.69 12.771 4.69C13.0256 4.69 13.2698 4.58886 13.4498 4.40882C13.6299 4.22879 13.731 3.98461 13.731 3.73C13.731 3.47539 13.6299 3.23121 13.4498 3.05118C13.2698 2.87114 13.0256 2.77 12.771 2.77ZM8.501 3.892C7.95607 3.8835 7.41489 3.98349 6.90898 4.18614C6.40306 4.3888 5.94251 4.69007 5.55415 5.07242C5.16579 5.45478 4.85736 5.91057 4.64684 6.41326C4.43632 6.91595 4.3279 7.4555 4.3279 8.0005C4.3279 8.5455 4.43632 9.08505 4.64684 9.58774C4.85736 10.0904 5.16579 10.5462 5.55415 10.9286C5.94251 11.3109 6.40306 11.6122 6.90898 11.8149C7.41489 12.0175 7.95607 12.1175 8.501 12.109C9.57954 12.0922 10.6082 11.6519 11.365 10.8833C12.1217 10.1146 12.5459 9.07917 12.5459 8.0005C12.5459 6.92183 12.1217 5.88641 11.365 5.11775C10.6082 4.34909 9.57954 3.90883 8.501 3.892ZM8.501 5.333C9.20833 5.333 9.88669 5.61399 10.3869 6.11415C10.887 6.61431 11.168 7.29267 11.168 8C11.168 8.70733 10.887 9.38569 10.3869 9.88585C9.88669 10.386 9.20833 10.667 8.501 10.667C7.79367 10.667 7.11531 10.386 6.61515 9.88585C6.11499 9.38569 5.834 8.70733 5.834 8C5.834 7.29267 6.11499 6.61431 6.61515 6.11415C7.11531 5.61399 7.79367 5.333 8.501 5.333Z"
+                fill="#9E0C26" />
+            </svg>
+            <svg width="13" height="13" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.502 8.05C15.502 3.604 11.92 0 7.502 0C3.082 0.001 -0.5 3.604 -0.5 8.051C-0.5 12.068 2.426 15.398 6.25 16.002V10.377H4.22V8.051H6.252V6.276C6.252 4.259 7.447 3.145 9.274 3.145C10.15 3.145 11.065 3.302 11.065 3.302V5.282H10.056C9.063 5.282 8.753 5.903 8.753 6.54V8.05H10.971L10.617 10.376H8.752V16.001C12.576 15.397 15.502 12.067 15.502 8.05Z"
+                fill="#9E0C26" />
+            </svg>
+            <svg width="13" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4.526 13.0007C10.564 13.0007 13.867 7.99769 13.867 3.66669C13.867 3.52669 13.867 3.38469 13.861 3.24469C14.5041 2.77918 15.0591 2.20284 15.5 1.54269C14.8993 1.80754 14.2628 1.9821 13.611 2.06069C14.2975 1.65033 14.8117 1.00466 15.058 0.243693C14.413 0.625817 13.707 0.894067 12.971 1.03669C12.4762 0.509717 11.8214 0.160611 11.1081 0.0434506C10.3948 -0.0737096 9.66272 0.0476146 9.02534 0.38863C8.38796 0.729646 7.88081 1.27132 7.58245 1.92975C7.28409 2.58818 7.21118 3.32663 7.375 4.03069C6.06974 3.96524 4.79282 3.62616 3.62704 3.03544C2.46127 2.44471 1.43268 1.61554 0.608 0.601693C0.18934 1.32478 0.0615737 2.18009 0.250646 2.99396C0.439718 3.80782 0.931455 4.51922 1.626 4.98369C1.10554 4.96601 0.596521 4.82625 0.14 4.57569V4.62069C0.140897 5.37817 0.403307 6.11211 0.882874 6.69845C1.36244 7.28479 2.02975 7.68757 2.772 7.83869C2.49026 7.91631 2.19923 7.955 1.907 7.95369C1.70098 7.95432 1.49538 7.93523 1.293 7.89669C1.50279 8.54875 1.91127 9.11886 2.46125 9.52717C3.01122 9.93548 3.67513 10.1615 4.36 10.1737C3.19656 11.0875 1.7594 11.5831 0.28 11.5807C0.0193207 11.5818 -0.241177 11.5668 -0.5 11.5357C1.00151 12.493 2.7453 13.0012 4.526 13.0007Z"
+                fill="#9E0C26" />
+            </svg>
+          </div>
+        </div>
+        <div class="flex items-center justify-start w-full p-2 font-sans font-normal md:px-14">
+          <p class="font-sans text-xl md:text-4xl">
+            <%= storeInfo.store_description %>
+          </p>
+        </div>
+
+        <div class="flex w-full md:px-14">
+          <div class="flex flex-col items-start justify-between w-full gap-8 p-8 flex-nowrap lg:w-4/5">
+            <!--store details card-->
+            <% storeCoupons.forEach(element=> { %>
+              <div class="flex w-full flex-nowrap drop-shadow-lg h-52">
+                <div class="relative w-2/6">
+                  <img src="<%= element.coupon_image %>" alt="" class="object-cover w-full h-full rounded-l-lg">
+                  <span
+                    class="absolute bottom-0 right-0 z-10 flex flex-wrap items-center justify-center px-0 py-2 text-lg font-bold text-white rounded-tl-xl bg-k-red">
+                    <%= element.coupon_percentage %> <span class="w-full text-sm text-center">OFF</span>
+                  </span>
+                </div>
+                <div class="flex flex-row flex-wrap items-center justify-center w-4/6 text-black bg-white rounded-r-lg">
+                  <div class="flex flex-col w-full px-8">
+                    <h2 class="font-sans text-xl font-bold text-left sm:text-3xl drop-shadow-md">
+                      <%= storeInfo.store_title %>
+                    </h2>
+                    <p class="mt-4 font-sans text-sm font-light">
+                      <%= element.coupon_description %>
+                    </p>
+                  </div>
+                  <div class="flex items-center w-full px-8">
+                    <img src="<%= element.coupon_image %>"
+                      class="left-0 flex items-center justify-center rounded-full brand-logo">
+                    <button class="ml-auto text-sm font-light text-white rounded-lg w-36 h-9 bg-k-red">Copy &
+                      Shop</button>
+                  </div>
+                </div>
+              </div>
+              <% }); %>
+          </div>
+          <!--Useful Links-->
+          <div class="flex flex-col pt-8">
+            <div class="flex justify-end p-2 bg-white rounded-lg shadow-xl min-h-[30%] md:mt-0 links w-full">
+              <div class="flex w-full px-2 py-4 bg-white">
+                <h4 class="w-full font-sans text-base font-bold text-left">Useful Links</h4>
+              </div>
+            </div>
+
+            <% storeFeaturers.forEach(element => { %>
+            <div class="flex flex-col items-stretch justify-center w-full gap-0 mt-2 bg-white shadow rounded-xl">
+              <div class="flex items-center justify-between gap-5 px-6 py-6 border-l-8 shadow-md border-k-red rounded-xl">
+                <img loading="lazy"
+                  src="<%= element.image %>"
+                  class="aspect-square object-cover object-center w-[50px] justify-center items-center overflow-hidden shrink-0 max-w-full" />
+                <div class="items-stretch self-stretch flex grow basis-[0%] flex-col">
+                  <div class="text-xl font-bold leading-8 tracking-normal text-slate-800 whitespace-nowrap">
+                    <%= element.title %>
+                  </div>
+                  <div class="text-neutral-500 text-sm leading-5 tracking-wide mt-1.5">
+                    <%= element.description %>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <% }); %>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!--end main-->
+
+    <%- include('footer') %>
+      <%- include('scripts') %>
+  </body>
+
+</html>

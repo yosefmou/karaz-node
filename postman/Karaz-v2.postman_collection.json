@@ -1,0 +1,621 @@
+{
+	"info": {
+		"_postman_id": "6d308ed3-74ff-4d3c-8317-7154a4ddd26d",
+		"name": "Karaz-v2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16966974"
+	},
+	"item": [
+		{
+			"name": "Sliders",
+			"item": [
+				{
+					"name": "Get Sliders",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Lang",
+								"value": "en",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "agent",
+									"value": "website",
+									"description": "ios or android or website",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/sliders/sliders",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"sliders",
+								"sliders"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ads",
+			"item": [
+				{
+					"name": "Get Ads",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Lang",
+								"value": "ar",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ad_position",
+									"value": "store_details",
+									"description": "'home_top','home_down','stores','store_details','categories','category_details'",
+									"type": "text"
+								},
+								{
+									"key": "ad_position_id",
+									"value": "0",
+									"description": "category_id or store_id ( if add_position in (store_details,category_details)",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/ads/ads?page=1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"ads",
+								"ads"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Subscribes",
+			"item": [
+				{
+					"name": "Subscribe",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Lang",
+								"value": "en",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "test3@gmail.com",
+									"description": "required",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/subscribes/subscribe",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"subscribes",
+								"subscribe"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "advertisers",
+			"item": [
+				{
+					"name": "Advertise",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "taher.alsabagh1@gmail.com",
+									"description": "required",
+									"type": "text"
+								},
+								{
+									"key": "fullname",
+									"value": "taher1 alsabagh",
+									"description": "required",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "96655443322",
+									"description": "required",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "test",
+									"description": "required",
+									"type": "text"
+								},
+								{
+									"key": "business",
+									"value": "test test",
+									"description": "required",
+									"type": "text"
+								},
+								{
+									"key": "how_find_us",
+									"value": "test test test",
+									"description": "required",
+									"type": "text"
+								},
+								{
+									"key": "message",
+									"value": "",
+									"description": "optional",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/advertisers/advertise",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"advertisers",
+								"advertise"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Contact Us",
+			"item": [
+				{
+					"name": "Contact Us",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "taher@gmail.com",
+									"description": "required",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "fullname",
+									"value": "taher",
+									"description": "required",
+									"type": "text"
+								},
+								{
+									"key": "message",
+									"value": "test",
+									"description": "required",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/contact_us/contact_us",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"contact_us",
+								"contact_us"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Stores",
+			"item": [
+				{
+					"name": "Get Stores",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "is_top",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/stores/stores?page=1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"stores",
+								"stores"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Review",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "store_id",
+									"value": "53",
+									"type": "text"
+								},
+								{
+									"key": "rating",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/stores/review",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"stores",
+								"review"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Stores By Category or Sub-Category",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Lang",
+								"value": "en",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "category_id",
+									"value": "14",
+									"type": "default"
+								},
+								{
+									"key": "subCategory_id",
+									"value": "46",
+									"type": "default",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/stores/catStores?page=1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"stores",
+								"catStores"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "Get Categories",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "category_id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/categories/categories?page=1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"categories",
+								"categories"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Coupons",
+			"item": [
+				{
+					"name": "Get Coupons",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Lang",
+								"value": "ar",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "store_id",
+									"value": "23",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "category_id",
+									"value": "14",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "is_top",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "is_lucky",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "is_deal",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "subCategory_id",
+									"value": "46",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/coupons/coupons?page=4",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"coupons",
+								"coupons"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Copy Coupon",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/coupons/copyCoupon?coupon_id=203",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"coupons",
+								"copyCoupon"
+							],
+							"query": [
+								{
+									"key": "coupon_id",
+									"value": "203"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Setting",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Lang",
+						"value": "ar",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/settings",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"settings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Home Page",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Lang",
+						"value": "en",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/home",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"home"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl1",
+			"value": "https://likecoupon.softwarus.com/api",
+			"type": "string"
+		},
+		{
+			"key": "baseUrl",
+			"value": "https://likecoupon.softwarus.com/api",
+			"type": "string"
+		}
+	]
+}

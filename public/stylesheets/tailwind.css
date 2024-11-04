@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Neo Sans Arabic", system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  /* Add your custom component classes here */
+}
+
+@layer utilities {
+  /* Add your custom utility classes here */
+}

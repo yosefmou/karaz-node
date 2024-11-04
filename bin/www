@@ -7,12 +7,13 @@
 var app = require('../app');
 var debug = require('debug')('karaz-node:server');
 var http = require('http');
+require('events').EventEmitter.defaultMaxListeners = 100;
 
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3000' || '3002' || '3003' || '3004');
+var port = normalizePort(process.env.PORT || '3000');
 console.log('port: ', port);
 app.set('port', port);
 
@@ -21,6 +22,22 @@ app.set('port', port);
  */
 
 var server = http.createServer(app);
+
+/**
+ * Add graceful shutdown
+ */
+
+function shutdown() {
+  server.close(() => {
+    console.log('Server closed');
+    process.removeAllListeners();
+    server.removeAllListeners();
+    process.exit(0);
+  });
+}
+
+process.on('SIGTERM', shutdown);
+process.on('SIGINT', shutdown);
 
 /**
  * Listen on provided port, on all network interfaces.

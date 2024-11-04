@@ -9,18 +9,18 @@
     <div class="main">
       <!--start hero-->
       <div class="pt-32 hero">
-        <!--header component-->
+        <!--header component--> 
         <%- include('navigation') %>
           <!--end header component-->
           <!--banner component-->
-          <div class="w-full mx-auto">
+          <div class="mx-auto w-full">
             <div id="default-carousel" class="relative" data-carousel="static">
               <!-- Carousel wrapper -->
-              <div class="relative overflow-hidden banner_sliderh">
-                <% sliders.forEach(element=> { %>
+              <div class="overflow-hidden relative banner_sliderh">
+                <% sliders.forEach(element=> { %> 
                   <div id="<%= element.slider_id %>" class="hidden duration-500 ease" data-carousel-item>
                     <img src="<%= element.slider_image %>"
-                      class="absolute block w-full -translate-x-1/2 -translate-y-1/2 banner_slider_img top-1/2 left-1/2"
+                      class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 banner_slider_img"
                       alt="...">
                     <div class="absolute overlay"></div>
                   </div>
@@ -28,10 +28,10 @@
               </div>
               <!-- Slider controls -->
               <button type="button"
-                class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer md:left-12 sm:left-2 group focus:outline-none"
+                class="flex absolute top-0 z-30 justify-center items-center px-4 h-full cursor-pointer md:left-12 sm:left-2 group focus:outline-none"
                 data-carousel-prev>
                 <span
-                  class="inline-flex items-center justify-center w-12 h-12 sm:w-10 sm:h-10 group-focus:outline-none">
+                  class="inline-flex justify-center items-center w-12 h-12 sm:w-10 sm:h-10 group-focus:outline-none">
                   <svg class="w-8 h-8 lg:w-12 lg:h-20" viewBox="0 0 49 82" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -42,9 +42,9 @@
                 </span>
               </button>
               <button type="button"
-                class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer md:right-12 group focus:outline-none"
+                class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer md:right-12 group focus:outline-none"
                 data-carousel-next>
-                <span class="inline-flex items-center justify-center w-12 h-12 sm:w-10 sm:h-1 group-focus:outline-none">
+                <span class="inline-flex justify-center items-center w-12 h-12 sm:w-10 sm:h-1 group-focus:outline-none">
                   <svg width="55" height="82" class="w-8 h-8 lg:w-14 lg:h-20" viewBox="0 0 55 82" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -62,9 +62,9 @@
       <!--start main-->
       <div class="container mx-auto my-0">
         <!--Top coupons-->
-        <div class="relative flex flex-row flex-wrap items-center justify-center w-full pt-12">
+        <div class="flex relative flex-row flex-wrap justify-center items-center pt-12 w-full">
           <h1
-            class="flex flex-col items-center justify-center w-full font-sans text-2xl font-normal uppercase title sm:text-5xl">
+            class="flex flex-col justify-center items-center w-full font-sans text-2xl font-normal uppercase title sm:text-5xl">
             Top
             Coupons</h1>
           <!--coupon slider-->
@@ -83,8 +83,8 @@
                       </span>
                     </div>
                     <div
-                      class="flex flex-col flex-wrap items-center justify-between w-full p-1 pb-2 text-black bg-white rounded-b-lg card_content">
-                      <div class="flex flex-col w-full px-4 py-2">
+                      class="flex flex-col flex-wrap justify-between items-center p-1 pb-2 w-full text-black bg-white rounded-b-lg card_content">
+                      <div class="flex flex-col px-4 py-2 w-full">
                         <h2 class="font-sans font-bold text-left">
                           <%= element.store.store_title %>
                         </h2>
@@ -92,10 +92,10 @@
                           <%= element.coupon_description %>
                         </p>
                       </div>
-                      <div class="flex items-center w-full p-2">
+                      <div class="flex items-center p-2 w-full">
                         <img class="rounded-full brand-logo" src="<%= element.store.store_image %>"
-                          class="left-0 flex items-center justify-center p-3 rounded-full shadow-xl">
-                        <button class="ml-auto text-sm font-medium text-white rounded-lg w-36 h-9 bg-k-red">Copy &
+                          class="flex left-0 justify-center items-center p-3 rounded-full shadow-xl">
+                        <button class="ml-auto w-36 h-9 text-sm font-medium text-white rounded-lg bg-k-red">Copy &
                           Shop</button>
                       </div>
                     </div>
@@ -111,29 +111,29 @@
         </div>
         <!--end top coupon-->
         <!--ads image-->
-        <div class="flex flex-row items-center justify-center pt-12 sm:m-12 md:m-0 ads_img">
+        <div class="flex flex-row justify-center items-center pt-12 sm:m-12 md:m-0 ads_img">
           <img src="/images/ads-banner.svg" alt="" class="w-full">
         </div>
         <!--end ads image-->
         <!--top stores-->
-        <div class="relative flex flex-row flex-wrap items-center justify-center w-full pt-12">
+        <div class="flex relative flex-row flex-wrap justify-center items-center pt-12 w-full">
           <h1
-            class="flex flex-col items-center justify-center w-full font-sans text-2xl font-normal uppercase title sm:text-5xl">
+            class="flex flex-col justify-center items-center w-full font-sans text-2xl font-normal uppercase title sm:text-5xl">
             Top
             Stores</h1>
           <!--stores slider-->
           <div class="swipe-slide-container swiper">
-            <div class=" stores_swiper">
+            <div class="stores_swiper">
               <div class="card-wrapper swiper-wrapper">
                 <% topStores.forEach(element=> { %>
                   <div class="mt-6 mb-6 drop-shadow-lg card swiper-slide">
                     <div class="relative card_image">
                       <img src="<%= element.store_image %>" alt="" class="w-full rounded-t-xl cardimg">
                       <img src="<%= element.store_image %>"
-                        class="absolute left-0 right-0 z-10 flex items-center justify-center m-auto bg-white rounded-full shadow-xl -bottom-7 brand-logo-store">
+                        class="flex absolute right-0 left-0 -bottom-7 z-10 justify-center items-center m-auto bg-white rounded-full shadow-xl brand-logo-store">
                     </div>
                     <div
-                      class="flex flex-row flex-wrap items-center justify-between w-full text-black bg-white rounded-b-xl">
+                      class="flex flex-row flex-wrap justify-between items-center w-full text-black bg-white rounded-b-xl">
                       <div class="flex flex-col items-center w-full px-4 pt-8 pb-2 h-[170px]">
                         <p class="pb-2 font-sans text-sm font-bold">
                           <%= element.store_title %>
@@ -142,9 +142,9 @@
                           <%= element.store_description %>
                         </p>
                       </div>
-                      <div class="flex items-center w-full p-2 pb-6">
+                      <div class="flex items-center p-2 pb-6 w-full">
                         <a href="/store/details/<%= element.store_id %>"
-                          class="w-full h-10 m-auto text-sm font-medium leading-9 text-center text-white rounded-lg bg-k-red">Details</a>
+                          class="m-auto w-full h-10 text-sm font-medium leading-9 text-center text-white rounded-lg bg-k-red">Details</a>
                       </div>
                     </div>
                   </div>
@@ -160,19 +160,19 @@
         </div>
         <!--end top stores-->
         <!--ads image-->
-        <div class="flex flex-row items-center justify-center pt-12 sm:m-12 md:m-0 ">
-          <div class="flex flex-col items-center justify-between pr-1">
+        <div class="flex flex-row justify-center items-center pt-12 sm:m-12 md:m-0">
+          <div class="flex flex-col justify-between items-center pr-1">
             <img src="/images/ads2.svg" alt="" class="">
           </div>
-          <div class="flex flex-col items-center justify-between pl-1">
+          <div class="flex flex-col justify-between items-center pl-1">
             <img src="/images/ads3.svg" alt="" class="">
           </div>
         </div>
         <!--end ads image-->
         <!--top deals-->
-        <div class="relative flex flex-row flex-wrap items-center justify-center w-full pt-12">
+        <div class="flex relative flex-row flex-wrap justify-center items-center pt-12 w-full">
           <h1
-            class="flex flex-col items-center justify-center w-full font-sans text-2xl font-normal uppercase title sm:text-5xl">
+            class="flex flex-col justify-center items-center w-full font-sans text-2xl font-normal uppercase title sm:text-5xl">
             Top
             Deals</h1>
           <!--deals slider-->
@@ -185,14 +185,14 @@
                     <div class="relative card_image">
                       <img src="<%= element.coupon_image %>" alt="" class="w-full rounded-t-lg cardimg">
                       <img src="<%= element.coupon_image %>"
-                        class="absolute z-10 flex items-center justify-center w-6 h-6 mt-2 mr-2 top-1 right-1">
+                        class="flex absolute top-1 right-1 z-10 justify-center items-center mt-2 mr-2 w-6 h-6">
                       <span
                         class="absolute z-10 flex items-center justify-center px-3 py-[1px] mt-2 ml-2 font-sans text-xs text-white bg-[#E74040] rounded-sm top-1 left-1">
                         <%= element.category.category_title %>
                       </span>
                     </div>
                     <div
-                      class="flex flex-row flex-wrap items-center justify-between w-full text-black bg-white rounded-b-lg">
+                      class="flex flex-row flex-wrap justify-between items-center w-full text-black bg-white rounded-b-lg">
                       <div class="flex flex-col items-start justify-start w-full px-4 py-4 h-[150px]">
                         <p class="pb-2 font-sans text-sm font-bold text-k-red">
                           <%= element.store.store_title %>
@@ -204,7 +204,7 @@
                           <%= element.coupon_description %>
                         </p>
                       </div>
-                      <div class="flex items-center w-full px-4 pb-6">
+                      <div class="flex items-center px-4 pb-6 w-full">
                         <a class="left-0 text-sm font-semibold border-[2px] rounded-lg w-28 text-k-red border-k-red h-9 leading-8 text-center"
                           href="<%= element.coupon_link %>">Learn
                           More</a>
@@ -228,37 +228,37 @@
         </div>
         <!--end top deals-->
         <!--scratch to revel component-->
-        <div class="flex flex-row flex-wrap items-center justify-center w-full gap-5 pt-12">
-          <div class="flex-col my-1 lg:w-1/4 drop-shadow-lg sm:w-full">
-            <figure class=" bridgeContainer">
+        <div class="flex flex-row flex-wrap gap-5 justify-center items-center pt-12 w-full">
+          <div class="flex-col my-1 drop-shadow-lg lg:w-1/4 sm:w-full">
+            <figure class="bridgeContainer">
               <button type="button"
-                class="block px-5 py-2 font-sans font-light text-white rounded-md scratch_btn bg-k-red drop-shadow-md">Get
+                class="block px-5 py-2 font-sans font-light text-white rounded-md drop-shadow-md scratch_btn bg-k-red">Get
                 Your Gift</button>
               <canvas class="rounded-t-lg bridge"></canvas>
             </figure>
-            <div class="w-full p-4 bg-white rounded-b-lg">
+            <div class="p-4 w-full bg-white rounded-b-lg">
               <p class="font-sans text-base text-center">Scratch to Reveal</p>
             </div>
           </div>
-          <div class="flex-col lg:w-1/4 drop-shadow-lg sm:w-full ">
+          <div class="flex-col drop-shadow-lg lg:w-1/4 sm:w-full">
             <figure class="bridgeContainer">
               <button type="button"
-                class="block px-5 py-2 font-sans font-light text-white rounded-md scratch_btn bg-k-red drop-shadow-md">Get
+                class="block px-5 py-2 font-sans font-light text-white rounded-md drop-shadow-md scratch_btn bg-k-red">Get
                 Your Gift</button>
               <canvas class="rounded-t-lg bridge"></canvas>
             </figure>
-            <div class="w-full p-4 bg-white rounded-b-lg">
+            <div class="p-4 w-full bg-white rounded-b-lg">
               <p class="font-sans text-base text-center">Scratch to Reveal</p>
             </div>
           </div>
-          <div class="flex-col my-1 lg:w-1/4 drop-shadow-lg sm:w-full">
+          <div class="flex-col my-1 drop-shadow-lg lg:w-1/4 sm:w-full">
             <figure class="bridgeContainer">
               <button type="button"
-                class="block px-5 py-2 font-sans font-light text-white rounded-md scratch_btn bg-k-red drop-shadow-md">Get
+                class="block px-5 py-2 font-sans font-light text-white rounded-md drop-shadow-md scratch_btn bg-k-red">Get
                 Your Gift</button>
               <canvas class="rounded-t-lg bridge"></canvas>
             </figure>
-            <div class="w-full p-4 bg-white rounded-b-lg">
+            <div class="p-4 w-full bg-white rounded-b-lg">
               <p class="font-sans text-base text-center">Scratch to Reveal</p>
             </div>
           </div>
@@ -269,7 +269,7 @@
     <!--end main-->
 
     <%- include('footer') %>
-    <%- include('scripts') %>
+      <%- include('scripts') %>
 
   </body>
 

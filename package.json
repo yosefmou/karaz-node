@@ -3,26 +3,35 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "devstart": "nodemon ./bin/www",
-    "tailwind:css": "postcss public/stylesheets/tailwind.css -o public/stylesheets/tailwindcss.css"
+    "start": "node ./bin/www",
+    "pre-dev": "kill-port 3000 3001 3002",
+    "dev": "npm run pre-dev && concurrently --kill-others \"npm run watch:server\" \"npm run watch:tailwind\" \"npm run watch:browser\"",
+    "watch:server": "nodemon ./bin/www",
+    "watch:tailwind": "tailwindcss -i ./public/stylesheets/tailwind.css -o ./public/stylesheets/tailwindcss.css --watch",
+    "watch:browser": "browser-sync start --config bs-config.js",
+    "build:tailwind": "tailwindcss -i ./public/stylesheets/tailwind.css -o ./public/stylesheets/tailwindcss.css --minify"
   },
   "dependencies": {
-    "autoprefixer": "^10.4.16",
+    "autoprefixer": "^10.4.20",
     "axios": "^1.5.0",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
-    "ejs": "~2.6.1",
-    "express": "~4.16.1",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
     "flowbite": "^1.8.1",
     "form-data": "^4.0.0",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
-    "postcss": "^8.4.30",
+    "postcss": "^8.4.47",
     "postcss-cli": "^10.1.0",
-    "tailwindcss": "^3.3.3",
+    "tailwindcss": "^3.4.14",
     "tw-elements": "^1.0.0"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1"
+    "browser-sync": "^3.0.3",
+    "concurrently": "^8.2.2",
+    "kill-port": "^2.0.1",
+    "nodemon": "^3.1.7",
+    "wait-on": "^8.0.1"
   }
 }

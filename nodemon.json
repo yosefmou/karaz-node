@@ -1,0 +1,21 @@
+{
+  "watch": [
+    "views/",
+    "routes/",
+    "public/",
+    "app.js",
+    "bin/www"
+  ],
+  "ext": "js,mjs,json,ejs,css",
+  "ignore": [
+    "public/stylesheets/tailwindcss.css",
+    "node_modules/",
+    ".git/",
+    "*.test.js"
+  ],
+  "delay": "1000",
+  "events": {
+    "restart": "kill-port 3000",
+    "crash": "kill-port 3000"
+  }
+} 

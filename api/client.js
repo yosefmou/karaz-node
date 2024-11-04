@@ -1,9 +1,38 @@
 const axios = require('axios');
+const config = require('../config/api.config');
 const FormData = require('form-data');
-const baseUrl = 'https://likecoupon.softwarus.com/api';
-const headers = {
-    'Lang': 'en'
+const baseUrl = config.newBaseUrl;
+
+// Helper to get headers with country and language
+const getHeaders = () => {
+    try {
+        // Only try to access window if we're in browser environment
+        if (typeof window !== 'undefined' && window.userSettings) {
+            const settings = window.userSettings.getCurrentSettings();
+            return {
+                'accept': '*/*',
+                'country-id': settings?.country?.id || '',
+                'language': settings?.language || 'en'
+            };
+        }
+        
+        // Return default headers if not in browser or no settings
+        return {
+            'accept': '*/*',
+            'country-id': config.defaultCountry.id,
+            'language': config.defaultLanguage
+        };
+    } catch (error) {
+        console.log('Error getting headers:', error);
+        // Fallback headers
+        return {
+            'accept': '*/*',
+            'country-id': config.defaultCountry.id,
+            'language': config.defaultLanguage
+        };
+    }
 };
+
 const endpoints = {
     general: {
         getMenuItems: async () => {
@@ -31,7 +60,7 @@ const endpoints = {
             try {
                 const response = await axios.get(baseUrl + '/categories/categories',
                     {
-                        headers
+                        headers: getHeaders()
                     });
                 return response.data.data.items;
             }
@@ -41,26 +70,16 @@ const endpoints = {
         }
     },
     homepage: {
-        getSlider: async () => {
-            try {
-                const response = await axios.get(baseUrl + '/sliders/sliders', {
-                    headers: headers
-                });
-                return response.data.data;
-            }
-            catch (error) {
-                console.log(error);
-            }
-        },
         getHomePage: async () => {
             try {
-                const response = await axios.get(baseUrl + '/home', {
-                    headers: headers
+                const response = await axios.get(baseUrl + '/Home/GetHomeLists', {
+                    headers: getHeaders()
                 });
-                return response.data.data;
+                return response.data.result;
             }
             catch (error) {
                 console.log(error);
+                return null;
             }
         },
     },
@@ -68,7 +87,7 @@ const endpoints = {
         getStores: async (id) => {
             try {
                 const response = await axios.get(baseUrl + `/stores/stores?page=${id}`, {
-                    headers: headers
+                    headers: getHeaders()
                 });
                 return response.data.data;
             }
@@ -82,7 +101,7 @@ const endpoints = {
                 data.append('category_id', category);
 
                 const response = await axios.post(baseUrl + `/stores/catStores?page=${id}`, {
-                    headers: headers,
+                    headers: getHeaders(),
                 });
                 return response.data.data;
             } catch (error) {
@@ -95,7 +114,7 @@ const endpoints = {
                 data.append('store_id', id);
 
                 const response = await axios.post(baseUrl + '/coupons/coupons', data, {
-                    headers: headers,
+                    headers: getHeaders(),
                 });
 
                 return response.data.data;

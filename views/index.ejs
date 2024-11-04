@@ -6,10 +6,10 @@
   <body id="app" class="block font-sans">
     <div class="background-images">
     </div>
-    <div class="main">
+    <div class="mb-24 main">
       <!--start hero-->
       <div class="pt-32 hero">
-        <!--header component--> 
+        <!--header component-->
         <%- include('navigation') %>
           <!--end header component-->
           <!--banner component-->
@@ -17,9 +17,9 @@
             <div id="default-carousel" class="relative" data-carousel="static">
               <!-- Carousel wrapper -->
               <div class="overflow-hidden relative banner_sliderh">
-                <% sliders.forEach(element=> { %> 
-                  <div id="<%= element.slider_id %>" class="hidden duration-500 ease" data-carousel-item>
-                    <img src="<%= element.slider_image %>"
+                <% sliders.forEach(element=> { %>
+                  <div class="hidden duration-500 ease" data-carousel-item>
+                    <img src="<%= element.image %>"
                       class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 banner_slider_img"
                       alt="...">
                     <div class="absolute overlay"></div>
@@ -73,27 +73,27 @@
               <div class="card-wrapper swiper-wrapper">
 
                 <% topCoupons.forEach(element=> { %>
-                  <div class="rounded-t-lg drop-shadow-lg card swiper-slide">
+                  <div class="rounded-t-lg drop-shadow-lg card swiper-slide" coupon-id="<%= element.couponId %>">
                     <div class="relative rounded-t-xl card_image">
                       <div class="absolute rounded-t-xl card-overlay"></div>
-                      <img src="<%= element.coupon_image %>" alt="" class="w-full rounded-t-xl cardimg">
+                      <img src="<%= element.image %>" alt="" class="w-full rounded-t-xl cardimg">
                       <span
                         class="absolute min-w-[70px] w- bottom-0 right-0 z-10 flex flex-wrap items-center justify-center px-0 py-2 text-lg font-bold text-white rounded-tl-xl bg-k-red">
-                        <%= element.coupon_percentage %> <span class="w-full text-sm text-center">OFF</span>
+                        <%= element.finalValue %> <span class="w-full text-sm text-center">OFF</span>
                       </span>
                     </div>
                     <div
                       class="flex flex-col flex-wrap justify-between items-center p-1 pb-2 w-full text-black bg-white rounded-b-lg card_content">
                       <div class="flex flex-col px-4 py-2 w-full">
                         <h2 class="font-sans font-bold text-left">
-                          <%= element.store.store_title %>
+                          <%= element.storeName %>
                         </h2>
                         <p class="font-sans text-sm font-light">
-                          <%= element.coupon_description %>
+                          <%= element.description %>
                         </p>
                       </div>
                       <div class="flex items-center p-2 w-full">
-                        <img class="rounded-full brand-logo" src="<%= element.store.store_image %>"
+                        <img class="rounded-full brand-logo" src="<%= element.logo %>"
                           class="flex left-0 justify-center items-center p-3 rounded-full shadow-xl">
                         <button class="ml-auto w-36 h-9 text-sm font-medium text-white rounded-lg bg-k-red">Copy &
                           Shop</button>
@@ -126,24 +126,24 @@
             <div class="stores_swiper">
               <div class="card-wrapper swiper-wrapper">
                 <% topStores.forEach(element=> { %>
-                  <div class="mt-6 mb-6 drop-shadow-lg card swiper-slide">
+                  <div class="mt-6 mb-6 drop-shadow-lg card swiper-slide" store-id="<%= element.id %>">
                     <div class="relative card_image">
-                      <img src="<%= element.store_image %>" alt="" class="w-full rounded-t-xl cardimg">
-                      <img src="<%= element.store_image %>"
+                      <img src="<%= element.image %>" alt="" class="w-full rounded-t-xl cardimg">
+                      <img src="<%= element.logo %>"
                         class="flex absolute right-0 left-0 -bottom-7 z-10 justify-center items-center m-auto bg-white rounded-full shadow-xl brand-logo-store">
                     </div>
                     <div
                       class="flex flex-row flex-wrap justify-between items-center w-full text-black bg-white rounded-b-xl">
                       <div class="flex flex-col items-center w-full px-4 pt-8 pb-2 h-[170px]">
                         <p class="pb-2 font-sans text-sm font-bold">
-                          <%= element.store_title %>
+                          <%= element.name %>
                         </p>
                         <p class="font-sans text-sm font-light text-center">
-                          <%= element.store_description %>
+                          <%= element.description %>
                         </p>
                       </div>
                       <div class="flex items-center p-2 pb-6 w-full">
-                        <a href="/store/details/<%= element.store_id %>"
+                        <a href="/store/details/<%= element.id %>"
                           class="m-auto w-full h-10 text-sm font-medium leading-9 text-center text-white rounded-lg bg-k-red">Details</a>
                       </div>
                     </div>
@@ -180,42 +180,47 @@
             <div class="deals_swiper">
               <div class="card-wrapper swiper-wrapper">
 
-                <% topDeals.forEach(element=> { %>
-                  <div class="drop-shadow-lg card swiper-slide">
+                <% topOffers.forEach(element=> { %>
+                  <% if (element.isTopPicks) { %>
+                  <div class="drop-shadow-lg card swiper-slide" offer-id="<%= element.id %>">
                     <div class="relative card_image">
-                      <img src="<%= element.coupon_image %>" alt="" class="w-full rounded-t-lg cardimg">
-                      <img src="<%= element.coupon_image %>"
+                      <img src="<%= element.image %>" alt="" class="w-full rounded-t-lg cardimg">
+                      <img src="<%= element.logo %>"
                         class="flex absolute top-1 right-1 z-10 justify-center items-center mt-2 mr-2 w-6 h-6">
+                    <% if (element.hasSaleTag) { %>
                       <span
                         class="absolute z-10 flex items-center justify-center px-3 py-[1px] mt-2 ml-2 font-sans text-xs text-white bg-[#E74040] rounded-sm top-1 left-1">
-                        <%= element.category.category_title %>
+                        Sale
                       </span>
+                    <% } %>
                     </div>
                     <div
                       class="flex flex-row flex-wrap justify-between items-center w-full text-black bg-white rounded-b-lg">
                       <div class="flex flex-col items-start justify-start w-full px-4 py-4 h-[150px]">
                         <p class="pb-2 font-sans text-sm font-bold text-k-red">
-                          <%= element.store.store_title %>
+                          <%= element.storeName %>
                         </p>
                         <p class="pb-[5px] font-sans text-sm font-bold">
-                          <%= element.category_title %>
+                          <%= element.name %>
                         </p>
                         <p class="font-sans text-sm font-light">
-                          <%= element.coupon_description %>
+                          <%= element.description %>
                         </p>
                       </div>
                       <div class="flex items-center px-4 pb-6 w-full">
                         <a class="left-0 text-sm font-semibold border-[2px] rounded-lg w-28 text-k-red border-k-red h-9 leading-8 text-center"
-                          href="<%= element.coupon_link %>">Learn
+                          href="<%= element.link %>">Learn
                           More</a>
                         <div class="ml-auto">
+                          <p class="text-xs font-light text-gray-400 line-through text-end"><%= element.oldPrice %> <%= element.currency %></p>
                           <p class="text-lg font-bold text-green-600">
-                            <%= element.coupon_percentage %>
+                            <%= element.offerPrice %> <%= element.currency %>
                           </p>
                         </div>
                       </div>
                     </div>
                   </div>
+                  <% } %>
                   <% }); %>
               </div>
             </div>
@@ -227,43 +232,6 @@
 
         </div>
         <!--end top deals-->
-        <!--scratch to revel component-->
-        <div class="flex flex-row flex-wrap gap-5 justify-center items-center pt-12 w-full">
-          <div class="flex-col my-1 drop-shadow-lg lg:w-1/4 sm:w-full">
-            <figure class="bridgeContainer">
-              <button type="button"
-                class="block px-5 py-2 font-sans font-light text-white rounded-md drop-shadow-md scratch_btn bg-k-red">Get
-                Your Gift</button>
-              <canvas class="rounded-t-lg bridge"></canvas>
-            </figure>
-            <div class="p-4 w-full bg-white rounded-b-lg">
-              <p class="font-sans text-base text-center">Scratch to Reveal</p>
-            </div>
-          </div>
-          <div class="flex-col drop-shadow-lg lg:w-1/4 sm:w-full">
-            <figure class="bridgeContainer">
-              <button type="button"
-                class="block px-5 py-2 font-sans font-light text-white rounded-md drop-shadow-md scratch_btn bg-k-red">Get
-                Your Gift</button>
-              <canvas class="rounded-t-lg bridge"></canvas>
-            </figure>
-            <div class="p-4 w-full bg-white rounded-b-lg">
-              <p class="font-sans text-base text-center">Scratch to Reveal</p>
-            </div>
-          </div>
-          <div class="flex-col my-1 drop-shadow-lg lg:w-1/4 sm:w-full">
-            <figure class="bridgeContainer">
-              <button type="button"
-                class="block px-5 py-2 font-sans font-light text-white rounded-md drop-shadow-md scratch_btn bg-k-red">Get
-                Your Gift</button>
-              <canvas class="rounded-t-lg bridge"></canvas>
-            </figure>
-            <div class="p-4 w-full bg-white rounded-b-lg">
-              <p class="font-sans text-base text-center">Scratch to Reveal</p>
-            </div>
-          </div>
-        </div>
-        <!--end scratch to revel component-->
       </div>
     </div>
     <!--end main-->

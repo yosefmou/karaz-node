@@ -1247,6 +1247,18 @@ html {
   margin-top: 1.5rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
 .block {
   display: block;
 }
@@ -2040,6 +2052,10 @@ html {
   text-align: center;
 }
 
+.text-end {
+  text-align: end;
+}
+
 .font-sans {
   font-family: Neo Sans Arabic, sans-serif;
 }
@@ -2198,6 +2214,10 @@ html {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.line-through {
+  text-decoration-line: line-through;
 }
 
 .placeholder-gray-400::-moz-placeholder {

@@ -8,6 +8,7 @@ require('events').EventEmitter.defaultMaxListeners = 100;
 var indexRouter = require('./routes/index');
 var storeRouter = require('./routes/store');
 var dealsRouter = require('./routes/deals');
+var categoriesRouter = require('./routes/categories');
 
 var app = express();
 
@@ -52,6 +53,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/store', storeRouter);
 app.use('/deals', dealsRouter);
+app.use('/categories', categoriesRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

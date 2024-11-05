@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var api = require('../api/client');
+const { truncateText } = require('../utils/formatters');
 
 router.get('/categories', async function (req, res, next) {
   try {

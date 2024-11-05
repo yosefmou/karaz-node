@@ -1,19 +1,21 @@
 var express = require('express');
 var router = express.Router();
 var api = require('../api/client');
-
+var { formatCoupons, formatStores, formatOffers } = require('../utils/formatters');
 
 router.get('/', async function (req, res, next) {
   try {
     const pageTitle = 'Karaz - Home';
     const homepage = await api.homepage.getHomePage();
-    const topCoupons = formatTopCoupons(homepage.topCoupons);
+    const topCoupons = formatCoupons(homepage.topCoupons);
+    const topStores = formatStores(homepage.topStores);
+    const topOffers = formatOffers(homepage.topOffers);
 
     res.render('index', {
       pageTitle: pageTitle,
       sliders: homepage.images,
-      topOffers: homepage.topOffers,
-      topStores: homepage.topStores,
+      topOffers: topOffers,
+      topStores: topStores,
       topCoupons: topCoupons,
       ads: homepage.ads
     });
@@ -21,17 +23,5 @@ router.get('/', async function (req, res, next) {
     console.log(error);
   }
 });
-
-function formatTopCoupons(coupons) {
-  return coupons.map(coupon => {
-    let finalValue;
-    if (coupon.type === 'Fixed') {
-      finalValue = `${coupon.value} ${coupon.currency}`;
-    } else {
-      finalValue = `${coupon.value}%`;
-    }
-    return { ...coupon, finalValue };
-  });
-}
 
 module.exports = router;

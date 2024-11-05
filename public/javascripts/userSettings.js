@@ -1,91 +1,75 @@
 const userSettings = {
-  async getActiveCountries() {
-    try {
-      const response = await fetch('http://165.232.76.152:8000/api/Countries/ActiveCountries', {
-        headers: {
-          'accept': '*/*',
-          'language': 'en'
+    async getActiveCountries() {
+        try {
+            const settings = await this.getCurrentSettings();
+            const response = await fetch('/api/Countries/ActiveCountries', {
+                headers: {
+                    'accept': '*/*',
+                    'language': settings.language
+                }
+            });
+            const data = await response.json();
+            return data.result;
+        } catch (error) {
+            console.error('Failed to fetch active countries:', error);
+            return null;
         }
-      });
-      const data = await response.json();
-      return data.result;
-    } catch (error) {
-      console.error('Failed to fetch active countries:', error);
-      return null;
+    },
+
+    async getCurrentSettings() {
+        const settings = localStorage.getItem('userSettings');
+        if (settings) {
+            return JSON.parse(settings);
+        }
+        return await this.setDefaultSettings();
+    },
+
+    async setDefaultSettings() {
+        try {
+            const response = await fetch('/api/settings');
+            const defaults = await response.json();
+            const defaultSettings = {
+                country: defaults.defaultCountry,
+                language: defaults.defaultLanguage
+            };
+            localStorage.setItem('userSettings', JSON.stringify(defaultSettings));
+            this.setCookie('userSettings', JSON.stringify(defaultSettings));
+            return defaultSettings;
+        } catch (error) {
+            console.error('Error fetching default settings:', error);
+            return null;
+        }
+    },
+
+    async updateSettings(newSettings) {
+        try {
+            // Get current settings first
+            const currentSettings = await this.getCurrentSettings();
+            
+            // Create updated settings by merging, not replacing
+            const updatedSettings = {
+                country: newSettings.country || currentSettings.country,
+                language: newSettings.language || currentSettings.language
+            };
+
+            // Save to both localStorage and cookies
+            localStorage.setItem('userSettings', JSON.stringify(updatedSettings));
+            this.setCookie('userSettings', JSON.stringify(updatedSettings));
+            
+            return updatedSettings;
+        } catch (error) {
+            console.error('Error updating settings:', error);
+            return null;
+        }
+    },
+
+    setCookie(name, value) {
+        const date = new Date();
+        date.setTime(date.getTime() + (365 * 24 * 60 * 60 * 1000)); // 1 year
+        document.cookie = `${name}=${value};expires=${date.toUTCString()};path=/`;
     }
-  },
-
-  async detectUserCountry() {
-    try {
-      const response = await fetch('https://ipapi.co/json/');
-      const data = await response.json();
-      return data.country_code.toUpperCase();
-    } catch (error) {
-      console.error('Failed to detect user country:', error);
-      return null;
-    }
-  },
-
-  async initializeUserSettings() {
-    // Check if settings already exist
-    const existingSettings = localStorage.getItem('userSettings');
-    if (existingSettings) {
-      return JSON.parse(existingSettings);
-    }
-
-    // Get active countries
-    const activeCountries = await this.getActiveCountries();
-    if (!activeCountries) {
-      return this.setDefaultSettings();
-    }
-
-    // Detect user's country
-    const userCountryCode = await this.detectUserCountry();
-    if (!userCountryCode) {
-      return this.setDefaultSettings();
-    }
-
-    // Find matching country in active countries
-    const userCountry = activeCountries.find(country => 
-      country.flag.toLowerCase().includes(`/${userCountryCode.toLowerCase()}.png`)
-    );
-
-    const settings = {
-      country: userCountry || defaultCountry,
-      language: 'en'
-    };
-
-    // Save to localStorage
-    localStorage.setItem('userSettings', JSON.stringify(settings));
-    return settings;
-  },
-
-  setDefaultSettings() {
-    const settings = {
-      country: defaultCountry,
-      language: 'en'
-    };
-    localStorage.setItem('userSettings', JSON.stringify(settings));
-    return settings;
-  },
-
-  getCurrentSettings() {
-    const settings = localStorage.getItem('userSettings');
-    return settings ? JSON.parse(settings) : this.setDefaultSettings();
-  }
 };
 
-// Default country configuration
-const defaultCountry = {
-  id: 182,
-  name: "United Arab Emirates",
-  flag: "http://165.232.76.152:8000/Karaz-imgs/countries/ae.png"
-};
-
-// Initialize settings when the script loads
-window.addEventListener('load', () => {
-  userSettings.initializeUserSettings();
-});
-
-// Make settings available globally
-window.userSettings = userSettings; 
+if (typeof window !== 'undefined') {
+    window.userSettings = userSettings;
+} 

@@ -4,19 +4,29 @@ const FormData = require('form-data');
 const baseUrl = config.newBaseUrl;
 
 // Helper to get headers with country and language
-const getHeaders = () => {
+const getHeaders = (req) => {
     try {
-        // Only try to access window if we're in browser environment
-        if (typeof window !== 'undefined' && window.userSettings) {
-            const settings = window.userSettings.getCurrentSettings();
+        // Check for server-side cookies first
+        if (req?.cookies?.userSettings) {
+            const settings = JSON.parse(req.cookies.userSettings);
             return {
                 'accept': '*/*',
-                'country-id': settings?.country?.id || '',
-                'language': settings?.language || 'en'
+                'country-id': settings?.country?.id || config.defaultCountry.id,
+                'language': settings?.language || config.defaultLanguage
             };
         }
         
-        // Return default headers if not in browser or no settings
+        // Then check browser localStorage if available
+        if (typeof window !== 'undefined') {
+            const settings = JSON.parse(localStorage.getItem('userSettings') || '{}');
+            return {
+                'accept': '*/*',
+                'country-id': settings?.country?.id || config.defaultCountry.id,
+                'language': settings?.language || config.defaultLanguage
+            };
+        }
+        
+        // Fallback to defaults
         return {
             'accept': '*/*',
             'country-id': config.defaultCountry.id,
@@ -24,7 +34,6 @@ const getHeaders = () => {
         };
     } catch (error) {
         console.log('Error getting headers:', error);
-        // Fallback headers
         return {
             'accept': '*/*',
             'country-id': config.defaultCountry.id,
@@ -67,13 +76,24 @@ const endpoints = {
             catch (error) {
                 console.log(error);
             }
-        }
+        },
+        getActiveCountries: async (req) => {
+            try {
+                const response = await axios.get(baseUrl + '/Countries/ActiveCountries', {
+                    headers: getHeaders(req)
+                });
+                return response.data.result;
+            } catch (error) {
+                console.log('Error fetching active countries:', error);
+                return [];
+            }
+        },
     },
     homepage: {
-        getHomePage: async () => {
+        getHomePage: async (req) => {
             try {
                 const response = await axios.get(baseUrl + '/Home/GetHomeLists', {
-                    headers: getHeaders()
+                    headers: getHeaders(req)
                 });
                 return response.data.result;
             }

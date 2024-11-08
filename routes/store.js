@@ -72,7 +72,8 @@ router.get('/stores/', async function (req, res, next) {
       ads,
       currentPage: page,
       totalPages,
-      currentCategoryId: categoryId
+      currentCategoryId: categoryId,
+      showCouponModal: false,
     });
 
   } catch (error) {

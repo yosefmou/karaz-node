@@ -3,42 +3,156 @@
 
 <%- include('head') %>
 
-<body id="app" class="block font-sans">
-  <div class="background-images">
-  </div>
-  <div class="main">
-    <!--start hero-->
-    <div class="pt-32 hero">
-      <!--header component-->
-      <%- include('navigation') %>
-      <!--end header component-->
-      <!--banner component-->
-      <div class="flex relative w-full">
-        <img src="/images/pexels-antonio-sokic-3839432 1.svg" class="w-full short-banner-img">
-        <div class="absolute overlay-short-banner"></div>
-        <p class="absolute top-1/2 left-1/2 bg-clip-text -translate-x-1/2 -translate-y-1/2">
-          <span class="font-sans text-5xl font-bold text-center text-white uppercase md:text-9xl">Daily Deals</span>
-        </p>
+  <body id="app" class="block font-sans">
+    <div class="background-images"></div>
+    <div class="mb-24 main">
+      <!--start hero-->
+      <div class="pt-32 w-full">
+        <%- include('navigation') %>
+          <div class="flex relative w-full h-96">
+            <img src="<%= pageImage %>" class="w-full short-banner-img">
+            <div class="absolute overlay-short-banner"></div>
+            <p class="absolute top-1/2 left-1/2 text-center bg-clip-text -translate-x-1/2 -translate-y-1/2">
+              <span class="font-sans text-5xl font-bold text-center text-white uppercase md:text-9xl">Daily Deals</span>
+            </p>
+          </div>
       </div>
-      <!--end banner component-->
-    </div>
-    <!--end hero-->
+      <!--end hero-->
 
-    <!--start main-->
-    <div class="container mx-auto my-0">
-      <!--store details logo background-->
-      <div class="absolute -z-10">
-        <img src="./storelogo.svg">
+      <!--start main-->
+      <div class="container mx-auto my-0">
+        <!--Top Picks-->
+        <div class="flex relative flex-row flex-wrap justify-center items-center mt-16 w-full">
+          <h1
+            class="flex flex-col justify-center items-center w-full font-sans text-2xl font-normal uppercase title sm:text-5xl">
+            Top Picks
+          </h1>
+          <!--deals slider-->
+          <div class="swipe-slide-container swiper">
+            <div class="deals_swiper">
+              <div class="card-wrapper swiper-wrapper">
+                <% topPicks.forEach(element=> { %>
+                  <div class="drop-shadow-lg card swiper-slide" offer-id="<%= element.id %>">
+                    <div class="relative card_image">
+                      <img src="<%= element.image %>" alt="" class="w-full rounded-t-lg cardimg">
+                      <img src="<%= element.logo %>"
+                        class="flex absolute top-1 right-1 z-10 justify-center items-center mt-2 mr-2 w-6 h-6">
+                      <% if (element.hasSaleTag) { %>
+                        <span
+                          class="absolute z-10 flex items-center justify-center px-3 py-[1px] mt-2 ml-2 font-sans text-xs text-white bg-[#E74040] rounded-sm top-1 left-1">
+                          Sale
+                        </span>
+                        <% } %>
+                    </div>
+                    <div
+                      class="flex flex-row flex-wrap justify-between items-center w-full text-black bg-white rounded-b-lg">
+                      <div class="flex flex-col items-start justify-start w-full px-4 py-4 h-[150px]">
+                        <p class="pb-2 font-sans text-sm font-bold text-k-red">
+                          <%= element.storeName %>
+                        </p>
+                        <p class="pb-[5px] font-sans text-sm font-bold">
+                          <%= element.name %>
+                        </p>
+                        <p class="font-sans text-sm font-light">
+                          <%= element.description %>
+                        </p>
+                      </div>
+                      <div class="flex items-center px-4 pb-6 w-full">
+                        <a class="left-0 text-sm font-semibold border-[2px] rounded-lg w-28 text-k-red border-k-red h-9 leading-8 text-center"
+                          href="<%= element.link %>">Learn More</a>
+                        <div class="ml-auto">
+                          <p class="text-xs font-light text-gray-400 line-through text-end">
+                            <%= element.currency %>
+                              <%= element.oldPrice %>
+                          </p>
+                          <p class="text-lg font-bold text-green-600">
+                            <%= element.currency %>
+                              <%= element.offerPrice %>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <% }); %>
+              </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination3"></div>
+          </div>
+          <!--slider controls-->
+          <div class="!hidden swiper-button-prev swiper-btn lg:!flex"></div>
+          <div class="!hidden swiper-button-next swiper-btn lg:!flex"></div>
+        </div>
+        <!--end top picks-->
+
+        <!--All Deals-->
+        <div class="flex relative flex-row flex-wrap justify-center items-center mt-24 w-full">
+          <div class="flex flex-row flex-wrap gap-8 justify-center items-center px-4 w-full max-w-7xl">
+            <% offers.forEach(element=> { %>
+              <div class="flex flex-col w-[391px] drop-shadow-lg card">
+                <div class="relative card_image">
+                  <img src="<%= element.image %>" alt="" class="w-full rounded-t-lg cardimg">
+                  <img src="<%= element.logo %>"
+                    class="flex absolute top-1 right-1 z-10 justify-center items-center mt-2 mr-2 w-6 h-6">
+                  <% if (element.hasSaleTag) { %>
+                    <span
+                      class="absolute z-10 flex items-center justify-center px-3 py-[1px] mt-2 ml-2 font-sans text-xs text-white bg-[#E74040] rounded-sm top-1 left-1">
+                      Sale
+                    </span>
+                    <% } %>
+                </div>
+                <div
+                  class="flex flex-row flex-wrap justify-between items-center w-full text-black bg-white rounded-b-lg">
+                  <div class="flex flex-col items-start justify-start w-full px-4 py-4 h-[150px]">
+                    <p class="pb-2 font-sans text-sm font-bold text-k-red">
+                      <%= element.storeName %>
+                    </p>
+                    <p class="pb-[5px] font-sans text-sm font-bold">
+                      <%= element.name %>
+                    </p>
+                    <p class="font-sans text-sm font-light">
+                      <%= element.description %>
+                    </p>
+                  </div>
+                  <div class="flex items-center px-4 pb-6 w-full">
+                    <a class="left-0 text-sm font-semibold border-[2px] rounded-lg w-28 text-k-red border-k-red h-9 leading-8 text-center"
+                      href="<%= element.link %>">Learn More</a>
+                    <div class="ml-auto">
+                      <p class="text-xs font-light text-gray-400 line-through text-end">
+                        <%= element.currency %>
+                          <%= element.oldPrice %>
+                      </p>
+                      <p class="text-lg font-bold text-green-600">
+                        <%= element.currency %>
+                          <%= element.offerPrice %>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <% }); %>
+          </div>
+        </div>
+        <!--end all deals-->
+
+        <!--ads image-->
+        <div class="flex flex-row justify-center items-center mt-16 h-[4.5rem] lg:h-72">
+          <% if (ads && ads.length> 0) { %>
+            <% ads.forEach(element=> { %>
+              <% if (element.type==='double' ) { %>
+                <div class="flex flex-col justify-between items-center pr-1 w-1/2">
+                  <img src="<%= element.image %>" alt="" class="object-cover w-full h-[4.5rem] lg:h-72">
+                </div>
+                <% } %>
+                  <% }); %>
+                    <% } %>
+        </div>
+        <!--end ads image-->
       </div>
-      <!--end store details logo background-->
-      <!--start mais store details-->
-
     </div>
-  </div>
-  <!--end main-->
+    <!--end main-->
 
-  <%- include('footer') %>
-  <%- include('scripts') %>
-</body>
+    <%- include('footer') %>
+      <%- include('scripts') %>
+  </body>
 
 </html>

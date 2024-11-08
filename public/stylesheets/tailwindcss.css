@@ -1276,6 +1276,10 @@ html {
   margin-top: 0.5rem;
 }
 
+.mt-24 {
+  margin-top: 6rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -1452,6 +1456,10 @@ html {
   width: 24rem;
 }
 
+.w-\[391px\] {
+  width: 391px;
+}
+
 .w-\[50px\] {
   width: 50px;
 }
@@ -1475,6 +1483,10 @@ html {
 
 .min-w-\[70px\] {
   min-width: 70px;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
 }
 
 .max-w-fit {

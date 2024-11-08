@@ -10,5 +10,7 @@
       <%= pageTitle %>
     </title>
     <script src="/javascripts/userSettings.js"></script>
-    <script src="/javascripts/couponModal.js"></script>
+    <% if (typeof showCouponModal !== 'undefined' && showCouponModal) { %>
+      <script src="/javascripts/couponModal.js"></script>
+    <% } %>
   </head>

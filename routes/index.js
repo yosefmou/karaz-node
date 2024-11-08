@@ -15,7 +15,8 @@ router.get('/', async function (req, res, next) {
       topOffers: formatOffers(homepage.topOffers),
       topStores: formatStores(homepage.topStores),
       topCoupons: formatCoupons(homepage.topCoupons),
-      ads: homepage.ads
+      ads: homepage.ads,
+      showCouponModal: true,
     });
   } catch (error) {
     console.log(error);

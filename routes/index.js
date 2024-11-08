@@ -7,14 +7,10 @@ var serverSettings = require('../utils/serverSettings');
 router.get('/', async function (req, res, next) {
   try {
     const pageTitle = 'Karaz - Home';
-    const settings = serverSettings.getCurrentSettings(req);
     const homepage = await api.homepage.getHomePage(req);
-    const countries = await api.general.getActiveCountries(req);
 
     res.render('index', {
       pageTitle,
-      countries,
-      userSettings: settings,
       sliders: homepage.images,
       topOffers: formatOffers(homepage.topOffers),
       topStores: formatStores(homepage.topStores),
@@ -23,6 +19,7 @@ router.get('/', async function (req, res, next) {
     });
   } catch (error) {
     console.log(error);
+    next(error);
   }
 });
 

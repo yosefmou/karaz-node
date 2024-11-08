@@ -8,12 +8,12 @@
         </div>
         <div class="main">
             <!--start hero-->
-            <div class="w-full pt-32">
+            <div class="pt-32 w-full">
                 <%- include('navigation') %>
-                    <div class="relative flex w-full h-96">
-                        <img src="/images/storesHero.svg" class="w-full short-banner-img ">
+                    <div class="flex relative w-full h-96">
+                        <img src="<%= pageImage %>" class="w-full short-banner-img">
                         <div class="absolute overlay-short-banner"></div>
-                        <p class="absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 bg-clip-text">
+                        <p class="absolute top-1/2 left-1/2 bg-clip-text -translate-x-1/2 -translate-y-1/2">
                             <span
                                 class="font-sans text-5xl font-bold text-center text-white uppercase md:text-9xl">Stores</span>
                         </p>
@@ -22,81 +22,109 @@
             <!--end hero-->
 
             <!--start main-->
-            <div class="container mx-auto my-0">
-                <div
-                    class="flex flex-wrap items-center justify-between w-full px-2 py-8 font-sans font-normal md:px-14">
+            <div class="container mx-auto my-0 mb-12">
+                <div class="flex flex-wrap justify-center items-center px-2 py-8 w-full font-sans font-normal md:px-14">
 
-                    <div
-                        class="relative flex flex-row flex-wrap items-center justify-center max-w-[1600px] w-full m-auto cat_swiper">
-                        <div class="swipe-slide-container-cat swiper">
-                            <div class="swipe-slide-content category_swiper">
-                                <div class="card-wrapper swiper-wrapper">
-                                    <% categories.forEach(element=> { %>
-                                        <a href="?page=1&category=<%= element.category_id %>"
-                                            class="flex flex-row flex-wrap justify-center cursor-pointer drop-shadow-lg swiper-slide"
-                                            cat-id="<%= element.category_id %>">
-                                            <img src="<%= element.category_image %>"
-                                                class="flex w-full rounded-full drop-shadow-lg">
-                                            <p class="flex justify-center w-full pt-4 text-gray-600">
-                                                <%= element.category_title %>
-                                            </p>
-                                        </a>
+                    <div class="flex relative flex-row flex-wrap justify-center items-center px-10 m-auto w-auto cat_swiper">
+                        <div class="swipe-slide-container-stores swiper">
+                            <div class="category_swiper">
+                                <div class="swiper-wrapper">
+                                    <% categories.forEach(category => { %>
+                                        <div class="swiper-slide">
+                                            <a href="<%= currentCategoryId === category.id ? '/store/stores' : `?categoryId=${category.id}` %>"
+                                               class="flex flex-col items-center cursor-pointer <%= currentCategoryId === category.id ? 'category-selected' : '' %>"
+                                               cat-id="<%= category.id %>">
+                                                <div class="relative w-20 h-20 rounded-full overflow-hidden 
+                                                  <%= currentCategoryId === category.id ? 'ring-2 ring-k-red ring-offset-2' : '' %>">
+                                                    <img src="<%= category.image %>"
+                                                         class="object-cover w-full h-full"
+                                                         alt="<%= category.name %>">
+                                                    <% if (currentCategoryId === category.id) { %>
+                                                        <div class="absolute inset-0 bg-opacity-20 bg-k-red"></div>
+                                                    <% } %>
+                                                </div>
+                                                <p class="mt-4 lg:text-base text-sm text-center <%= currentCategoryId === category.id ? 'text-k-red font-semibold' : 'text-gray-600' %>">
+                                                    <%= category.name %>
+                                                </p>
+                                            </a>
+                                        </div>
                                     <% }); %>
                                 </div>
                             </div>
                         </div>
-                        <!--coupon slider controls-->
-                        <div class="swiper-button-prev prev-cat swiper-btn"></div>
-                        <div class="swiper-button-next next-cat swiper-btn"></div>
+                        <div class="absolute left-0 top-1/2 -translate-y-1/2 swiper-button-prev prev-cat swiper-btn"></div>
+                        <div class="absolute right-0 top-1/2 -translate-y-1/2 swiper-button-next next-cat swiper-btn"></div>
                     </div>
 
-                    <div class="flex flex-row flex-wrap items-center justify-center w-full gap-5 pt-20">
-                        <% stores.forEach(element=> { %>
-                            <div class="flex flex-col drop-shadow-lg card w-80">
-                                <div class="relative card_image">
-                                    <img src="<%= element.store_image %>" alt="" class="w-full rounded-t-xl cardimg">
-                                    <img src="<%= element.store_image %>"
-                                        class="absolute left-0 right-0 z-10 flex items-center justify-center m-auto bg-white rounded-full shadow-xl -bottom-7 brand-logo-store">
-                                </div>
-                                <div
-                                    class="flex flex-row flex-wrap items-center justify-between w-full text-black bg-white rounded-b-xl">
-                                    <div class="flex flex-col items-center w-full px-4 pt-8 pb-2 h-[170px]">
-                                        <p class="pb-2 font-sans text-sm font-bold">
-                                            <%= element.store_title %>
+                    <div class="flex flex-row flex-wrap gap-5 justify-center items-center mt-12 w-full">
+                        <% if (stores && stores.length > 0) { %>
+                            <% stores.forEach(store => { %>
+                                <div class="flex flex-col w-80 drop-shadow-lg card">
+                                    <div class="relative card_image">
+                                      <img src="<%= store.image %>" alt="" class="w-full rounded-t-xl cardimg">
+                                      <img src="<%= store.logo %>"
+                                        class="flex absolute right-0 left-0 -bottom-7 z-10 justify-center items-center m-auto bg-white rounded-full shadow-xl brand-logo-store">
+                                    </div>
+                                    <div
+                                      class="flex flex-col justify-between items-center w-full h-44 text-black bg-white rounded-b-xl">
+                                      <div class="flex flex-col items-center px-4 pt-8 w-full">
+                                        <p class="pt-4 font-sans text-sm font-bold">
+                                          <%= store.name %>
                                         </p>
                                         <p class="font-sans text-sm font-light text-center">
-                                            <%= element.store_description %>
+                                          <%= store.description %>
                                         </p>
-                                    </div>
-                                    <div class="flex items-center w-full p-2 pb-6">
-                                        <a href="/store/details/<%= element.store_id %>"
-                                            class="w-full h-10 m-auto text-sm font-medium leading-9 text-center text-white rounded-lg bg-k-red">Details</a>
+                                      </div>
+                                      <div class="flex items-center px-6 pt-4 pb-6 w-full">
+                                        <a href="/store/details/<%= store.id %>"
+                                          class="m-auto w-full h-10 text-sm font-medium leading-9 text-center text-white rounded-lg bg-k-red">Details</a>
+                                      </div>
                                     </div>
                                 </div>
-                            </div>
+                                
                             <% }); %>
-                        <span id="page-numbers" class="flex flex-row items-center justify-center w-full mb-6">
-                            <% for (let page=1; page <=totalPages; page++) { %>
-                                <% if (page==currentPage) { %>
-                                    <a href="?page=<%= page %>&category=<%= currentCategory %>" data-page="<%= page %>"
-                                        class="flex items-center justify-center p-2 m-2 text-white bg-k-red w-7 h-7">
-                                        <%= page %>
-                                    </a>
-                                <% } else { %>
-                                    <a href="?page=<%= page %>&category=<%= currentCategory %>" data-page="<%= page %>" class="text-[#9e0c26] border-[#9e0c26] border-2 p-2 w-7 h-7 flex items-center justify-center m-2">
-                                        <%= page %>
-                                    </a>
-                                <% } %>
+                        <% } else { %>
+                            <div class="flex flex-col justify-start items-center min-h-[400px] w-full">
+                                <svg class="mb-4 w-20 h-20 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                </svg>
+                                <h2 class="mb-2 text-2xl font-bold text-gray-600">No Stores Found</h2>
+                                <p class="p-2 mb-6 text-center text-gray-500">There are no stores available in this category at the moment.</p>
+                                <a href="/store/stores" class="px-6 py-2 text-white rounded-lg transition-colors bg-k-red hover:bg-opacity-90">
+                                    View All Stores
+                                </a>
+                            </div>
+                        <% } %>
+                    </div>
+
+                    <% if (totalPages > 1) { %>
+                        <div class="flex justify-center mt-8 mb-8 w-full">
+                            <% for(let i = 1; i <= totalPages; i++) { %>
+                                <a href="?page=<%= i %><%= currentCategoryId ? '&categoryId=' + currentCategoryId : '' %>"
+                                   class="mx-1 px-4 py-2 <%= currentPage === i ? 'bg-k-red text-white' : 'border border-k-red text-k-red' %> rounded">
+                                    <%= i %>
+                                </a>
                             <% } %>
-                        </span>
+                        </div>
+                    <% } %>
+
+                    <div class="flex flex-row justify-center w-full items-center mt-16 h-[4.5rem] lg:h-72">
+                        <% if (ads.length > 0) { %>
+                          <% ads.forEach(element=> { %>
+                            <% if (element.type === 'double') { %>
+                            <div class="flex flex-col justify-between items-center pr-1 w-1/2">
+                              <img src="<%= element.image %>" alt="" class="object-cover w-full h-[4.5rem] lg:h-72">
+                            </div>
+                            <% } %>
+                          <% }); %>
+                        <% } %>
                     </div>
                 </div>
             </div>
         </div>
-        <!--end main-->
 
         <%- include('footer') %>
-            <%- include('scripts') %>
+        <%- include('scripts') %>
     </body>
 
 </html>

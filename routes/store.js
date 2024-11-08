@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var api = require('../api/client');
+var { formatStores } = require('../utils/formatters');
 
 router.get('/details/:id', async function (req, res, next) {
   try {
@@ -15,65 +16,68 @@ router.get('/details/:id', async function (req, res, next) {
     const storeFeaturers = details.items[0].store.store_features;
     const pageTitle = 'Karaz - ' + storeInfo.store_title;
 
-    console.log(storeFeaturers)
-    console.log(storeCoupons);
-    res.render('storeDetails', { pageTitle: pageTitle, storeInfo: storeInfo, storeCoupons: storeCoupons, storeFeaturers: storeFeaturers });
+    res.render('storeDetails', { 
+      pageTitle,
+      storeInfo,
+      storeCoupons,
+      storeFeaturers
+    });
   } catch (error) {
     console.log(error);
+    next(error);
   }
 });
 
 router.get('/stores/', async function (req, res, next) {
   try {
-    const category = req.query.category || null;
+    const page = parseInt(req.query.page) || 1;
+    const categoryId = parseInt(req.query.categoryId) || null;
+    const itemsPerPage = 12;
 
-    if (category) {
-      const currentPage = req.query.page || 1;
-      const stores = await api.store.getStoresByCategory(currentPage, category);
-      const categories = await api.general.getCategories();
+    // Get all categories regardless of filter
+    const allCategoriesData = await api.store.getStores();
+    const categories = allCategoriesData?.categories || [];
+    const pageImage = allCategoriesData?.imags[0].image || '';
+    let stores;
+    let ads;
 
-      const maxLength = 180;
-      stores.items.forEach(store => {
-        if (store.store_description.length > maxLength) {
-          store.store_description = store.store_description.substring(0, maxLength) + '...';
-        }
-      });
-
-      const pageTitle = 'Karaz - Stores';
-      res.render('stores', {
-        pageTitle: pageTitle,
-        stores: stores.items,
-        categories: categories,
-        totalPages: stores.total_pages,
-        currentPage: currentPage,
-        currentCategory: category
-      });
+    if (categoryId) {
+      const categoryData = await api.store.getStoresByCategory(categoryId);
+      stores = categoryData?.stores || [];
+      ads = categoryData?.ads || allCategoriesData?.ads;
+    } else {
+      // Get all stores
+      stores = allCategoriesData?.stores || [];
+      ads = allCategoriesData?.ads;
+    }
+    
+    if (!stores) {
+      res.status(404).send('Stores not found');
       return;
     }
 
-
-    const currentPage = req.query.page || 1;
-    const stores = await api.store.getStores(currentPage);
-    const categories = await api.general.getCategories();
-
-    const maxLength = 180;
-    stores.items.forEach(store => {
-      if (store.store_description.length > maxLength) {
-        store.store_description = store.store_description.substring(0, maxLength) + '...';
-      }
-    });
+    // Calculate pagination
+    const totalStores = stores.length;
+    const totalPages = Math.ceil(totalStores / itemsPerPage);
+    const startIndex = (page - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    const paginatedStores = stores.slice(startIndex, endIndex);
 
     const pageTitle = 'Karaz - Stores';
     res.render('stores', {
-      pageTitle: pageTitle,
-      stores: stores.items,
-      categories: categories,
-      totalPages: stores.total_pages,
-      currentPage: currentPage,
-      currentCategory: null
+      pageTitle,
+      stores: paginatedStores,
+      categories,
+      pageImage,
+      ads,
+      currentPage: page,
+      totalPages,
+      currentCategoryId: categoryId
     });
+
   } catch (error) {
-    console.log(error);
+    console.error('Error in /stores route:', error);
+    next(error);
   }
 });
 

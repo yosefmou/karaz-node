@@ -5,7 +5,7 @@
 
   <body id="app" class="block font-sans">
 
-    <div id="couponModal" class="hidden fixed inset-0 z-50">
+    <div id="couponModal" class="hidden fixed inset-0 z-[9999]">
       <div class="absolute inset-0 bg-black/50"></div>
       <div class="relative top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-md bg-white rounded-lg shadow-xl">
         <div class="p-6">
@@ -17,12 +17,12 @@
 
           <!-- Success Message Section -->
           <div class="flex flex-col items-center mb-6">
-            <svg width="161" height="161" viewBox="0 0 161 161" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="100" height="100" viewBox="0 0 161 161" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="4" y="4" width="153" height="153" rx="76.5" fill="#D1FADF"/>
               <rect x="4" y="4" width="153" height="153" rx="76.5" stroke="#ECFDF3" stroke-width="8"/>
               <path d="M62.3132 80.5002L74.4382 92.6252L98.6882 68.3752M120.917 80.5002C120.917 102.822 102.822 120.917 80.5007 120.917C58.1791 120.917 40.084 102.822 40.084 80.5002C40.084 58.1787 58.1791 40.0835 80.5007 40.0835C102.822 40.0835 120.917 58.1787 120.917 80.5002Z" stroke="#039855" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>              
-            <h3 class="mt-1 mb-1 text-xl font-bold text-green-500">Code Copied Successfully!</h3>
+            <h3 class="mt-2 mb-1 text-xl font-bold text-green-500">Code Copied Successfully!</h3>
             <div id="redirectCounter" class="text-sm text-gray-600"></div>
           </div>
 
@@ -62,52 +62,30 @@
     
     <div class="mb-24 main">
       <!--start hero-->
-      <div class="pt-32 hero">
+      <div class="pt-32 w-full">
         <!--header component-->
         <%- include('navigation') %>
           <!--end header component-->
           <!--banner component-->
-          <div class="mx-auto w-full">
-            <div id="default-carousel" class="relative" data-carousel="static">
-              <!-- Carousel wrapper -->
-              <div class="overflow-hidden relative banner_sliderh">
+          <div class="mx-auto w-full h-[35vh] lg:h-[80vh]">
+            <div class="banner-swiper swiper">
+              <div class="swiper-wrapper">
                 <% sliders.forEach(element=> { %>
-                  <div class="hidden duration-500 ease" data-carousel-item>
+                  <div class="relative h-full swiper-slide">
                     <img src="<%= element.image %>"
-                      class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 banner_slider_img"
+                      class="block object-cover w-full h-full"
                       alt="...">
-                    <div class="absolute overlay"></div>
+                    <div class="absolute inset-0 overlay"></div>
                   </div>
-                  <% }); %>
+                <% }); %>
               </div>
-              <!-- Slider controls -->
-              <button type="button"
-                class="flex absolute top-0 z-30 justify-center items-center px-4 h-full cursor-pointer md:left-12 sm:left-2 group focus:outline-none"
-                data-carousel-prev>
-                <span
-                  class="inline-flex justify-center items-center w-12 h-12 sm:w-10 sm:h-10 group-focus:outline-none">
-                  <svg class="w-8 h-8 lg:w-12 lg:h-20" viewBox="0 0 49 82" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M45.3733 0C46.127 0 46.9002 0.274188 47.4787 0.80975C48.6384 1.87831 48.6384 3.62337 47.4787 4.69194L7.8236 41.2434L46.9002 77.2466C48.0599 78.3151 48.0599 80.0602 46.9002 81.1287C45.7404 82.1973 43.8464 82.1973 42.6866 81.1287L1.5046 43.1858C0.34482 42.1173 0.34482 40.3722 1.5046 39.3036L43.2651 0.80975C43.8436 0.27675 44.6195 0 45.3733 0Z"
-                      fill="white" fill-opacity="0.22" />
-                  </svg>
-                  <span class="hidden">Previous</span>
-                </span>
-              </button>
-              <button type="button"
-                class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer md:right-12 group focus:outline-none"
-                data-carousel-next>
-                <span class="inline-flex justify-center items-center w-12 h-12 sm:w-10 sm:h-1 group-focus:outline-none">
-                  <svg width="55" height="82" class="w-8 h-8 lg:w-14 lg:h-20" viewBox="0 0 55 82" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.67561 81.1456C2.82097 81.1312 1.94509 80.8451 1.29076 80.304C-0.021061 79.2242 -0.0157624 77.4971 1.30255 76.4617L46.3782 41.0428L2.17881 4.66317C0.866982 3.58343 0.872281 1.85629 2.19059 0.820847C3.50891 -0.214594 5.65654 -0.178424 6.96836 0.901314L53.5491 39.2411C54.8609 40.3208 54.8556 42.0479 53.5373 43.0834L6.06852 80.3845C5.41095 80.9009 4.53025 81.16 3.67561 81.1456Z"
-                      fill="white" fill-opacity="0.22" />
-                  </svg>
-                  <span class="hidden">Next</span>
-                </span>
-              </button>
+              
+              <!-- Add Navigation -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
             </div>
           </div>
           <!--end banner component-->
@@ -167,16 +145,16 @@
             <div class="swiper-pagination swiper-pagination1"></div>
           </div>
           <!--coupon slider controls-->
-          <div class="swiper-button-prev swiper-btn"></div>
-          <div class="swiper-button-next swiper-btn"></div>
+          <div class="!hidden swiper-button-prev swiper-btn lg:!flex"></div>
+          <div class="!hidden swiper-button-next swiper-btn lg:!flex"></div>
         </div>
         <!--end top coupon-->
         <!--single ads image-->
-        <div class="flex flex-row justify-center items-center mt-16 h-72 ads_img">
+        <div class="flex flex-row justify-center items-center mt-16 h-[4.5rem] lg:h-72 ads_img">
           <% if (ads.length > 0) { %>
             <% ads.forEach(element=> { %>
               <% if (element.type === 'single') { %>
-                <img src="<%= element.image %>" alt="" class="object-cover w-full h-72">
+                <img src="<%= element.image %>" alt="" class="object-cover w-full h-[4.5rem] lg:h-72">
               <% } %>
             <% }); %>
           <% } %>
@@ -221,19 +199,19 @@
             <div class="swiper-pagination swiper-pagination2"></div>
           </div>
           <!--coupon slider controls-->
-          <div class="swiper-button-prev swiper-btn"></div>
-          <div class="swiper-button-next swiper-btn"></div>
+          <div class="!hidden swiper-button-prev swiper-btn lg:!flex"></div>
+          <div class="!hidden swiper-button-next swiper-btn lg:!flex"></div>
 
         </div>
         <!--end top stores-->
         
         <!-- Double ads image-->
-        <div class="flex flex-row justify-center items-center mt-16 h-72">
+        <div class="flex flex-row justify-center items-center mt-16 h-[4.5rem] lg:h-72">
           <% if (ads.length > 0) { %>
             <% ads.forEach(element=> { %>
               <% if (element.type === 'double') { %>
               <div class="flex flex-col justify-between items-center pr-1 w-1/2">
-                <img src="<%= element.image %>" alt="" class="object-cover w-full h-72">
+                <img src="<%= element.image %>" alt="" class="object-cover w-full h-[4.5rem] lg:h-72">
               </div>
               <% } %>
             <% }); %>
@@ -299,8 +277,8 @@
             <div class="swiper-pagination swiper-pagination3"></div>
           </div>
           <!--coupon slider controls-->
-          <div class="swiper-button-prev swiper-btn"></div>
-          <div class="swiper-button-next swiper-btn"></div>
+          <div class="!hidden swiper-button-prev swiper-btn lg:!flex"></div>
+          <div class="!hidden swiper-button-next swiper-btn lg:!flex"></div>
 
         </div>
         <!--end top deals-->

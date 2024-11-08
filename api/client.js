@@ -15,7 +15,7 @@ const getHeaders = (req) => {
                 'language': settings?.language || config.defaultLanguage
             };
         }
-        
+
         // Then check browser localStorage if available
         if (typeof window !== 'undefined') {
             const settings = JSON.parse(localStorage.getItem('userSettings') || '{}');
@@ -25,7 +25,7 @@ const getHeaders = (req) => {
                 'language': settings?.language || config.defaultLanguage
             };
         }
-        
+
         // Fallback to defaults
         return {
             'accept': '*/*',
@@ -52,16 +52,7 @@ const endpoints = {
                     { name: 'Advertise With Us', url: '/advertise-with-us' },
                     { name: 'Contact', url: '/contact-us' },
                     { name: 'blog', url: '/blog' },
-                    {
-                        name: 'Categories', url: '/categories', subCategories: [
-                            { name: 'Home', url: '/' },
-                            { name: 'Daily Deals', url: '/daily-deals' },
-                            { name: 'Advertise With Us', url: '/advertise-with-us' },
-                            { name: 'Contact', url: '/contact-us' },
-                            { name: 'blog', url: '/blog' },
-                            { name: 'Categories', url: '/categories' },
-                        ]
-                    },
+                    {name: 'Categories', url: '/categories'},
                 ],
             }
         },
@@ -104,28 +95,28 @@ const endpoints = {
         },
     },
     store: {
-        getStores: async (id) => {
+        getStores: async () => {
             try {
-                const response = await axios.get(baseUrl + `/stores/stores?page=${id}`, {
+                const response = await axios.get(baseUrl + `/Stores/GetStoresLists`, {
                     headers: getHeaders()
                 });
-                return response.data.data;
+                return response.data.result;
             }
             catch (error) {
-                console.log(error);
+                console.error('Error fetching stores:', error);
+                return null;
             }
         },
-        getStoresByCategory: async (id, category) => {
+        getStoresByCategory: async (categoryId) => {
             try {
-                const data = new FormData();
-                data.append('category_id', category);
-
-                const response = await axios.post(baseUrl + `/stores/catStores?page=${id}`, {
-                    headers: getHeaders(),
+                const response = await axios.get(
+                    baseUrl + `/Categories/GetCategoryStoresByCountry?categoryId=${categoryId}`, {
+                    headers: getHeaders()
                 });
-                return response.data.data;
+                return response.data.result;
             } catch (error) {
-                console.log(error);
+                console.error('Error fetching stores by category:', error);
+                return null;
             }
         },
         getStoreDetails: async (id) => {

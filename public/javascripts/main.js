@@ -1,4 +1,3 @@
-
 // onscroll event change logo size
 const scrollThreshold = 100; // Adjust this threshold as needed
 var logoclass = document.getElementsByClassName("logo")[0];
@@ -24,12 +23,6 @@ hamburger.addEventListener('click', function () {
 
 });
 
-// //sub catogory mobile menu
-// let back_btn = document.querySelector('.back_btn');
-// back_btn.addEventListener('click', function () {
-//   document.querySelector(".toggle-input").checked = false;
-// });
-
 // search bar
 let search_btn = document.querySelector('.search-icon');
 let search_content = document.getElementById('search-content');
@@ -40,6 +33,28 @@ search_btn.addEventListener('click', function () {
     search_content.style.display = "none";
   }
 });
+
+// Banner slider
+var bannerSwiper = new Swiper(".banner-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  loop: true,
+  effect: "fade", // Optional: adds fade transition between slides
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".banner-swiper .swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ".banner-swiper .swiper-button-next",
+    prevEl: ".banner-swiper .swiper-button-prev",
+  },
+});
+
 // top coupons slider
 var couponSwiper = new Swiper(".coupon_swiper", {
   spaceBetween: 10,
@@ -79,7 +94,7 @@ var couponSwiper = new Swiper(".coupon_swiper", {
 var storesSwiper = new Swiper(".stores_swiper", {
   slidesPerView: 1,
   spaceBetween: 10,
-  // loop: true,
+  loop: true,
   autoplay: {
     delay: 5000,
   },
@@ -116,7 +131,7 @@ var storesSwiper = new Swiper(".stores_swiper", {
 var dealsSwiper = new Swiper(".deals_swiper", {
   slidesPerView: 1,
   spaceBetween: 10,
-  // loop: true,
+  loop: true,
   autoplay: {
     delay: 5000,
   },
@@ -149,33 +164,37 @@ var dealsSwiper = new Swiper(".deals_swiper", {
   },
 });
 
-// categorgy slider
+// category slider
 var categorySwiper = new Swiper(".category_swiper", {
-  slidesPerView: 1,
+  slidesPerView: 3,
   spaceBetween: 10,
-  // loop: true,
   autoplay: false,
+  centerInsufficientSlides: true,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".next-cat",
+    prevEl: ".prev-cat",
   },
-
   breakpoints: {
-    0: {
-      slidesPerView: 2,
+    320: {
+      slidesPerView: 3,
+      spaceBetween: 8,
     },
-    // when window width is >= 480px
     480: {
-      slidesPerView: 4
+      slidesPerView: 4,
+      spaceBetween: 12,
     },
     768: {
+      slidesPerView: 5,
+      spaceBetween: 16,
+    },
+    1024: {
       slidesPerView: 6,
-    },
-    1200: {
-      slidesPerView: 9,
-    },
-    1400: {
-      slidesPerView: 11,
+      spaceBetween: 20,
     }
   },
+  // Enable touch swiping
+  touchEventsTarget: 'container',
+  touchRatio: 1,
+  touchAngle: 45,
+  grabCursor: true,
 });

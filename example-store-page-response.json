@@ -1,0 +1,3222 @@
+{
+  "result": {
+    "imags": [
+      {
+        "image": "http://165.232.76.152:8000/Karaz-imgs/system/storesbg.png",
+        "link": null
+      }
+    ],
+    "categories": [
+      {
+        "id": 1,
+        "name": "Electronics",
+        "description": "All electronic gadgets and accessories",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/categories/electronics/electronics.png\r\n",
+        "subCategories": [
+          {
+            "id": 14,
+            "name": "Mobile Phones & Tablets",
+            "description": "Smartphones, tablets, and accessories",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/electronics/electronics.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 15,
+            "name": "Computers & Accessories",
+            "description": "Laptops, desktops, and computer accessories",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/electronics/electronics.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 16,
+            "name": "Cameras & Photography",
+            "description": "Cameras, lenses, and photography gear",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/electronics/electronics.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 17,
+            "name": "Home Appliances",
+            "description": "Refrigerators, washing machines, and other home appliances",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/electronics/electronics.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 18,
+            "name": "TVs & Audio",
+            "description": "Televisions, sound systems, and audio equipment",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/electronics/electronics.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 19,
+            "name": "Wearable Tech",
+            "description": "Smartwatches, fitness trackers, and wearable technology",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/electronics/electronics.png\r\n",
+            "subCategories": null
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Fashion",
+        "description": "Clothing and accessories for men, women, and kids",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/categories/fashion/fashion.png\r\n",
+        "subCategories": [
+          {
+            "id": 20,
+            "name": "Men’s Fashion",
+            "description": "Clothing and accessories for men",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/fashion/fashion.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 21,
+            "name": "Women’s Fashion",
+            "description": "Clothing and accessories for women",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/fashion/fashion.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 22,
+            "name": "Kids’ Fashion",
+            "description": "Clothing and accessories for kids",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/fashion/fashion.png\r\n",
+            "subCategories": null
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Beauty & Personal Care",
+        "description": "Cosmetics, skincare, and personal grooming",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/categories/beauty/beauty.png\r\n",
+        "subCategories": [
+          {
+            "id": 23,
+            "name": "Makeup",
+            "description": "Face, eye, and lip makeup products",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/beauty/beauty.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 24,
+            "name": "Skincare",
+            "description": "Moisturizers, cleansers, and treatments",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/beauty/beauty.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 25,
+            "name": "Hair Care",
+            "description": "Shampoos, conditioners, and styling tools",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/beauty/beauty.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 26,
+            "name": "Fragrances",
+            "description": "Perfumes and colognes",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/beauty/beauty.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 27,
+            "name": "Grooming Tools",
+            "description": "Electric shavers, trimmers, and grooming kits",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/beauty/beauty.png\r\n",
+            "subCategories": null
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Home & Kitchen",
+        "description": "Furniture, appliances, and home decor",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/categories/home_kitchen/home_kitchen.png\r\n",
+        "subCategories": [
+          {
+            "id": 28,
+            "name": "Furniture",
+            "description": "Living room, bedroom, and office furniture",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/home_kitchen/home_kitchen.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 29,
+            "name": "Kitchen & Dining",
+            "description": "Cookware, dinnerware, and small kitchen appliances",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/home_kitchen/home_kitchen.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 30,
+            "name": "Bedding",
+            "description": "Bedsheets, comforters, and pillows",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/home_kitchen/home_kitchen.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 31,
+            "name": "Home Décor",
+            "description": "Wall art, rugs, and home décor",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/home_kitchen/home_kitchen.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 32,
+            "name": "Home Improvement",
+            "description": "Lighting, tools, and bathroom fixtures",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/home_kitchen/home_kitchen.png\r\n",
+            "subCategories": null
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Sports & Outdoors",
+        "description": "Sports equipment and outdoor gear",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/categories/sports_outdoors/sports_outdoors.png\r\n",
+        "subCategories": [
+          {
+            "id": 33,
+            "name": "Fitness Equipment",
+            "description": "Treadmills, weights, and fitness accessories",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/sports_outdoors/sports_outdoors.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 34,
+            "name": "Outdoor Gear",
+            "description": "Camping and trekking gear",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/sports_outdoors/sports_outdoors.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 35,
+            "name": "Cycling",
+            "description": "Bicycles and cycling accessories",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/sports_outdoors/sports_outdoors.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 36,
+            "name": "Water Sports",
+            "description": "Swimwear and water sports equipment",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/sports_outdoors/sports_outdoors.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 37,
+            "name": "Team Sports",
+            "description": "Football, basketball, and tennis equipment",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/sports_outdoors/sports_outdoors.png\r\n",
+            "subCategories": null
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Toys, Kids & Baby",
+        "description": "Toys and essentials for kids and babies",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/categories/toys_kids_baby/toys_kids_baby.png\r\n",
+        "subCategories": [
+          {
+            "id": 38,
+            "name": "Toys",
+            "description": "Educational toys, dolls, and games",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/toys_kids_baby/toys_kids_baby.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 39,
+            "name": "Baby Essentials",
+            "description": "Diapers, strollers, and baby care products",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/toys_kids_baby/toys_kids_baby.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 40,
+            "name": "School Supplies",
+            "description": "Backpacks, lunch boxes, and stationery",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/toys_kids_baby/toys_kids_baby.png\r\n",
+            "subCategories": null
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Groceries",
+        "description": "Food and household items",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/categories/groceries/groceries.png\r\n",
+        "subCategories": [
+          {
+            "id": 41,
+            "name": "Fresh Food",
+            "description": "Vegetables, fruits, and dairy products",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/groceries/groceries.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 42,
+            "name": "Beverages",
+            "description": "Coffee, tea, juices, and soft drinks",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/groceries/groceries.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 43,
+            "name": "Pantry Staples",
+            "description": "Rice, pasta, sauces, and snacks",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/groceries/groceries.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 44,
+            "name": "Cleaning Supplies",
+            "description": "Detergents and household cleaning products",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/groceries/groceries.png\r\n",
+            "subCategories": null
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Health & Wellness",
+        "description": "Health products, supplements, and medical supplies",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/categories/health_wellness/health_wellness.png\r\n",
+        "subCategories": [
+          {
+            "id": 45,
+            "name": "Supplements",
+            "description": "Vitamins, minerals, and protein powders",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/health_wellness/health_wellness.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 46,
+            "name": "Medical Supplies",
+            "description": "First aid kits, face masks, and monitors",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/health_wellness/health_wellness.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 47,
+            "name": "Personal Care",
+            "description": "Oral care and hygiene products",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/health_wellness/health_wellness.png\r\n",
+            "subCategories": null
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Books & Media",
+        "description": "Books, movies, music, and other media",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/categories/books_media/books_media.png\r\n",
+        "subCategories": [
+          {
+            "id": 48,
+            "name": "Books",
+            "description": "Fiction, non-fiction, and children’s books",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/books_media/books_media.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 49,
+            "name": "Movies & TV Shows",
+            "description": "DVDs, Blu-rays, and streaming devices",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/books_media/books_media.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 50,
+            "name": "Music",
+            "description": "CDs, vinyl records, and musical instruments",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/books_media/books_media.png\r\n",
+            "subCategories": null
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Automotive",
+        "description": "Car parts and accessories",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/categories/automotive/automotive.png\r\n",
+        "subCategories": [
+          {
+            "id": 51,
+            "name": "Car Accessories",
+            "description": "Seat covers, car electronics, and air fresheners",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/automotive/automotive.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 52,
+            "name": "Car Parts",
+            "description": "Engine parts, tires, and wheels",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/automotive/automotive.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 53,
+            "name": "Motorcycle Accessories",
+            "description": "Helmets, motorcycle parts, and accessories",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/automotive/automotive.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 54,
+            "name": "Oils & Fluids",
+            "description": "Motor oils, brake fluids, and other car fluids",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/automotive/automotive.png\r\n",
+            "subCategories": null
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "name": "Pet Supplies",
+        "description": "Food and supplies for pets",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/categories/pet_supplies/pet_supplies.png\r\n",
+        "subCategories": [
+          {
+            "id": 55,
+            "name": "Pet Food",
+            "description": "Food for dogs, cats, and small pets",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/pet_supplies/pet_supplies.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 56,
+            "name": "Pet Accessories",
+            "description": "Beds, collars, and litter boxes",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/pet_supplies/pet_supplies.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 57,
+            "name": "Pet Toys",
+            "description": "Toys for pets, including chew toys and scratchers",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/pet_supplies/pet_supplies.png\r\n",
+            "subCategories": null
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "name": "Office Supplies & Stationery",
+        "description": "Office supplies and stationery",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/categories/office_supplies/office_supplies.png\r\n",
+        "subCategories": [
+          {
+            "id": 58,
+            "name": "Office Electronics",
+            "description": "Printers, scanners, and office phones",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/office_supplies/office_supplies.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 59,
+            "name": "Writing Supplies",
+            "description": "Pens, pencils, and notebooks",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/office_supplies/office_supplies.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 60,
+            "name": "Organization",
+            "description": "Filing systems and desk organizers",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/office_supplies/office_supplies.png\r\n",
+            "subCategories": null
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "name": "Gaming",
+        "description": "Gaming consoles, games, and accessories",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/categories/gaming/gaming.png\r\n",
+        "subCategories": [
+          {
+            "id": 61,
+            "name": "Gaming Consoles",
+            "description": "PlayStation, Xbox, and Nintendo consoles",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/gaming/gaming.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 62,
+            "name": "Games",
+            "description": "PlayStation, Xbox, and PC games",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/gaming/gaming.png\r\n",
+            "subCategories": null
+          },
+          {
+            "id": 63,
+            "name": "Gaming Accessories",
+            "description": "Controllers, headsets, and gaming chairs",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/categories/gaming/gaming.png\r\n",
+            "subCategories": null
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "id": 1,
+        "name": "Sharaf DG",
+        "description": "Leading electronics retailer",
+        "address": "123 Fashion St, City A",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "storeLink": "https://www.sharafdg.com",
+        "rate": 5,
+        "coupons": [
+          {
+            "storeId": 1,
+            "countryId": 50,
+            "categoryName": "Electronics",
+            "storeName": "Sharaf DG",
+            "description": "This is a description for Coupon 1",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 1",
+            "code": "73045676",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 300,
+            "rate": 5,
+            "couponId": 1,
+            "storeLink": "https://www.sharafdg.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 1,
+            "countryId": 50,
+            "categoryName": "Electronics",
+            "storeName": "Sharaf DG",
+            "description": "This is a description for Coupon 2",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 2",
+            "code": "06B929ED",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 300,
+            "rate": 5,
+            "couponId": 2,
+            "storeLink": "https://www.sharafdg.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 1,
+            "countryId": 50,
+            "categoryName": "Electronics",
+            "storeName": "Sharaf DG",
+            "description": "This is a description for Coupon 3",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 3",
+            "code": "3948506B",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 300,
+            "rate": 5,
+            "couponId": 3,
+            "storeLink": "https://www.sharafdg.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 1,
+            "countryId": 50,
+            "categoryName": "Electronics",
+            "storeName": "Sharaf DG",
+            "description": "This is a description for Coupon 4",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 4",
+            "code": "58729D63",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 300,
+            "rate": 5,
+            "couponId": 4,
+            "storeLink": "https://www.sharafdg.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 1,
+            "countryId": 50,
+            "categoryName": "Electronics",
+            "storeName": "Sharaf DG",
+            "description": "This is a description for Coupon 5",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 5",
+            "code": "3873E6A3",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 300,
+            "rate": 5,
+            "couponId": 5,
+            "storeLink": "https://www.sharafdg.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          }
+        ],
+        "features": [
+          {
+            "storeId": 1,
+            "featureId": 1,
+            "name": "Easy to use",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/1.png"
+          },
+          {
+            "storeId": 1,
+            "featureId": 2,
+            "name": "Fast delivery",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/2.png"
+          },
+          {
+            "storeId": 1,
+            "featureId": 3,
+            "name": "14 Days return",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/3.png"
+          }
+        ],
+        "socialMedia": []
+      },
+      {
+        "id": 2,
+        "name": "Extra",
+        "description": "Electronics and appliance retailer",
+        "address": "123 Fashion St, City A",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "storeLink": "https://www.extra.com",
+        "rate": 4,
+        "coupons": [
+          {
+            "storeId": 2,
+            "countryId": 50,
+            "categoryName": "TVs & Audio",
+            "storeName": "Extra",
+            "description": "This is a description for Coupon 6",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 6",
+            "code": "85808819",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 300,
+            "rate": 4,
+            "couponId": 6,
+            "storeLink": "https://www.extra.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 2,
+            "countryId": 50,
+            "categoryName": "TVs & Audio",
+            "storeName": "Extra",
+            "description": "This is a description for Coupon 7",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 7",
+            "code": "F415CEE3",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 300,
+            "rate": 4,
+            "couponId": 7,
+            "storeLink": "https://www.extra.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 2,
+            "countryId": 50,
+            "categoryName": "TVs & Audio",
+            "storeName": "Extra",
+            "description": "This is a description for Coupon 8",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 8",
+            "code": "A87A6D84",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 300,
+            "rate": 4,
+            "couponId": 8,
+            "storeLink": "https://www.extra.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 2,
+            "countryId": 50,
+            "categoryName": "TVs & Audio",
+            "storeName": "Extra",
+            "description": "This is a description for Coupon 9",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 9",
+            "code": "D960E9B7",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 300,
+            "rate": 4,
+            "couponId": 9,
+            "storeLink": "https://www.extra.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 2,
+            "countryId": 50,
+            "categoryName": "TVs & Audio",
+            "storeName": "Extra",
+            "description": "This is a description for Coupon 10",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 10",
+            "code": "9E6CE28B",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 300,
+            "rate": 4,
+            "couponId": 10,
+            "storeLink": "https://www.extra.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          }
+        ],
+        "features": [
+          {
+            "storeId": 2,
+            "featureId": 1,
+            "name": "Easy to use",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/1.png"
+          },
+          {
+            "storeId": 2,
+            "featureId": 2,
+            "name": "Fast delivery",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/2.png"
+          },
+          {
+            "storeId": 2,
+            "featureId": 3,
+            "name": "14 Days return",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/3.png"
+          }
+        ],
+        "socialMedia": []
+      },
+      {
+        "id": 3,
+        "name": "Virgin Megastore",
+        "description": "Entertainment retailer with electronics and more",
+        "address": "123 Fashion St, City A",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "storeLink": "https://www.virginmegastore.com",
+        "rate": 4,
+        "coupons": [
+          {
+            "storeId": 3,
+            "countryId": 50,
+            "categoryName": "Electronics",
+            "storeName": "Virgin Megastore",
+            "description": "This is a description for Coupon 11",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 11",
+            "code": "80D374DE",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 300,
+            "rate": 4,
+            "couponId": 11,
+            "storeLink": "https://www.virginmegastore.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 3,
+            "countryId": 50,
+            "categoryName": "Electronics",
+            "storeName": "Virgin Megastore",
+            "description": "This is a description for Coupon 12",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 12",
+            "code": "3AA4967E",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 300,
+            "rate": 4,
+            "couponId": 12,
+            "storeLink": "https://www.virginmegastore.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 3,
+            "countryId": 50,
+            "categoryName": "Electronics",
+            "storeName": "Virgin Megastore",
+            "description": "This is a description for Coupon 13",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 13",
+            "code": "901BA1A2",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 300,
+            "rate": 4,
+            "couponId": 13,
+            "storeLink": "https://www.virginmegastore.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 3,
+            "countryId": 50,
+            "categoryName": "Electronics",
+            "storeName": "Virgin Megastore",
+            "description": "This is a description for Coupon 14",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 14",
+            "code": "80965C6E",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 300,
+            "rate": 4,
+            "couponId": 14,
+            "storeLink": "https://www.virginmegastore.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 3,
+            "countryId": 50,
+            "categoryName": "Electronics",
+            "storeName": "Virgin Megastore",
+            "description": "This is a description for Coupon 15",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 15",
+            "code": "CFE1E7D2",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 300,
+            "rate": 4,
+            "couponId": 15,
+            "storeLink": "https://www.virginmegastore.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          }
+        ],
+        "features": [
+          {
+            "storeId": 3,
+            "featureId": 1,
+            "name": "Easy to use",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/1.png"
+          },
+          {
+            "storeId": 3,
+            "featureId": 2,
+            "name": "Fast delivery",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/2.png"
+          },
+          {
+            "storeId": 3,
+            "featureId": 3,
+            "name": "14 Days return",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/3.png"
+          }
+        ],
+        "socialMedia": []
+      },
+      {
+        "id": 4,
+        "name": "Jumbo Electronics",
+        "description": "Electronics and gadgets",
+        "address": "123 Fashion St, City A",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "storeLink": "https://www.jumbo.ae",
+        "rate": 4,
+        "coupons": [
+          {
+            "storeId": 4,
+            "countryId": 50,
+            "categoryName": "TVs & Audio",
+            "storeName": "Jumbo Electronics",
+            "description": "This is a description for Coupon 16",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 16",
+            "code": "4C84C81D",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 300,
+            "rate": 4,
+            "couponId": 16,
+            "storeLink": "https://www.jumbo.ae",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 4,
+            "countryId": 50,
+            "categoryName": "TVs & Audio",
+            "storeName": "Jumbo Electronics",
+            "description": "This is a description for Coupon 17",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 17",
+            "code": "65B94359",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 300,
+            "rate": 4,
+            "couponId": 17,
+            "storeLink": "https://www.jumbo.ae",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 4,
+            "countryId": 50,
+            "categoryName": "TVs & Audio",
+            "storeName": "Jumbo Electronics",
+            "description": "This is a description for Coupon 18",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 18",
+            "code": "51541169",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 300,
+            "rate": 4,
+            "couponId": 18,
+            "storeLink": "https://www.jumbo.ae",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 4,
+            "countryId": 50,
+            "categoryName": "TVs & Audio",
+            "storeName": "Jumbo Electronics",
+            "description": "This is a description for Coupon 19",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 19",
+            "code": "19BA3B0E",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 300,
+            "rate": 4,
+            "couponId": 19,
+            "storeLink": "https://www.jumbo.ae",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 4,
+            "countryId": 50,
+            "categoryName": "TVs & Audio",
+            "storeName": "Jumbo Electronics",
+            "description": "This is a description for Coupon 20",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 20",
+            "code": "C3C18AD6",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 300,
+            "rate": 4,
+            "couponId": 20,
+            "storeLink": "https://www.jumbo.ae",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          }
+        ],
+        "features": [
+          {
+            "storeId": 4,
+            "featureId": 1,
+            "name": "Easy to use",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/1.png"
+          },
+          {
+            "storeId": 4,
+            "featureId": 2,
+            "name": "Fast delivery",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/2.png"
+          },
+          {
+            "storeId": 4,
+            "featureId": 3,
+            "name": "14 Days return",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/3.png"
+          }
+        ],
+        "socialMedia": []
+      },
+      {
+        "id": 5,
+        "name": "Emax",
+        "description": "Electronics retailer with great deals",
+        "address": "123 Fashion St, City A",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "storeLink": "https://www.emaxonline.com",
+        "rate": 4,
+        "coupons": [
+          {
+            "storeId": 5,
+            "countryId": 50,
+            "categoryName": "Electronics",
+            "storeName": "Emax",
+            "description": "This is a description for Coupon 21",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 21",
+            "code": "CE459C57",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 300,
+            "rate": 4,
+            "couponId": 21,
+            "storeLink": "https://www.emaxonline.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 5,
+            "countryId": 50,
+            "categoryName": "Electronics",
+            "storeName": "Emax",
+            "description": "This is a description for Coupon 22",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 22",
+            "code": "05012558",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 300,
+            "rate": 4,
+            "couponId": 22,
+            "storeLink": "https://www.emaxonline.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 5,
+            "countryId": 50,
+            "categoryName": "Electronics",
+            "storeName": "Emax",
+            "description": "This is a description for Coupon 23",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 23",
+            "code": "DEC6A4DA",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 300,
+            "rate": 4,
+            "couponId": 23,
+            "storeLink": "https://www.emaxonline.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 5,
+            "countryId": 50,
+            "categoryName": "Electronics",
+            "storeName": "Emax",
+            "description": "This is a description for Coupon 24",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 24",
+            "code": "7C889872",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 300,
+            "rate": 4,
+            "couponId": 24,
+            "storeLink": "https://www.emaxonline.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 5,
+            "countryId": 50,
+            "categoryName": "Electronics",
+            "storeName": "Emax",
+            "description": "This is a description for Coupon 25",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 25",
+            "code": "21293D1B",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 300,
+            "rate": 4,
+            "couponId": 25,
+            "storeLink": "https://www.emaxonline.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          }
+        ],
+        "features": [
+          {
+            "storeId": 5,
+            "featureId": 1,
+            "name": "Easy to use",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/1.png"
+          },
+          {
+            "storeId": 5,
+            "featureId": 2,
+            "name": "Fast delivery",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/2.png"
+          },
+          {
+            "storeId": 5,
+            "featureId": 3,
+            "name": "14 Days return",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/3.png"
+          }
+        ],
+        "socialMedia": []
+      },
+      {
+        "id": 6,
+        "name": "H&M",
+        "description": "Global fashion retailer",
+        "address": "123 Fashion St, City A",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "storeLink": "https://www.hm.com",
+        "rate": 5,
+        "coupons": [
+          {
+            "storeId": 6,
+            "countryId": 50,
+            "categoryName": "Women’s Fashion",
+            "storeName": "H&M",
+            "description": "This is a description for Coupon 26",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 26",
+            "code": "7CD49147",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 300,
+            "rate": 5,
+            "couponId": 26,
+            "storeLink": "https://www.hm.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 6,
+            "countryId": 50,
+            "categoryName": "Women’s Fashion",
+            "storeName": "H&M",
+            "description": "This is a description for Coupon 27",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 27",
+            "code": "5356D9B9",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 300,
+            "rate": 5,
+            "couponId": 27,
+            "storeLink": "https://www.hm.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 6,
+            "countryId": 50,
+            "categoryName": "Women’s Fashion",
+            "storeName": "H&M",
+            "description": "This is a description for Coupon 28",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 28",
+            "code": "80B51303",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 300,
+            "rate": 5,
+            "couponId": 28,
+            "storeLink": "https://www.hm.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 6,
+            "countryId": 50,
+            "categoryName": "Women’s Fashion",
+            "storeName": "H&M",
+            "description": "This is a description for Coupon 29",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 29",
+            "code": "3ADB4865",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 300,
+            "rate": 5,
+            "couponId": 29,
+            "storeLink": "https://www.hm.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 6,
+            "countryId": 50,
+            "categoryName": "Women’s Fashion",
+            "storeName": "H&M",
+            "description": "This is a description for Coupon 30",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 30",
+            "code": "163CF0B6",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 300,
+            "rate": 5,
+            "couponId": 30,
+            "storeLink": "https://www.hm.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          }
+        ],
+        "features": [
+          {
+            "storeId": 6,
+            "featureId": 1,
+            "name": "Easy to use",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/1.png"
+          },
+          {
+            "storeId": 6,
+            "featureId": 2,
+            "name": "Fast delivery",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/2.png"
+          },
+          {
+            "storeId": 6,
+            "featureId": 3,
+            "name": "14 Days return",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/3.png"
+          }
+        ],
+        "socialMedia": [
+          {
+            "key": "Facebook",
+            "value": "https://hmgroup.com/media/social-media/?form=MG0AV3"
+          },
+          {
+            "key": "Instgram",
+            "value": "https://www.instagram.com/hm/"
+          },
+          {
+            "key": "X",
+            "value": "https://x.com/hm/?mx=2"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Zara",
+        "description": "Trendy fashion and accessories",
+        "address": "123 Fashion St, City A",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "storeLink": "https://www.zara.com",
+        "rate": 4,
+        "coupons": [],
+        "features": [
+          {
+            "storeId": 7,
+            "featureId": 1,
+            "name": "Easy to use",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/1.png"
+          },
+          {
+            "storeId": 7,
+            "featureId": 2,
+            "name": "Fast delivery",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/2.png"
+          },
+          {
+            "storeId": 7,
+            "featureId": 3,
+            "name": "14 Days return",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/3.png"
+          }
+        ],
+        "socialMedia": []
+      },
+      {
+        "id": 8,
+        "name": "Adidas",
+        "description": "Sportswear and footwear",
+        "address": "123 Fashion St, City A",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "storeLink": "https://www.adidas.com",
+        "rate": 5,
+        "coupons": [
+          {
+            "storeId": 8,
+            "countryId": 50,
+            "categoryName": "Women’s Fashion",
+            "storeName": "Adidas",
+            "description": "This is a description for Coupon 31",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 31",
+            "code": "62D70CAE",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 200,
+            "rate": 5,
+            "couponId": 31,
+            "storeLink": "https://www.adidas.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 8,
+            "countryId": 50,
+            "categoryName": "Women’s Fashion",
+            "storeName": "Adidas",
+            "description": "This is a description for Coupon 32",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 32",
+            "code": "55156BD4",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 200,
+            "rate": 5,
+            "couponId": 32,
+            "storeLink": "https://www.adidas.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 8,
+            "countryId": 50,
+            "categoryName": "Women’s Fashion",
+            "storeName": "Adidas",
+            "description": "This is a description for Coupon 33",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 33",
+            "code": "7558EF44",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 200,
+            "rate": 5,
+            "couponId": 33,
+            "storeLink": "https://www.adidas.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 8,
+            "countryId": 50,
+            "categoryName": "Women’s Fashion",
+            "storeName": "Adidas",
+            "description": "This is a description for Coupon 34",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 34",
+            "code": "23BD8232",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 200,
+            "rate": 5,
+            "couponId": 34,
+            "storeLink": "https://www.adidas.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 8,
+            "countryId": 50,
+            "categoryName": "Women’s Fashion",
+            "storeName": "Adidas",
+            "description": "This is a description for Coupon 35",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 35",
+            "code": "A199F5CF",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 200,
+            "rate": 5,
+            "couponId": 35,
+            "storeLink": "https://www.adidas.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          }
+        ],
+        "features": [
+          {
+            "storeId": 8,
+            "featureId": 1,
+            "name": "Easy to use",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/1.png"
+          },
+          {
+            "storeId": 8,
+            "featureId": 2,
+            "name": "Fast delivery",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/2.png"
+          },
+          {
+            "storeId": 8,
+            "featureId": 3,
+            "name": "14 Days return",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/3.png"
+          }
+        ],
+        "socialMedia": []
+      },
+      {
+        "id": 9,
+        "name": "Nike",
+        "description": "Sports apparel and footwear",
+        "address": "123 Fashion St, City A",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "storeLink": "https://www.nike.com",
+        "rate": 5,
+        "coupons": [
+          {
+            "storeId": 9,
+            "countryId": 50,
+            "categoryName": "Kids’ Fashion",
+            "storeName": "Nike",
+            "description": "This is a description for Coupon 36",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 36",
+            "code": "A44CB828",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 200,
+            "rate": 5,
+            "couponId": 36,
+            "storeLink": "https://www.nike.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 9,
+            "countryId": 50,
+            "categoryName": "Kids’ Fashion",
+            "storeName": "Nike",
+            "description": "This is a description for Coupon 37",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 37",
+            "code": "D9D4CF98",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 200,
+            "rate": 5,
+            "couponId": 37,
+            "storeLink": "https://www.nike.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 9,
+            "countryId": 50,
+            "categoryName": "Kids’ Fashion",
+            "storeName": "Nike",
+            "description": "This is a description for Coupon 38",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 38",
+            "code": "1E3E2059",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 200,
+            "rate": 5,
+            "couponId": 38,
+            "storeLink": "https://www.nike.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 9,
+            "countryId": 50,
+            "categoryName": "Kids’ Fashion",
+            "storeName": "Nike",
+            "description": "This is a description for Coupon 39",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 39",
+            "code": "F61D3E49",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 200,
+            "rate": 5,
+            "couponId": 39,
+            "storeLink": "https://www.nike.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 9,
+            "countryId": 50,
+            "categoryName": "Kids’ Fashion",
+            "storeName": "Nike",
+            "description": "This is a description for Coupon 40",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 40",
+            "code": "C8C3D06C",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 200,
+            "rate": 5,
+            "couponId": 40,
+            "storeLink": "https://www.nike.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          }
+        ],
+        "features": [
+          {
+            "storeId": 9,
+            "featureId": 1,
+            "name": "Easy to use",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/1.png"
+          },
+          {
+            "storeId": 9,
+            "featureId": 2,
+            "name": "Fast delivery",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/2.png"
+          },
+          {
+            "storeId": 9,
+            "featureId": 3,
+            "name": "14 Days return",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/3.png"
+          }
+        ],
+        "socialMedia": []
+      },
+      {
+        "id": 10,
+        "name": "SHEIN",
+        "description": "Fast fashion e-commerce",
+        "address": "123 Fashion St, City A",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "storeLink": "https://www.shein.com",
+        "rate": 4,
+        "coupons": [
+          {
+            "storeId": 10,
+            "countryId": 50,
+            "categoryName": "Women’s Fashion",
+            "storeName": "SHEIN",
+            "description": "This is a description for Coupon 41",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 41",
+            "code": "AF60F261",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 200,
+            "rate": 4,
+            "couponId": 41,
+            "storeLink": "https://www.shein.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 10,
+            "countryId": 50,
+            "categoryName": "Women’s Fashion",
+            "storeName": "SHEIN",
+            "description": "This is a description for Coupon 42",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 42",
+            "code": "DC6641FC",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 200,
+            "rate": 4,
+            "couponId": 42,
+            "storeLink": "https://www.shein.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 10,
+            "countryId": 50,
+            "categoryName": "Women’s Fashion",
+            "storeName": "SHEIN",
+            "description": "This is a description for Coupon 43",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 43",
+            "code": "ADA7B331",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 200,
+            "rate": 4,
+            "couponId": 43,
+            "storeLink": "https://www.shein.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 10,
+            "countryId": 50,
+            "categoryName": "Women’s Fashion",
+            "storeName": "SHEIN",
+            "description": "This is a description for Coupon 44",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 44",
+            "code": "E077B324",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 200,
+            "rate": 4,
+            "couponId": 44,
+            "storeLink": "https://www.shein.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 10,
+            "countryId": 50,
+            "categoryName": "Women’s Fashion",
+            "storeName": "SHEIN",
+            "description": "This is a description for Coupon 45",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 45",
+            "code": "918BB7C4",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 200,
+            "rate": 4,
+            "couponId": 45,
+            "storeLink": "https://www.shein.com",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          }
+        ],
+        "features": [
+          {
+            "storeId": 10,
+            "featureId": 1,
+            "name": "Easy to use",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/1.png"
+          },
+          {
+            "storeId": 10,
+            "featureId": 2,
+            "name": "Fast delivery",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/2.png"
+          },
+          {
+            "storeId": 10,
+            "featureId": 3,
+            "name": "14 Days return",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/3.png"
+          }
+        ],
+        "socialMedia": []
+      },
+      {
+        "id": 11,
+        "name": "Sephora",
+        "description": "Leading beauty retailer",
+        "address": "123 Fashion St, City A",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "storeLink": "https://www.sephora.ae",
+        "rate": 5,
+        "coupons": [
+          {
+            "storeId": 11,
+            "countryId": 50,
+            "categoryName": "Makeup",
+            "storeName": "Sephora",
+            "description": "This is a description for Coupon 46",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 46",
+            "code": "2F04B95C",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 200,
+            "rate": 5,
+            "couponId": 46,
+            "storeLink": "https://www.sephora.ae",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 11,
+            "countryId": 50,
+            "categoryName": "Makeup",
+            "storeName": "Sephora",
+            "description": "This is a description for Coupon 47",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 47",
+            "code": "BE7E8495",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 200,
+            "rate": 5,
+            "couponId": 47,
+            "storeLink": "https://www.sephora.ae",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 11,
+            "countryId": 50,
+            "categoryName": "Makeup",
+            "storeName": "Sephora",
+            "description": "This is a description for Coupon 48",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 48",
+            "code": "E048D47D",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 200,
+            "rate": 5,
+            "couponId": 48,
+            "storeLink": "https://www.sephora.ae",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 11,
+            "countryId": 50,
+            "categoryName": "Makeup",
+            "storeName": "Sephora",
+            "description": "This is a description for Coupon 49",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 49",
+            "code": "BCC7FAE7",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 200,
+            "rate": 5,
+            "couponId": 49,
+            "storeLink": "https://www.sephora.ae",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          },
+          {
+            "storeId": 11,
+            "countryId": 50,
+            "categoryName": "Makeup",
+            "storeName": "Sephora",
+            "description": "This is a description for Coupon 50",
+            "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+            "couponName": "Coupon 50",
+            "code": "872038A3",
+            "validFrom": "2024-10-10T00:00:00",
+            "validTo": "2025-01-31T00:00:00",
+            "type": "Fixed",
+            "value": 200,
+            "rate": 5,
+            "couponId": 50,
+            "storeLink": "https://www.sephora.ae",
+            "currency": "EGP",
+            "termsAndConditions": [
+              {
+                "id": 1,
+                "termValue": "Coupon has no cash value"
+              },
+              {
+                "id": 2,
+                "termValue": "Code must be entered at checkout"
+              },
+              {
+                "id": 3,
+                "termValue": "Company reserves the right to modify or cancel coupons at any time"
+              }
+            ]
+          }
+        ],
+        "features": [
+          {
+            "storeId": 11,
+            "featureId": 1,
+            "name": "Easy to use",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/1.png"
+          },
+          {
+            "storeId": 11,
+            "featureId": 2,
+            "name": "Fast delivery",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/2.png"
+          },
+          {
+            "storeId": 11,
+            "featureId": 3,
+            "name": "14 Days return",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/3.png"
+          }
+        ],
+        "socialMedia": []
+      },
+      {
+        "id": 12,
+        "name": "Bath & Body Works",
+        "description": "Body care and fragrance retailer",
+        "address": "123 Fashion St, City A",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "storeLink": "https://www.bathandbodyworks.com",
+        "rate": 4,
+        "coupons": [],
+        "features": [
+          {
+            "storeId": 12,
+            "featureId": 1,
+            "name": "Easy to use",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/1.png"
+          },
+          {
+            "storeId": 12,
+            "featureId": 2,
+            "name": "Fast delivery",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/2.png"
+          },
+          {
+            "storeId": 12,
+            "featureId": 3,
+            "name": "14 Days return",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/3.png"
+          }
+        ],
+        "socialMedia": []
+      },
+      {
+        "id": 13,
+        "name": "The Body Shop",
+        "description": "Natural beauty products",
+        "address": "123 Fashion St, City A",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "storeLink": "https://www.thebodyshop.com",
+        "rate": 4,
+        "coupons": [],
+        "features": [
+          {
+            "storeId": 13,
+            "featureId": 1,
+            "name": "Easy to use",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/1.png"
+          },
+          {
+            "storeId": 13,
+            "featureId": 2,
+            "name": "Fast delivery",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/2.png"
+          },
+          {
+            "storeId": 13,
+            "featureId": 3,
+            "name": "14 Days return",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/3.png"
+          }
+        ],
+        "socialMedia": []
+      },
+      {
+        "id": 14,
+        "name": "Faces",
+        "description": "Beauty and cosmetics retailer",
+        "address": "123 Fashion St, City A",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "storeLink": "https://www.faces.com",
+        "rate": 4,
+        "coupons": [],
+        "features": [
+          {
+            "storeId": 14,
+            "featureId": 1,
+            "name": "Easy to use",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/1.png"
+          },
+          {
+            "storeId": 14,
+            "featureId": 2,
+            "name": "Fast delivery",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/2.png"
+          },
+          {
+            "storeId": 14,
+            "featureId": 3,
+            "name": "14 Days return",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/3.png"
+          }
+        ],
+        "socialMedia": []
+      },
+      {
+        "id": 15,
+        "name": "MAC Cosmetics",
+        "description": "Professional makeup brand",
+        "address": "123 Fashion St, City A",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "storeLink": "https://www.maccosmetics.com",
+        "rate": 5,
+        "coupons": [],
+        "features": [
+          {
+            "storeId": 15,
+            "featureId": 1,
+            "name": "Easy to use",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/1.png"
+          },
+          {
+            "storeId": 15,
+            "featureId": 2,
+            "name": "Fast delivery",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/2.png"
+          },
+          {
+            "storeId": 15,
+            "featureId": 3,
+            "name": "14 Days return",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/3.png"
+          }
+        ],
+        "socialMedia": []
+      },
+      {
+        "id": 16,
+        "name": "IKEA",
+        "description": "Global home furnishings retailer",
+        "address": "123 Fashion St, City A",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "storeLink": "https://www.ikea.com",
+        "rate": 5,
+        "coupons": [],
+        "features": [
+          {
+            "storeId": 16,
+            "featureId": 1,
+            "name": "Easy to use",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/1.png"
+          },
+          {
+            "storeId": 16,
+            "featureId": 2,
+            "name": "Fast delivery",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/2.png"
+          },
+          {
+            "storeId": 16,
+            "featureId": 3,
+            "name": "14 Days return",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/3.png"
+          }
+        ],
+        "socialMedia": []
+      },
+      {
+        "id": 17,
+        "name": "Home Centre",
+        "description": "Home decor and furnishings",
+        "address": "123 Fashion St, City A",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "storeLink": "https://www.homecentre.com",
+        "rate": 4,
+        "coupons": [],
+        "features": [
+          {
+            "storeId": 17,
+            "featureId": 1,
+            "name": "Easy to use",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/1.png"
+          },
+          {
+            "storeId": 17,
+            "featureId": 2,
+            "name": "Fast delivery",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/2.png"
+          },
+          {
+            "storeId": 17,
+            "featureId": 3,
+            "name": "14 Days return",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/3.png"
+          }
+        ],
+        "socialMedia": []
+      },
+      {
+        "id": 18,
+        "name": "ACE Hardware",
+        "description": "Home improvement and hardware store",
+        "address": "123 Fashion St, City A",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "storeLink": "https://www.aceuae.com",
+        "rate": 4,
+        "coupons": [],
+        "features": [
+          {
+            "storeId": 18,
+            "featureId": 1,
+            "name": "Easy to use",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/1.png"
+          },
+          {
+            "storeId": 18,
+            "featureId": 2,
+            "name": "Fast delivery",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/2.png"
+          },
+          {
+            "storeId": 18,
+            "featureId": 3,
+            "name": "14 Days return",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/3.png"
+          }
+        ],
+        "socialMedia": []
+      },
+      {
+        "id": 19,
+        "name": "Danube Home",
+        "description": "Home improvement and furniture",
+        "address": "123 Fashion St, City A",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "storeLink": "https://www.danubehome.com",
+        "rate": 4,
+        "coupons": [],
+        "features": [
+          {
+            "storeId": 19,
+            "featureId": 1,
+            "name": "Easy to use",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/1.png"
+          },
+          {
+            "storeId": 19,
+            "featureId": 2,
+            "name": "Fast delivery",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/2.png"
+          },
+          {
+            "storeId": 19,
+            "featureId": 3,
+            "name": "14 Days return",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/3.png"
+          }
+        ],
+        "socialMedia": []
+      },
+      {
+        "id": 20,
+        "name": "Carrefour Home",
+        "description": "Household essentials and decor",
+        "address": "123 Fashion St, City A",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "storeLink": "https://www.carrefouruae.com",
+        "rate": 4,
+        "coupons": [],
+        "features": [
+          {
+            "storeId": 20,
+            "featureId": 1,
+            "name": "Easy to use",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/1.png"
+          },
+          {
+            "storeId": 20,
+            "featureId": 2,
+            "name": "Fast delivery",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/2.png"
+          },
+          {
+            "storeId": 20,
+            "featureId": 3,
+            "name": "14 Days return",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/3.png"
+          }
+        ],
+        "socialMedia": []
+      },
+      {
+        "id": 21,
+        "name": "Decathlon",
+        "description": "Sporting goods and apparel",
+        "address": "123 Fashion St, City A",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "storeLink": "https://www.decathlon.ae",
+        "rate": 5,
+        "coupons": [],
+        "features": [
+          {
+            "storeId": 21,
+            "featureId": 1,
+            "name": "Easy to use",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/1.png"
+          },
+          {
+            "storeId": 21,
+            "featureId": 2,
+            "name": "Fast delivery",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/2.png"
+          },
+          {
+            "storeId": 21,
+            "featureId": 3,
+            "name": "14 Days return",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/3.png"
+          }
+        ],
+        "socialMedia": []
+      },
+      {
+        "id": 22,
+        "name": "Sun & Sand Sports",
+        "description": "Sports equipment retailer",
+        "address": "123 Fashion St, City A",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "storeLink": "https://www.sunandsandsports.com",
+        "rate": 4,
+        "coupons": [],
+        "features": [
+          {
+            "storeId": 22,
+            "featureId": 1,
+            "name": "Easy to use",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/1.png"
+          },
+          {
+            "storeId": 22,
+            "featureId": 2,
+            "name": "Fast delivery",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/2.png"
+          },
+          {
+            "storeId": 22,
+            "featureId": 3,
+            "name": "14 Days return",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/3.png"
+          }
+        ],
+        "socialMedia": []
+      },
+      {
+        "id": 23,
+        "name": "Go Sport",
+        "description": "Sporting goods retailer",
+        "address": "123 Fashion St, City A",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "storeLink": "https://www.gosport.com",
+        "rate": 4,
+        "coupons": [],
+        "features": [
+          {
+            "storeId": 23,
+            "featureId": 1,
+            "name": "Easy to use",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/1.png"
+          },
+          {
+            "storeId": 23,
+            "featureId": 2,
+            "name": "Fast delivery",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/2.png"
+          },
+          {
+            "storeId": 23,
+            "featureId": 3,
+            "name": "14 Days return",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/3.png"
+          }
+        ],
+        "socialMedia": []
+      },
+      {
+        "id": 24,
+        "name": "Adventure HQ",
+        "description": "Outdoor adventure equipment",
+        "address": "123 Fashion St, City A",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "storeLink": "https://www.adventurehq.ae",
+        "rate": 4,
+        "coupons": [],
+        "features": [
+          {
+            "storeId": 24,
+            "featureId": 1,
+            "name": "Easy to use",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/1.png"
+          },
+          {
+            "storeId": 24,
+            "featureId": 2,
+            "name": "Fast delivery",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/2.png"
+          },
+          {
+            "storeId": 24,
+            "featureId": 3,
+            "name": "14 Days return",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/3.png"
+          }
+        ],
+        "socialMedia": []
+      },
+      {
+        "id": 25,
+        "name": "Sports World",
+        "description": "Sports gear and equipment",
+        "address": "123 Fashion St, City A",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "storeLink": "https://www.sportsworld.com",
+        "rate": 4,
+        "coupons": [],
+        "features": [
+          {
+            "storeId": 25,
+            "featureId": 1,
+            "name": "Easy to use",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/1.png"
+          },
+          {
+            "storeId": 25,
+            "featureId": 2,
+            "name": "Fast delivery",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/2.png"
+          },
+          {
+            "storeId": 25,
+            "featureId": 3,
+            "name": "14 Days return",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/3.png"
+          }
+        ],
+        "socialMedia": []
+      },
+      {
+        "id": 26,
+        "name": "Toys \"R\" Us",
+        "description": "Global toy retailer",
+        "address": "123 Fashion St, City A",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "storeLink": "https://www.toysrus.com",
+        "rate": 5,
+        "coupons": [],
+        "features": [
+          {
+            "storeId": 26,
+            "featureId": 1,
+            "name": "Easy to use",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/1.png"
+          },
+          {
+            "storeId": 26,
+            "featureId": 2,
+            "name": "Fast delivery",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/2.png"
+          },
+          {
+            "storeId": 26,
+            "featureId": 3,
+            "name": "14 Days return",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/3.png"
+          }
+        ],
+        "socialMedia": []
+      },
+      {
+        "id": 27,
+        "name": "Mothercare",
+        "description": "Baby and childrens products",
+        "address": "123 Fashion St, City A",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "storeLink": "https://www.mothercare.com",
+        "rate": 5,
+        "coupons": [],
+        "features": [
+          {
+            "storeId": 27,
+            "featureId": 1,
+            "name": "Easy to use",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/1.png"
+          },
+          {
+            "storeId": 27,
+            "featureId": 2,
+            "name": "Fast delivery",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/2.png"
+          },
+          {
+            "storeId": 27,
+            "featureId": 3,
+            "name": "14 Days return",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/3.png"
+          }
+        ],
+        "socialMedia": []
+      },
+      {
+        "id": 28,
+        "name": "Chicco",
+        "description": "Baby care and toys",
+        "address": "123 Fashion St, City A",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "storeLink": "https://www.chicco.com",
+        "rate": 4,
+        "coupons": [],
+        "features": [
+          {
+            "storeId": 28,
+            "featureId": 1,
+            "name": "Easy to use",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/1.png"
+          },
+          {
+            "storeId": 28,
+            "featureId": 2,
+            "name": "Fast delivery",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/2.png"
+          },
+          {
+            "storeId": 28,
+            "featureId": 3,
+            "name": "14 Days return",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/3.png"
+          }
+        ],
+        "socialMedia": []
+      },
+      {
+        "id": 29,
+        "name": "Early Learning Centre",
+        "description": "Educational toys and games",
+        "address": "123 Fashion St, City A",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "storeLink": "https://www.elc.co.uk",
+        "rate": 4,
+        "coupons": [],
+        "features": [
+          {
+            "storeId": 29,
+            "featureId": 1,
+            "name": "Easy to use",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/1.png"
+          },
+          {
+            "storeId": 29,
+            "featureId": 2,
+            "name": "Fast delivery",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/2.png"
+          },
+          {
+            "storeId": 29,
+            "featureId": 3,
+            "name": "14 Days return",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/3.png"
+          }
+        ],
+        "socialMedia": []
+      },
+      {
+        "id": 30,
+        "name": "Lego Store",
+        "description": "Building toys and kits",
+        "address": "123 Fashion St, City A",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "logo": "http://165.232.76.152:8000/Karaz-imgs/stores/store.png",
+        "storeLink": "https://www.lego.com",
+        "rate": 5,
+        "coupons": [],
+        "features": [
+          {
+            "storeId": 30,
+            "featureId": 1,
+            "name": "Easy to use",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/1.png"
+          },
+          {
+            "storeId": 30,
+            "featureId": 2,
+            "name": "Fast delivery",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/2.png"
+          },
+          {
+            "storeId": 30,
+            "featureId": 3,
+            "name": "14 Days return",
+            "description": "Things on a very small scale behave like nothing",
+            "image": "http://165.232.76.152:8000/Karaz-imgs/Features/3.png"
+          }
+        ],
+        "socialMedia": []
+      }
+    ],
+    "ads": [
+      {
+        "id": 1,
+        "name": "Ad1",
+        "description": "Description",
+        "location": "banner",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/ads/Adbanner.png",
+        "type": "single",
+        "country_Id": 50
+      },
+      {
+        "id": 2,
+        "name": "Ad2",
+        "description": "Description",
+        "location": "left",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/ads/adsoffer1.png",
+        "type": "double",
+        "country_Id": 50
+      },
+      {
+        "id": 3,
+        "name": "Ad3",
+        "description": "Description",
+        "location": "right",
+        "image": "http://165.232.76.152:8000/Karaz-imgs/ads/adsoffer2.png",
+        "type": "double",
+        "country_Id": 50
+      }
+    ]
+  },
+  "isOperationSuccessfull": true,
+  "message": "Success"
+}

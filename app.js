@@ -10,6 +10,7 @@ var storeRouter = require('./routes/store');
 var dealsRouter = require('./routes/deals');
 var categoriesRouter = require('./routes/categories');
 var apiRouter = require('./routes/api');
+const settingsMiddleware = require('./middleware/settings');
 
 var app = express();
 
@@ -40,6 +41,9 @@ if (app.get('env') === 'development') {
     next();
   });
 }
+
+// Add the settings middleware before your routes
+app.use(settingsMiddleware);
 
 // Routes
 app.use('/api', apiRouter);
